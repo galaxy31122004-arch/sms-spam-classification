@@ -26,6 +26,7 @@ PHONE_RE = re.compile(r"(?<!\w)(?:\+?\d[\d ().-]{5,}\d)(?!\w)")
 
 def normalize_text(text: str) -> str:
     text = unicodedata.normalize("NFKC", text).lower()
+    text = text.replace("\u00e5\u00a3", "\u00a3")
     text = URL_RE.sub(" <URL> ", text)
 
     def replace_money(match: re.Match[str]) -> str:
@@ -38,16 +39,19 @@ def normalize_text(text: str) -> str:
 
 
 def load_rows(path: Path) -> list[dict[str, str]]:
-    try:
-        content = path.read_text(encoding="utf-8-sig")
-    except UnicodeDecodeError:
-        content = path.read_text(encoding="cp1252")
+    for encoding in ("utf-8-sig", "cp1252"):
+        try:
+            with path.open("r", encoding=encoding, newline="") as source:
+                content = source.read()
+            break
+        except UnicodeDecodeError:
+            continue
     sample = content[:4096]
     try:
-        dialect = csv.Sniffer().sniff(sample, delimiters=",\t;")
+        delimiter = csv.Sniffer().sniff(sample, delimiters=",\t;").delimiter
     except csv.Error:
-        dialect = csv.excel
-    rows = list(csv.reader(io.StringIO(content, newline=""), dialect))
+        delimiter = ","
+    rows = list(csv.reader(io.StringIO(content, newline=""), delimiter=delimiter, doublequote=True))
 
     if not rows:
         raise ValueError(f"Dataset is empty: {path}")
@@ -109,7 +113,7 @@ def stratified_split(records: list[dict[str, str]], seed: int) -> dict[str, list
 def write_csv(path: Path, records: list[dict[str, str]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8", newline="") as destination:
-        writer = csv.DictWriter(destination, fieldnames=("label", "raw_text", "text"))
+        writer = csv.DictWriter(destination, fieldnames=("label", "raw_text", "text"), lineterminator="\n")
         writer.writeheader()
         writer.writerows(records)
 

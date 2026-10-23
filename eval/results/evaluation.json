@@ -1,0 +1,178 @@
+{
+  "dataset": {
+    "test_file": "data/splits/test.csv",
+    "examples": 836
+  },
+  "models": {
+    "transformer": "mrm8488/bert-tiny-finetuned-sms-spam-detection",
+    "tier1": "jngb-labs/sms-spam-classical",
+    "tier1_score_method": "log-odds of calibrated spam probability"
+  },
+  "transformer": {
+    "examples": 836,
+    "accuracy": 0.9665071770334929,
+    "spam_precision": 0.9772727272727273,
+    "spam_recall": 0.7678571428571429,
+    "spam_f1": 0.86,
+    "false_positive_rate_ham": 0.0027624309392265192,
+    "roc_auc": 0.9902944948697712,
+    "confusion_matrix_labels": [
+      "ham",
+      "spam"
+    ],
+    "confusion_matrix": [
+      [
+        722,
+        2
+      ],
+      [
+        26,
+        86
+      ]
+    ],
+    "avg_latency_ms": 0.40343767942653375,
+    "classification_report": {
+      "ham": {
+        "precision": 0.9652406417112299,
+        "recall": 0.9972375690607734,
+        "f1-score": 0.9809782608695652,
+        "support": 724.0
+      },
+      "spam": {
+        "precision": 0.9772727272727273,
+        "recall": 0.7678571428571429,
+        "f1-score": 0.86,
+        "support": 112.0
+      },
+      "accuracy": 0.9665071770334929,
+      "macro avg": {
+        "precision": 0.9712566844919786,
+        "recall": 0.8825473559589582,
+        "f1-score": 0.9204891304347826,
+        "support": 836.0
+      },
+      "weighted avg": {
+        "precision": 0.9668525957577463,
+        "recall": 0.9665071770334929,
+        "f1-score": 0.9647706469731641,
+        "support": 836.0
+      }
+    },
+    "spam_label_id": 1
+  },
+  "tier1": {
+    "examples": 742,
+    "accuracy": 1.0,
+    "spam_precision": 1.0,
+    "spam_recall": 1.0,
+    "spam_f1": 1.0,
+    "false_positive_rate_ham": 0.0,
+    "roc_auc": 1.0,
+    "confusion_matrix_labels": [
+      "ham",
+      "spam"
+    ],
+    "confusion_matrix": [
+      [
+        687,
+        0
+      ],
+      [
+        0,
+        55
+      ]
+    ],
+    "avg_latency_ms": 0.11810753588496738,
+    "classification_report": {
+      "ham": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 687.0
+      },
+      "spam": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 55.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 742.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 742.0
+      }
+    },
+    "coverage": 0.8875598086124402,
+    "route_counts": {
+      "tier1_spam": 55,
+      "tier1_ham": 687,
+      "tier2": 94
+    },
+    "score_method": "log-odds of calibrated spam probability"
+  },
+  "cascade": {
+    "examples": 836,
+    "accuracy": 0.9856459330143541,
+    "spam_precision": 0.9901960784313726,
+    "spam_recall": 0.9017857142857143,
+    "spam_f1": 0.9439252336448598,
+    "false_positive_rate_ham": 0.0013812154696132596,
+    "roc_auc": 0.9988900947119179,
+    "confusion_matrix_labels": [
+      "ham",
+      "spam"
+    ],
+    "confusion_matrix": [
+      [
+        723,
+        1
+      ],
+      [
+        11,
+        101
+      ]
+    ],
+    "avg_latency_ms": 0.16193720095639277,
+    "classification_report": {
+      "ham": {
+        "precision": 0.9850136239782016,
+        "recall": 0.9986187845303868,
+        "f1-score": 0.9917695473251029,
+        "support": 724.0
+      },
+      "spam": {
+        "precision": 0.9901960784313726,
+        "recall": 0.9017857142857143,
+        "f1-score": 0.9439252336448598,
+        "support": 112.0
+      },
+      "accuracy": 0.9856459330143541,
+      "macro avg": {
+        "precision": 0.987604851204787,
+        "recall": 0.9502022494080505,
+        "f1-score": 0.9678473904849814,
+        "support": 836.0
+      },
+      "weighted avg": {
+        "precision": 0.9857079240963297,
+        "recall": 0.9856459330143541,
+        "f1-score": 0.9853597828129173,
+        "support": 836.0
+      }
+    },
+    "tier2_rate": 0.11244019138755981,
+    "route_counts": {
+      "tier1_spam": 55,
+      "tier1_ham": 687,
+      "tier2": 94
+    }
+  }
+}

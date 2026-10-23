@@ -10,19 +10,21 @@ thresholds:
 force_to_tier2:
   # Tier-1 bao ham nhung co dau hieu nguy hiem -> bat xuong Tier-2
   - name: url_la
-    condition: contains_url AND NOT domain_allowlist
+    type: url_not_allowlisted
     reason: phishing moi thuong qua URL, Tier-1 train tu 2011 de sot
 
   - name: trung_thuong_vay_viec
-    condition: keyword_in [win, prize, free, claim, loan, debt, job, offer, crypto, investment] AND contains_phone_or_url
+    type: keyword_with_contact
+    keywords: [win, prize, free, claim, loan, debt, job, offer, crypto, investment]
     reason: mau lua dao kinh dien, can Transformer xac minh ngu nghia
 
   - name: tin_nhan_rut_gon
-    condition: contains_shortlink  # bit.ly, t.co, tinyurl
+    type: shortlink
+    domains: [bit.ly, t.co, tinyurl.com]
     reason: shortlink che URL that, classical khong nhin duoc
 
   - name: so_dien_thoai_la
-    condition: contains_phone AND sender_not_in_contacts
+    type: unknown_sender_phone
     reason: smishing thuong keu goi lai so la
 
 allowlist:
