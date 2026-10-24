@@ -1,93 +1,69 @@
-# Plan: SMS Spam Detection (Classical Tier-1 + Transformer)
+# Kế hoạch benchmark SMS spam: MLP / LSTM / Transformer train từ đầu
 
-## 0. Mục tiêu (đã chốt)
-- Model chính: Transformer. MLP/LSTM chỉ giữ làm baseline so sánh.
-- Tier-1 classical chỉ làm pre-filter, không thay thế model chính.
-- Ngôn ngữ: tiếng Anh. Dataset chính: SMS Spam Collection + bổ sung phishing mới.
+## 0. Mục tiêu
+
+- Train ba kiến trúc MLP, LSTM và Transformer encoder nhỏ từ đầu trên cùng bộ SMS spam tiếng Anh, rồi so sánh bằng một quy trình đánh giá chung.
+- Ưu tiên phương pháp so sánh và khả năng tái lập hơn hiệu suất tối đa.
+- Không dùng checkpoint pretrained, fine-tuning hoặc số liệu Tier-1/cascade.
 
 ## 1. Dữ liệu
-1. SMS Spam Collection từ Kaggle đã tải về: 5,572 mẫu có nhãn (4,825 ham, 747 spam).
-2. Bổ sung SmishTank / PhishTank / mẫu mới (fake delivery, job scam, crypto).
-3. Chuẩn hóa nhãn về `ham / spam`.
-4. Chia stratified: train 70 / val 15 / test 15. Test set khóa lại, mọi model dùng chung.
 
-## 2. Tiền xử lý chung
-- Lowercase, chuẩn hóa unicode.
-- Thay thế: URL -> `<URL>`, SĐT -> `<PHONE>`, số tiền -> `<MONEY>`.
-- Giữ dấu câu (!, $, %) vì có tín hiệu spam.
-- Không stemming mạnh với nhánh Transformer.
+1. SMS Spam Collection gồm 5.572 mẫu (4.825 ham, 747 spam), lưu tại `data/raw/spam.csv`.
+2. Chuẩn hóa nhãn thành `ham` và `spam`.
+3. Chia stratified với seed 42 theo tỷ lệ train/val/test 70/15/15: 3.900 / 836 / 836 mẫu. Cả ba model dùng cùng các file split.
+4. `data/splits/test.csv` đã khóa. Không tạo lại split bằng `--force` khi chưa có yêu cầu rõ ràng.
 
-Verify: script kiểm tra 100 mẫu sau normalize bằng mắt.
+## 2. Chuẩn hóa và vector hóa
 
-## 3. Tier-1: Classical filter
-- Checkpoint: `jngb-labs/sms-spam-classical` (TF-IDF word + char + surface features + calibrated LinearSVC).
-- Không fine-tune checkpoint này. Classifier được calibration không expose `decision_function`; implementation dùng log-odds `ln(P(spam)/P(ham))` làm score đơn điệu.
-- Ngưỡng đề xuất:
-  - score > 1.0 -> spam chắc chắn
-  - score < -1.0 -> ham chắc chắn
-  - còn lại -> chuyển Tier-2
-- Rule ép xuống Tier-2 (xem `tier1_rules.yaml`):
-  - chứa URL lạ + Tier-1 bảo ham -> vẫn chuyển Tier-2
-  - chứa từ khóa trúng thưởng / vay / job offer + số điện thoại -> chuyển Tier-2
+- Chuẩn hóa văn bản chung: lowercase, Unicode NFKC, thay URL bằng `<URL>`, số điện thoại bằng `<PHONE>`, số tiền bằng `<MONEY>`; giữ dấu `!`, `$`, `%`.
+- Vector hóa phù hợp với từng kiến trúc: MLP dùng TF-IDF từ 1-2gram (tối đa 10.000 feature) cộng ký tự 3-5gram (tối đa 5.000 feature). LSTM và Transformer dùng cùng bộ token ID, vocab tối đa 10.000 mục và `max_len=100`.
+- Chỉ fit TF-IDF và xây vocab trên train split. Validation và test chỉ dùng bộ biến đổi đã fit.
+- Ghi rõ kiểu đầu vào, số feature/vocab và `max_len` trong cấu hình của từng model. Sự khác nhau về vector hóa là một phần của kiến trúc, không phải bước chuẩn hóa chung.
 
-Verify: đo precision/recall Tier-1 độc lập, tỉ lệ lọt Tier-2 khoảng 10-20%.
+Kiểm tra trực quan 100 mẫu sau chuẩn hóa khi thay đổi quy trình dữ liệu.
 
-## 4. Baseline 1: MLP (tham khảo)
-- Input: TF-IDF word 1-2gram (max 10k) + char 3-5gram (max 5k).
-- Kiến trúc: Dense 256 + ReLU + Dropout 0.4 -> Dense 128 -> Sigmoid.
-- Loss: BCE với class_weight. Adam lr 1e-3. Early stopping theo F1 val.
-- Chỉ dùng để so sánh, không triển khai chính.
+## 3. MLP
 
-## 5. Baseline 2: LSTM (tham khảo)
-- Embedding 128 (học từ đầu) hoặc GloVe 100d.
-- BiLSTM 128 -> Dropout 0.4 -> Dense 64 -> Sigmoid.
-- max_len 100. Adam lr 1e-3, early stopping F1 val.
-- Chỉ dùng để so sánh, không triển khai chính.
+- Đầu vào TF-IDF như mục 2; Dense 256 + ReLU + Dropout 0,4 -> Dense 128 + ReLU + Dropout 0,4 -> một logit spam.
+- BCEWithLogitsLoss có trọng số lớp; Adam với learning rate 1e-3; dừng sớm theo spam F1 trên validation.
 
-## 6. Model chính: Transformer (đã chốt)
-- Checkpoint: `mrm8488/bert-tiny-finetuned-sms-spam-detection` (BERT-tiny, đã clone sẵn).
-- Model ID mặc định: `mrm8488/bert-tiny-finetuned-sms-spam-detection`; evaluator tải model công khai vào Hugging Face cache, có thể truyền checkpoint local bằng `--model`.
-- Dùng trực tiếp cho Tier-2, không train lại. Chỉ fine-tune thêm nếu cần số liệu riêng.
-- Inference: pipeline `text-classification`, max_length 128.
-- Label mapping đã đối chiếu trên validation split: `0=HAM`, `1=SPAM`; evaluator mặc định dùng ID 1. Với ID 1, validation accuracy 0.9749 / spam F1 0.8976; ID 0 cho accuracy 0.0251 / spam F1 0.0468.
+## 4. LSTM
 
-## 7. Đánh giá
-- Transformer: Precision / Recall / F1 spam, Confusion Matrix, ROC-AUC.
-- MLP/LSTM chỉ đo F1 tham khảo trên cùng test set.
-- Cascade: F1 cuối, false positive rate ham, latency trung bình, tỉ lệ gọi Tier-2.
-- Target: F1 spam > 0.95, ham chặn nhầm < 1%.
-- Test hiện tại có 836 mẫu: BERT spam F1 0.8600, ham FPR 0.3%; cascade spam F1 0.9439, ham FPR 0.1%, Tier-2 rate 11.2%, latency trung bình 0.16 ms/message (CPU).
+- Embedding 128 học từ đầu; BiLSTM hidden 128 -> Dropout 0,4 -> Dense 64 -> một logit spam.
+- `max_len=100`; Adam với learning rate 1e-3; dừng sớm theo spam F1 trên validation.
 
-## 8. Báo cáo
-- Bảng 1: baseline classical và MLP/LSTM tham khảo.
-- Bảng 2: Transformer chạy độc lập (không qua lọc).
-- Bảng 3: cascade Tier-1 + Transformer.
-- Ghi rõ Tier-1 là phụ trợ, không dùng để thay số liệu model chính.
+## 5. Transformer nhỏ
 
-## 9. Cấu trúc thư mục
-```
-data/raw/          Kaggle spam.csv + archive; phishing bổ sung chưa có
-data/processed/    dữ liệu sau normalize
-data/splits/       train/val/test đã khóa
-data/prepare_data.py  chuẩn hóa CSV và tạo split stratified
-tier1/             load jngb-labs, áp thresholds/rules, cascade routing
-tier1_rules.yaml   ngưỡng + rule ép xuống Tier-2
-models/mlp/        baseline tham khảo
-models/lstm/       baseline tham khảo
-models/transformer/bert-tiny-sms-spam/  checkpoint Tier-2 đã clone
-eval/              evaluate.py, report.py, setup_env.py, requirements.txt
-tests/             kiểm tra parser, routing, score và report
-PLAN.md            kế hoạch này
-README.md          chỉ dẫn file
+- Encoder hai lớp, hidden 128, bốn attention head; embedding token và vị trí đều học từ đầu. Không dùng trọng số pretrained.
+- Dùng cùng vocab và `max_len=100` với LSTM; AdamW và lịch learning rate warmup/linear decay; dừng sớm theo spam F1 trên validation.
+
+## 6. Đánh giá chung
+
+- Dùng ngưỡng xác suất spam cố định 0,5 cho cả ba model khi chọn checkpoint trên validation và chấm test. Ngưỡng này không được tối ưu riêng cho từng model; vì dữ liệu lệch lớp, Precision/Recall/F1 có thể khác nếu dùng ngưỡng khác. ROC-AUC không phụ thuộc ngưỡng.
+- Trên cùng `test.csv` đã khóa, báo cáo spam Precision/Recall/F1, Confusion Matrix (ham/spam), ROC-AUC, latency CPU trung bình ở batch size 1 và 32, số tham số và thời gian train.
+- Latency CPU tính cả vector hóa (TF-IDF hoặc token ID) và inference, không phải thời gian inference thuần. Warmup một lượt trên tối đa 32 mẫu trước khi đo; lượt warmup không tính vào kết quả thời gian hay metric.
+- Đặt ba model cạnh nhau trong một bảng. Mỗi config có cùng các trường: kiểu đầu vào, vocab/feature, `max_len`, embedding, hidden, optimizer, epoch đã chạy, epoch tốt nhất, seed và ngưỡng. Ghi `n/a` cho trường không áp dụng.
+
+## 7. Cấu trúc thư mục
+
+```text
+data/raw/                     dữ liệu gốc
+data/splits/                  train/val/test đã khóa
+data/prepare_data.py          chuẩn hóa CSV, chia stratified với seed 42
+models/common.py              dữ liệu, vector hóa, model và quy trình train chung
+models/mlp/                   script train MLP từ đầu
+models/lstm/                  script train LSTM từ đầu
+models/transformer/           script train Transformer nhỏ từ đầu
+legacy/bert-tiny-sms-spam/    checkpoint pretrained cũ, không nằm trong benchmark
+eval/                         đánh giá chung và báo cáo so sánh
+tests/                        test dữ liệu, model, metric và report
 ```
 
-## 10. Scripts hiện có
+## 8. Script
 
-- `data/prepare_data.py`: đọc CSV Kaggle (`v1`/`v2`) hoặc CSV tương đương, chuẩn hóa Unicode, URL, số điện thoại và số tiền; tạo `train.csv`, `val.csv`, `test.csv` theo tỷ lệ 70/15/15 với seed mặc định 42. Script từ chối ghi đè split đã có trừ khi truyền `--force`. Chạy `python data/prepare_data.py --input data/raw/spam.csv`.
-- `tier1/model.py`: tải checkpoint `jngb-labs/sms-spam-classical` qua Hugging Face Hub, import `features.py` để nạp joblib, trả calibrated probability và log-odds.
-- `tier1/cascade.py` / `tier1/rules.py`: quyết định confident Tier-1 hay Tier-2; force-rule không tự kết luận spam/ham.
-- `eval/evaluate.py`: đánh giá BERT riêng, Tier-1 confident subset và cascade; lưu JSON ở `eval/results/evaluation.json`.
-- `eval/report.py`: đọc JSON và tạo `eval/results/report.md`.
-- `eval/requirements.txt` và `eval/setup_env.py`: dependency đánh giá được giữ riêng; script tạo `eval/.venv` và cài thư viện vào môi trường đó. Chạy `python eval/setup_env.py`.
-
-Split đã được tạo từ CSV Kaggle, seed 42: 3,900 train / 836 validation / 836 test. Không chạy lại với `--force` nếu không chủ ý mở khóa test split. Bộ dữ liệu bổ sung phishing chưa được đưa vào.
+- `data/prepare_data.py --input data/raw/spam.csv`: chuẩn hóa và chia dữ liệu; từ chối ghi đè split nếu không có `--force`.
+- `models/{mlp,lstm,transformer}/train.py`: train từ đầu trên train split, chọn checkpoint theo validation, lưu trọng số và config JSON.
+- `eval/evaluate.py`: nạp ba checkpoint, chấm cùng test split bằng metric chung, lưu JSON.
+- `eval/report.py`: tạo bảng so sánh Markdown từ JSON.
+- `eval/setup_env.py`: tạo `eval/.venv` và cài dependencies.
+- `eval/results/`: artifact JSON và Markdown tạo khi chạy, được Git ignore để tránh dùng nhầm số liệu cũ.

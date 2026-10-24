@@ -3,8 +3,10 @@ __pycache__/
 *.py[codz]
 *$py.class
 
-# Local Hugging Face checkout; evaluation downloads model weights to its cache.
-/models/transformer/bert-tiny-sms-spam/
+# Legacy local Hugging Face checkout.
+/legacy/bert-tiny-sms-spam/
+/models/*/checkpoint/
+/eval/results/
 
 # C extensions
 *.so

@@ -27,7 +27,7 @@ def main() -> None:
     except subprocess.CalledProcessError as error:
         print("Dependency installation failed. Enable package network access and rerun this script.", file=sys.stderr)
         raise SystemExit(error.returncode) from error
-    print(f"Environment ready. Run: {python} eval/evaluate.py")
+    print(f"Environment ready. Train models with {python} models/<kind>/train.py, then run eval/evaluate.py.")
 
 
 if __name__ == "__main__":
