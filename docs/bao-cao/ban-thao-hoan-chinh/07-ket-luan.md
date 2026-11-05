@@ -28,7 +28,9 @@ Website dùng Transformer baseline, mô hình tốt nhất trên dữ liệu ngo
 
 Hạn chế đầu tiên là nội dung trùng giữa các tập: 84 dòng test trùng `text` với train, gồm 23 dòng SPAM. Sự trùng này có thể khiến kết quả trên test UCI lạc quan hơn so với SMS mới. Đánh giá ngoài nguồn bù một phần hạn chế này nhưng không thay thế việc chia lại dữ liệu.
 
-Dữ liệu đánh giá ngoài nguồn còn nhỏ và cũ: 387 SMS, thu thập khoảng 2015–2020, nghiêng về người dùng Ấn Độ, tin HAM chủ yếu là trao đổi cá nhân ngắn. Bộ dữ liệu bổ sung huấn luyện là dữ liệu tổng hợp theo template. Kiểm tra định tính với SMS tự soạn cho thấy cả ba mô hình vẫn bỏ sót lừa đảo không có liên kết, như tin giả làm người thân xin chuyển tiền, và đôi khi gán nhầm tin giao dịch ngân hàng hợp lệ.
+Dữ liệu đánh giá ngoài nguồn còn nhỏ và cũ: 387 SMS, thu thập khoảng 2015–2020, nghiêng về người dùng Ấn Độ, tin HAM chủ yếu là trao đổi cá nhân ngắn. Bộ dữ liệu bổ sung huấn luyện là dữ liệu tổng hợp theo template.
+
+Kiểm tra định tính trên 66 SMS tự soạn (mục 4.7.4) cho thấy hai hạn chế còn lại. Mô hình bỏ sót lừa đảo phi kỹ thuật không chứa liên kết, như tin giả làm người thân xin chuyển tiền, và báo nhầm các thông báo giao dịch, giao hàng, đặt chỗ hợp lệ. Nguyên nhân của nhóm thứ hai được kiểm chứng bằng biến thể: ký hiệu tiền tệ kèm số trong dữ liệu huấn luyện hầu như chỉ gắn với tin rác, nên `$<MONEY>` trở thành đặc trưng của lớp SPAM. Ngoài ra, luật nhận số điện thoại trong `normalize_text` bắt mọi dãy 7–15 chữ số nên mã vận đơn và mã đơn hàng bị thay bằng `<PHONE>`; đây là lỗi của bước chuẩn hóa, sửa được bằng mã nhưng kéo theo sinh lại split và huấn luyện lại cả ba mô hình nên chưa thực hiện trong phạm vi báo cáo.
 
 Hồ sơ chỉ có một seed và một lần đo latency trên một máy. Cùng số lượng vocab và cùng test không loại bỏ mọi khác biệt giữa pipeline; MLP dùng TF-IDF còn hai mạng chuỗi dùng embedding, nên chưa thể quy toàn bộ khác biệt cho riêng kiến trúc. Điểm hiển thị dưới nhãn “Xác suất SPAM” chưa được hiệu chỉnh.
 
@@ -37,5 +39,7 @@ Hồ sơ chỉ có một seed và một lần đo latency trên một máy. Cùn
 Ưu tiên đầu tiên là cải thiện thiết kế đánh giá: gom nhóm các văn bản trùng và phân bổ mỗi nhóm vào một tập, rồi huấn luyện và đánh giá lại cả ba mô hình. Mã chia nhóm đã có trong `data/prepare_data.py`; split hiện tại đã được sao lưu để bảo toàn nguồn gốc kết quả.
 
 Tiếp theo là thu thập SMS lừa đảo thật, hiện đại và đa dạng hơn, gồm cả tin HAM có liên kết, số tiền hay mã OTP, để vừa bổ sung huấn luyện vừa đánh giá. Kết quả của đồ án gợi ý dữ liệu thật đa dạng có giá trị hơn dữ liệu tổng hợp theo template. Các lượt chạy nên lặp với nhiều seed và ghi điểm từng mẫu để báo cáo độ biến thiên, vẽ đường ROC và phân tích lỗi theo nội dung.
+
+Một việc nhỏ hơn nhưng cụ thể là sửa luật nhận số điện thoại để phân biệt mã vận đơn, mã đơn hàng với số liên lạc, có thể bằng một placeholder riêng cho dãy số không phải số điện thoại. Việc này không cần dữ liệu mới, nhưng phải sinh lại cột `text`, huấn luyện lại cả ba mô hình và cập nhật toàn bộ số liệu, nên cần thực hiện trong một đợt thực nghiệm có kiểm soát.
 
 Đối với suy luận, nên ghi phiên bản hàm chuẩn hóa vào config để phát hiện sai lệch giữa checkpoint và mã, và khảo sát ngưỡng trên validation theo chi phí FP/FN khi có nhu cầu vận hành cụ thể; các thử nghiệm đó phải được báo cáo riêng, không thay quy ước benchmark 0,5. Đối với website, bước tiếp theo là kiểm tra xử lý lỗi khi thiếu artifact và đo thời gian đáp ứng.

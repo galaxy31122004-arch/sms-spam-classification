@@ -41,7 +41,8 @@
 - Bảng 4.7. F1 SPAM trên `test.csv` của lượt Colab và lượt huấn luyện lại.
 - Bảng 4.8. F1 SPAM trước (baseline) và sau (augmented) khi bổ sung dữ liệu, trên ba tập test.
 - Bảng 4.9. Ma trận nhầm lẫn của các mô hình baseline trên `test_external.csv`.
-- Bảng 4.10. Kết luận được số liệu hỗ trợ cho từng mô hình.
+- Bảng 4.10. Kết quả trên 66 SMS tự soạn.
+- Bảng 4.11. Kết luận được số liệu hỗ trợ cho từng mô hình.
 - Bảng 5.1. Thành phần website và trách nhiệm theo mã.
 - Bảng 5.2. Kết quả kiểm thử các nhánh của website.
 - Bảng KL.1. Mức đáp ứng các mục tiêu nêu ở Mở đầu.
@@ -853,11 +854,30 @@ Giới hạn của tập này cần được giữ khi diễn giải. Tập ch�
 
 ### 4.7.4. Kiểm tra định tính với SMS tự soạn
 
-Ngoài các tập có nhãn, 36 SMS tiếng Anh tự soạn (18 HAM, 18 SPAM, gồm cả dạng lừa đảo hiện đại như khóa tài khoản, phí hải quan, giả làm người thân) được dùng để kiểm tra nhanh qua `compare_demo_models.py`. Transformer baseline đúng 33/36, MLP augmented đúng 30/36 và MLP của lượt Colab đúng 27/36. Cả ba mô hình đều bỏ sót tin lừa đảo không có liên kết dạng “Hi mum, I dropped my phone… send me $300”, và Transformer gán nhầm SPAM cho hai tin giao dịch ngân hàng hợp lệ. Bộ tin này do người viết báo cáo soạn, quá nhỏ để báo cáo như một metric; nó chỉ minh họa các dạng lỗi còn tồn tại.
+Ngoài các tập có nhãn, 66 SMS tiếng Anh tự soạn (33 HAM, 33 SPAM) được dùng để kiểm tra định tính qua `compare_demo_models.py`. Bộ tin cố ý nhắm vào các dạng mà dữ liệu huấn luyện không có: lừa đảo khóa tài khoản, phí hải quan, đầu tư tiền mã hóa, giả làm người thân; phía HAM có thông báo giao dịch thẻ, giao hàng, OTP, hóa đơn và liên kết công việc.
+
+**Bảng 4.10. Kết quả trên 66 SMS tự soạn.**
+
+| Mô hình | Nhận đúng | Báo nhầm HAM | Bỏ sót SPAM |
+|---|---:|---:|---:|
+| Transformer baseline | 59/66 | 5 | 2 |
+| Transformer augmented | 56/66 | 5 | 5 |
+| BiLSTM baseline | 54/66 | 4 | 8 |
+| MLP baseline | 50/66 | 5 | 11 |
+
+*Nguồn: `compare_demo_models.py` và `docs/ket-qua-kiem-thu-thu-cong.json`; ngưỡng 0,5. Bộ tin do người viết báo cáo và người dùng soạn, không lấy từ bất kỳ split nào.*
+
+Thứ hạng trùng với kết quả trên `test_external.csv`. Bốn mô hình báo nhầm HAM gần bằng nhau; khác biệt nằm ở số SPAM bỏ sót.
+
+Chạy thêm các biến thể của từng tin sai cho phép tách hai loại nguyên nhân. Thứ nhất là hạn chế của bước chuẩn hóa: mã vận đơn “7741 2093” bị thay bằng `<PHONE>` do luật nhận số điện thoại bắt mọi dãy 7–15 chữ số, và chỉ riêng điều này đưa một thông báo giao hàng hợp lệ từ 0,02 lên 1,00. Thứ hai là hạn chế của dữ liệu: bốn tin HAM còn lại bị báo nhầm đều chứa `$<MONEY>` hoặc cụm “reply X to Y”; bỏ số tiền khỏi tin thanh toán tiền nước làm điểm giảm từ 0,94 xuống 0,22, viết số tiền bằng chữ làm điểm còn 0,01. Trong SMS Spam Collection, ký hiệu tiền tệ kèm số hầu như chỉ xuất hiện ở tin trúng thưởng hoặc dịch vụ tính phí, nên mô hình học `$<MONEY>` thành đặc trưng của lớp SPAM; thông báo giao dịch ngân hàng hợp lệ gần như không có trong dữ liệu.
+
+Hai tin SPAM bị bỏ sót đều là lừa đảo phi kỹ thuật không chứa liên kết hoặc từ khóa quảng cáo (“Hi mum, I dropped my phone… send me $300” và một tin mạo danh bạn bè). Với tin thứ hai, thay liên kết thành `<URL>` chỉ nâng điểm từ 0,01 lên 0,22, nên nguyên nhân là văn phong chứ không phải cách xử lý liên kết.
+
+Bộ tin này quá nhỏ và không chọn ngẫu nhiên nên không được báo cáo như một metric; quy trình đầy đủ và phân tích từng lỗi đặt tại `docs/kiem-thu-tin-nhan-thuc-te.md`.
 
 ## 4.8. Tổng hợp và cơ sở chọn mô hình cho demo
 
-**Bảng 4.10. Kết luận được số liệu hỗ trợ cho từng mô hình.**
+**Bảng 4.11. Kết luận được số liệu hỗ trợ cho từng mô hình.**
 
 | Mô hình | Điểm thuận lợi quan sát được | Giới hạn cần giữ khi diễn giải |
 |---|---|---|
@@ -865,7 +885,7 @@ Ngoài các tập có nhãn, 36 SMS tiếng Anh tự soạn (18 HAM, 18 SPAM, g�
 | BiLSTM | Latency batch 1 thấp nhất; 0 FP trên test ngoài | 10 FN trên test UCI; F1 thấp hơn Transformer trên test ngoài |
 | Transformer | ROC-AUC cao nhất trên cả hai tập; F1 cao nhất trên test ngoài (97,56%) | F1 thấp nhất trên test UCI; thời gian train và latency batch 32 cao nhất |
 
-*Nguồn: tổng hợp Bảng 4.2–4.9; nhận xét chỉ áp dụng cho cấu hình, dữ liệu và số liệu được lưu.*
+*Nguồn: tổng hợp Bảng 4.2–4.10; nhận xét chỉ áp dụng cho cấu hình, dữ liệu và số liệu được lưu.*
 
 Website dùng Transformer baseline vì đây là mô hình tổng quát tốt nhất trên dữ liệu thật ngoài nguồn, và mục tiêu của demo là phân loại SMS người dùng tự nhập, vốn không thuộc phân bố UCI. Lựa chọn này đánh đổi khoảng ba điểm phần trăm F1 trên test UCI. Số liệu hỗ trợ sự phù hợp của Transformer cho demo học thuật; chưa chứng minh mô hình đủ điều kiện triển khai thực tế.
 
@@ -1025,7 +1045,9 @@ Website dùng Transformer baseline, mô hình tốt nhất trên dữ liệu ngo
 
 Hạn chế đầu tiên là nội dung trùng giữa các tập: 84 dòng test trùng `text` với train, gồm 23 dòng SPAM. Sự trùng này có thể khiến kết quả trên test UCI lạc quan hơn so với SMS mới. Đánh giá ngoài nguồn bù một phần hạn chế này nhưng không thay thế việc chia lại dữ liệu.
 
-Dữ liệu đánh giá ngoài nguồn còn nhỏ và cũ: 387 SMS, thu thập khoảng 2015–2020, nghiêng về người dùng Ấn Độ, tin HAM chủ yếu là trao đổi cá nhân ngắn. Bộ dữ liệu bổ sung huấn luyện là dữ liệu tổng hợp theo template. Kiểm tra định tính với SMS tự soạn cho thấy cả ba mô hình vẫn bỏ sót lừa đảo không có liên kết, như tin giả làm người thân xin chuyển tiền, và đôi khi gán nhầm tin giao dịch ngân hàng hợp lệ.
+Dữ liệu đánh giá ngoài nguồn còn nhỏ và cũ: 387 SMS, thu thập khoảng 2015–2020, nghiêng về người dùng Ấn Độ, tin HAM chủ yếu là trao đổi cá nhân ngắn. Bộ dữ liệu bổ sung huấn luyện là dữ liệu tổng hợp theo template.
+
+Kiểm tra định tính trên 66 SMS tự soạn (mục 4.7.4) cho thấy hai hạn chế còn lại. Mô hình bỏ sót lừa đảo phi kỹ thuật không chứa liên kết, như tin giả làm người thân xin chuyển tiền, và báo nhầm các thông báo giao dịch, giao hàng, đặt chỗ hợp lệ. Nguyên nhân của nhóm thứ hai được kiểm chứng bằng biến thể: ký hiệu tiền tệ kèm số trong dữ liệu huấn luyện hầu như chỉ gắn với tin rác, nên `$<MONEY>` trở thành đặc trưng của lớp SPAM. Ngoài ra, luật nhận số điện thoại trong `normalize_text` bắt mọi dãy 7–15 chữ số nên mã vận đơn và mã đơn hàng bị thay bằng `<PHONE>`; đây là lỗi của bước chuẩn hóa, sửa được bằng mã nhưng kéo theo sinh lại split và huấn luyện lại cả ba mô hình nên chưa thực hiện trong phạm vi báo cáo.
 
 Hồ sơ chỉ có một seed và một lần đo latency trên một máy. Cùng số lượng vocab và cùng test không loại bỏ mọi khác biệt giữa pipeline; MLP dùng TF-IDF còn hai mạng chuỗi dùng embedding, nên chưa thể quy toàn bộ khác biệt cho riêng kiến trúc. Điểm hiển thị dưới nhãn “Xác suất SPAM” chưa được hiệu chỉnh.
 
@@ -1034,6 +1056,8 @@ Hồ sơ chỉ có một seed và một lần đo latency trên một máy. Cùn
 Ưu tiên đầu tiên là cải thiện thiết kế đánh giá: gom nhóm các văn bản trùng và phân bổ mỗi nhóm vào một tập, rồi huấn luyện và đánh giá lại cả ba mô hình. Mã chia nhóm đã có trong `data/prepare_data.py`; split hiện tại đã được sao lưu để bảo toàn nguồn gốc kết quả.
 
 Tiếp theo là thu thập SMS lừa đảo thật, hiện đại và đa dạng hơn, gồm cả tin HAM có liên kết, số tiền hay mã OTP, để vừa bổ sung huấn luyện vừa đánh giá. Kết quả của đồ án gợi ý dữ liệu thật đa dạng có giá trị hơn dữ liệu tổng hợp theo template. Các lượt chạy nên lặp với nhiều seed và ghi điểm từng mẫu để báo cáo độ biến thiên, vẽ đường ROC và phân tích lỗi theo nội dung.
+
+Một việc nhỏ hơn nhưng cụ thể là sửa luật nhận số điện thoại để phân biệt mã vận đơn, mã đơn hàng với số liên lạc, có thể bằng một placeholder riêng cho dãy số không phải số điện thoại. Việc này không cần dữ liệu mới, nhưng phải sinh lại cột `text`, huấn luyện lại cả ba mô hình và cập nhật toàn bộ số liệu, nên cần thực hiện trong một đợt thực nghiệm có kiểm soát.
 
 Đối với suy luận, nên ghi phiên bản hàm chuẩn hóa vào config để phát hiện sai lệch giữa checkpoint và mã, và khảo sát ngưỡng trên validation theo chi phí FP/FN khi có nhu cầu vận hành cụ thể; các thử nghiệm đó phải được báo cáo riêng, không thay quy ước benchmark 0,5. Đối với website, bước tiếp theo là kiểm tra xử lý lỗi khi thiếu artifact và đo thời gian đáp ứng.
 

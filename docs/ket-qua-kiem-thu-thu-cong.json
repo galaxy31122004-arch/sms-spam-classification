@@ -1,0 +1,838 @@
+{
+  "1": {
+    "correct": {
+      "TRF-demo": 14,
+      "MLP": 13,
+      "LSTM": 13,
+      "TRF-aug": 15
+    },
+    "total": 16,
+    "rows": [
+      {
+        "label": "spam",
+        "tag": "Chase khoa tai khoan",
+        "message": "Chase: Your account has been temporarily locked. Verify your identity at chase-secure-login.com/verify",
+        "normalized": "chase: your account has been temporarily locked. verify your identity at <URL>",
+        "scores": {
+          "TRF-demo": 0.9985,
+          "MLP": 0.9404,
+          "LSTM": 0.5164,
+          "TRF-aug": 0.9998
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "USPS giao hang",
+        "message": "USPS: Your package could not be delivered. Update your address: usps-redelivery.info/track",
+        "normalized": "usps: your package could not be delivered. update your address: <URL>",
+        "scores": {
+          "TRF-demo": 0.9698,
+          "MLP": 0.9961,
+          "LSTM": 0.1951,
+          "TRF-aug": 0.9998
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Netflix thanh toan",
+        "message": "Your Netflix payment failed. Update billing details within 24h: bit.ly/3nfxupd",
+        "normalized": "your netflix payment failed. update billing details within 24h: <URL>",
+        "scores": {
+          "TRF-demo": 0.9918,
+          "MLP": 0.9619,
+          "LSTM": 0.8688,
+          "TRF-aug": 0.9995
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "HSBC dang nhap la",
+        "message": "HSBC ALERT: Unusual sign-in detected. If this was not you, secure your account: t.me/hsbcsupport",
+        "normalized": "hsbc alert: unusual sign-in detected. if this was not you, secure your account: <URL>",
+        "scores": {
+          "TRF-demo": 0.7961,
+          "MLP": 0.4044,
+          "LSTM": 0.0778,
+          "TRF-aug": 0.9476
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "IRS hoan thue",
+        "message": "IRS: You are eligible for a tax refund of $1,250. Claim now: irs-refund-gov.com/claim",
+        "normalized": "irs: you are eligible for a tax refund of $<MONEY> . claim now: <URL>",
+        "scores": {
+          "TRF-demo": 0.9991,
+          "MLP": 1.0,
+          "LSTM": 0.9984,
+          "TRF-aug": 0.9999
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Amazon gift card",
+        "message": "Congratulations! You won a $500 Amazon gift card. Reply YES to claim your prize",
+        "normalized": "congratulations! you won a $<MONEY> amazon gift card. reply yes to claim your prize",
+        "scores": {
+          "TRF-demo": 0.999,
+          "MLP": 1.0,
+          "LSTM": 0.9998,
+          "TRF-aug": 0.9997
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "PayPal doi PIN",
+        "message": "Your PayPal account will be suspended. Confirm your PIN to avoid deactivation",
+        "normalized": "your paypal account will be suspended. confirm your pin to avoid deactivation",
+        "scores": {
+          "TRF-demo": 0.9872,
+          "MLP": 0.0004,
+          "LSTM": 0.4571,
+          "TRF-aug": 0.9999
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "iPhone mien phi",
+        "message": "FREE entry to win a new iPhone! Text WIN to 80085 now. 150p/msg",
+        "normalized": "free entry to win a new iphone! text win to 80085 now. <MONEY> /msg",
+        "scores": {
+          "TRF-demo": 0.9991,
+          "MLP": 1.0,
+          "LSTM": 1.0,
+          "TRF-aug": 0.9988
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Giao dich the Chase",
+        "message": "Your Chase card ending 4821 was used for $23.50 at Starbucks. Not you? Call the number on your card.",
+        "normalized": "your chase card ending 4821 was used for $<MONEY> at starbucks. not you? call the number on your card.",
+        "scores": {
+          "TRF-demo": 0.998,
+          "MLP": 0.8406,
+          "LSTM": 0.0004,
+          "TRF-aug": 0.9991
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "OTP",
+        "message": "Your OTP is 448213. Do not share it with anyone.",
+        "normalized": "your otp is 448213. do not share it with anyone.",
+        "scores": {
+          "TRF-demo": 0.0031,
+          "MLP": 0.0082,
+          "LSTM": 0.0001,
+          "TRF-aug": 0.0002
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Da giao hang",
+        "message": "Your package was delivered today at 2:14 PM. Thanks for shopping with us.",
+        "normalized": "your package was delivered today at 2:14 pm. thanks for shopping with us.",
+        "scores": {
+          "TRF-demo": 0.0027,
+          "MLP": 0.0004,
+          "LSTM": 0.0,
+          "TRF-aug": 0.0003
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Hoi so tai khoan",
+        "message": "Hey, can you send me the bank details for the rent? I'll transfer tonight.",
+        "normalized": "hey, can you send me the bank details for the rent? i'll transfer tonight.",
+        "scores": {
+          "TRF-demo": 0.0027,
+          "MLP": 0.0,
+          "LSTM": 0.0,
+          "TRF-aug": 0.0002
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Lich hen nha si",
+        "message": "Reminder: your dentist appointment is tomorrow at 10am.",
+        "normalized": "reminder: your dentist appointment is tomorrow at 10am.",
+        "scores": {
+          "TRF-demo": 0.0016,
+          "MLP": 0.0004,
+          "LSTM": 0.0002,
+          "TRF-aug": 0.0002
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Me nhan tin",
+        "message": "Mum says dinner is at 7, don't be late!",
+        "normalized": "mum says dinner is at 7, don't be late!",
+        "scores": {
+          "TRF-demo": 0.0016,
+          "MLP": 0.0,
+          "LSTM": 0.0,
+          "TRF-aug": 0.0002
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Thanh toan tien nuoc",
+        "message": "Payment of $45.00 to City Water received. Thank you.",
+        "normalized": "payment of $<MONEY> to city water received. thank you.",
+        "scores": {
+          "TRF-demo": 0.9389,
+          "MLP": 0.0244,
+          "LSTM": 0.026,
+          "TRF-aug": 0.0002
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Hen an trua",
+        "message": "Are we still meeting for lunch today?",
+        "normalized": "are we still meeting for lunch today?",
+        "scores": {
+          "TRF-demo": 0.0016,
+          "MLP": 0.0,
+          "LSTM": 0.0,
+          "TRF-aug": 0.0002
+        }
+      }
+    ]
+  },
+  "2": {
+    "correct": {
+      "TRF-demo": 19,
+      "MLP": 14,
+      "LSTM": 17,
+      "TRF-aug": 16
+    },
+    "total": 20,
+    "rows": [
+      {
+        "label": "spam",
+        "tag": "Wells Fargo thiet bi moi",
+        "message": "Wells Fargo: A new device was added to your account. If you did not authorize this, log in at wf-account-review.net",
+        "normalized": "wells fargo: a new device was added to your account. if you did not authorize this, log in at <URL>",
+        "scores": {
+          "TRF-demo": 0.5053,
+          "MLP": 0.0358,
+          "LSTM": 0.7022,
+          "TRF-aug": 0.0217
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Apple ID bi khoa",
+        "message": "Your Apple ID has been locked for security reasons. Unlock it here: apple-id-support.co/unlock",
+        "normalized": "your apple id has been locked for security reasons. unlock it here: <URL>",
+        "scores": {
+          "TRF-demo": 0.9989,
+          "MLP": 0.0568,
+          "LSTM": 0.1513,
+          "TRF-aug": 0.9998
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "DHL phi hai quan",
+        "message": "DHL: Customs fee of $2.99 required for your parcel. Pay now: dhl-parcel-fee.com/pay",
+        "normalized": "dhl: customs fee of $<MONEY> required for your parcel. pay now: <URL>",
+        "scores": {
+          "TRF-demo": 0.9991,
+          "MLP": 0.7223,
+          "LSTM": 0.9077,
+          "TRF-aug": 0.9999
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Gia danh nguoi than",
+        "message": "Hi mum, I dropped my phone and this is my new number. Can you send me $300 for rent? I'll pay you back",
+        "normalized": "hi mum, i dropped my phone and this is my new number. can you send me $<MONEY> for rent? i'll pay you back",
+        "scores": {
+          "TRF-demo": 0.0281,
+          "MLP": 0.0,
+          "LSTM": 0.0003,
+          "TRF-aug": 0.0009
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Viec tai nha",
+        "message": "You have been selected for a work-from-home job paying $800/day. Reply JOB for details",
+        "normalized": "you have been selected for a work-from-home job paying $<MONEY> /day. reply job for details",
+        "scores": {
+          "TRF-demo": 0.9976,
+          "MLP": 0.4682,
+          "LSTM": 0.9971,
+          "TRF-aug": 0.993
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Bao hiem xe",
+        "message": "Final notice: your car warranty is about to expire. Call 1-888-555-0199 to renew today",
+        "normalized": "final notice: your car warranty is about to expire. call <PHONE> to renew today",
+        "scores": {
+          "TRF-demo": 0.9985,
+          "MLP": 1.0,
+          "LSTM": 1.0,
+          "TRF-aug": 0.9999
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Venmo nhan tien",
+        "message": "Venmo: You received $950.00. Confirm the transfer to release funds: venmo-secure-pay.com/r/88x2",
+        "normalized": "venmo: you received $<MONEY> . confirm the transfer to release funds: <URL>",
+        "scores": {
+          "TRF-demo": 0.9992,
+          "MLP": 0.9989,
+          "LSTM": 0.9948,
+          "TRF-aug": 0.9999
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Dau tu Bitcoin",
+        "message": "Crypto alert: Bitcoin is about to explode. Invest $250 today and earn $5000 by Friday. Reply INVEST",
+        "normalized": "crypto alert: bitcoin is about to explode. invest $<MONEY> today and earn $<MONEY> by friday. reply invest",
+        "scores": {
+          "TRF-demo": 0.999,
+          "MLP": 0.9987,
+          "LSTM": 0.9971,
+          "TRF-aug": 0.995
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Phi duong bo",
+        "message": "Your E-ZPass account has an unpaid toll of $4.15. Avoid a late fee: ezpass-tolls.info/pay",
+        "normalized": "your e-zpass account has an unpaid toll of $<MONEY> . avoid a late fee: <URL>",
+        "scores": {
+          "TRF-demo": 0.999,
+          "MLP": 0.9963,
+          "LSTM": 0.9975,
+          "TRF-aug": 0.9999
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Trung thuong tien mat",
+        "message": "WINNER! Your number was drawn for a cash prize of $10,000. Call now to claim before midnight",
+        "normalized": "winner! your number was drawn for a cash prize of $<MONEY> . call now to claim before midnight",
+        "scores": {
+          "TRF-demo": 0.9981,
+          "MLP": 1.0,
+          "LSTM": 0.9999,
+          "TRF-aug": 0.9995
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Ma Uber",
+        "message": "Your Uber code is 7731. Never share this code.",
+        "normalized": "your uber code is 7731. never share this code.",
+        "scores": {
+          "TRF-demo": 0.0028,
+          "MLP": 0.0021,
+          "LSTM": 0.0003,
+          "TRF-aug": 0.0002
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Phong kham xac nhan",
+        "message": "Hi, it's Dr. Patel's office confirming your appointment on Thursday at 3:30pm. Reply C to confirm.",
+        "normalized": "hi, it's dr. patel's office confirming your appointment on thursday at 3:30pm. reply c to confirm.",
+        "scores": {
+          "TRF-demo": 0.0243,
+          "MLP": 0.0003,
+          "LSTM": 0.3391,
+          "TRF-aug": 0.0008
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Amazon da gui hang",
+        "message": "Your Amazon order #112-4471 has shipped. Track it in the Amazon app.",
+        "normalized": "your amazon order # <PHONE> has shipped. track it in the amazon app.",
+        "scores": {
+          "TRF-demo": 0.1631,
+          "MLP": 0.9855,
+          "LSTM": 0.9945,
+          "TRF-aug": 0.9987
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Tra tien ve",
+        "message": "I paid you back $40 for the concert tickets on Venmo, check when you can",
+        "normalized": "i paid you back $<MONEY> for the concert tickets on venmo, check when you can",
+        "scores": {
+          "TRF-demo": 0.1271,
+          "MLP": 0.4402,
+          "LSTM": 0.0,
+          "TRF-aug": 0.0002
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Ket xe den muon",
+        "message": "Running 10 min late, traffic is crazy. Order me a coffee pls",
+        "normalized": "running 10 min late, traffic is crazy. order me a coffee pls",
+        "scores": {
+          "TRF-demo": 0.009,
+          "MLP": 0.0001,
+          "LSTM": 0.0001,
+          "TRF-aug": 0.0003
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Sao ke ngan hang",
+        "message": "Bank of America: Your statement is ready. Sign in to the app to view it.",
+        "normalized": "bank of america: your statement is ready. sign in to the app to view it.",
+        "scores": {
+          "TRF-demo": 0.0022,
+          "MLP": 0.2028,
+          "LSTM": 0.0001,
+          "TRF-aug": 0.0004
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Chuc mung sinh nhat",
+        "message": "Happy birthday!! Hope you have an amazing day, drinks on me this weekend",
+        "normalized": "happy birthday!! hope you have an amazing day, drinks on me this weekend",
+        "scores": {
+          "TRF-demo": 0.0022,
+          "MLP": 0.0,
+          "LSTM": 0.0,
+          "TRF-aug": 0.0003
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Mua do an",
+        "message": "Can you pick up milk and bread on your way home?",
+        "normalized": "can you pick up milk and bread on your way home?",
+        "scores": {
+          "TRF-demo": 0.002,
+          "MLP": 0.0,
+          "LSTM": 0.0,
+          "TRF-aug": 0.0002
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Link bien ban hop",
+        "message": "Here's the link to the meeting notes: docs.google.com/document/d/1abc",
+        "normalized": "here's the link to the meeting notes: <URL>",
+        "scores": {
+          "TRF-demo": 0.1301,
+          "MLP": 0.8713,
+          "LSTM": 0.0743,
+          "TRF-aug": 0.9993
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Chuyen bay United",
+        "message": "Your flight UA 482 to Denver departs at 6:45 AM from gate B12. Check in now in the United app.",
+        "normalized": "your flight ua 482 to denver departs at 6:45 am from gate b12. check in now in the united app.",
+        "scores": {
+          "TRF-demo": 0.2054,
+          "MLP": 0.0002,
+          "LSTM": 0.0001,
+          "TRF-aug": 0.0008
+        }
+      }
+    ]
+  },
+  "3": {
+    "correct": {
+      "TRF-demo": 14,
+      "MLP": 10,
+      "LSTM": 12,
+      "TRF-aug": 12
+    },
+    "total": 15,
+    "rows": [
+      {
+        "label": "spam",
+        "tag": "Coca-Cola trung thuong",
+        "message": "Urgent! Your email ID has selected as the winner of £500,000 in the Coca-Cola National Promo. To claim your cash prize, email: coca-claims@xxx.com",
+        "normalized": "urgent! your email id has selected as the winner of £<MONEY> in the coca-cola national promo. to claim your cash prize, email: coca-claims@xxx.com",
+        "scores": {
+          "TRF-demo": 0.999,
+          "MLP": 1.0,
+          "LSTM": 1.0,
+          "TRF-aug": 0.9999
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Dau tu / viec nhe luong cao",
+        "message": "Earn $500 a day passively by testing website security. No skills required, guaranteed payouts via PayPal every Friday. Register today: http://earn-easy-cash.xxx",
+        "normalized": "earn $<MONEY> a day passively by testing website security. no skills required, guaranteed payouts via paypal every friday. register today: <URL>",
+        "scores": {
+          "TRF-demo": 0.9982,
+          "MLP": 0.9744,
+          "LSTM": 0.9387,
+          "TRF-aug": 0.9999
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Apple iCloud canh bao",
+        "message": "Apple Support: Unauthorized login attempt detected on your iCloud account from Russia. If this wasn't you, reset your password immediately: http://icloud-secure-signon.xxx",
+        "normalized": "apple support: unauthorized login attempt detected on your icloud account from russia. if this wasn't you, reset your password immediately: <URL>",
+        "scores": {
+          "TRF-demo": 0.9982,
+          "MLP": 0.4443,
+          "LSTM": 0.9811,
+          "TRF-aug": 0.9999
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Thuoc giam can",
+        "message": "Get 80% off on premium vitamins and weight loss pills. No prescription needed. Worldwide shipping in discrete packaging. Order now: http://health-pharmacy.xxx",
+        "normalized": "get 80% off on premium vitamins and weight loss pills. no prescription needed. worldwide shipping in discrete packaging. order now: <URL>",
+        "scores": {
+          "TRF-demo": 0.9883,
+          "MLP": 0.0984,
+          "LSTM": 0.4692,
+          "TRF-aug": 0.9999
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Bat dong san",
+        "message": "Exclusive pre-launch offer! Luxury apartments in downtown starting from just $150k. Guaranteed 8% rental yield. Reply 'STOP' to opt out or click: http://city-condos.xxx",
+        "normalized": "exclusive pre-launch offer! luxury apartments in downtown starting from just $<MONEY> . guaranteed 8% rental yield. reply 'stop' to opt out or click: <URL>",
+        "scores": {
+          "TRF-demo": 0.9991,
+          "MLP": 1.0,
+          "LSTM": 0.9997,
+          "TRF-aug": 0.9999
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Thu hoi no",
+        "message": "FINAL NOTICE: Your outstanding balance of $1,240.50 has been passed to a debt collection agency. Pay immediately to avoid legal action: http://legal-settlement.xxx",
+        "normalized": "final notice: your outstanding balance of $<MONEY> has been passed to a debt collection agency. pay immediately to avoid legal action: <URL>",
+        "scores": {
+          "TRF-demo": 0.9985,
+          "MLP": 0.8509,
+          "LSTM": 0.9987,
+          "TRF-aug": 0.9999
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Mao danh ban be",
+        "message": "Hey, it's been a while! I saw your photos on this site, are you serious? Look at what they posted about you: gossip-trends.xxx",
+        "normalized": "hey, it's been a while! i saw your photos on this site, are you serious? look at what they posted about you: gossip-trends.xxx",
+        "scores": {
+          "TRF-demo": 0.0081,
+          "MLP": 0.0,
+          "LSTM": 0.0,
+          "TRF-aug": 0.0011
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Costco gia han the",
+        "message": "Your Costco membership auto-renewal failed. Update your billing address within 24 hours to keep your rewards points active: http://costco-member-login.xxx",
+        "normalized": "your costco membership auto-renewal failed. update your billing address within 24 hours to keep your rewards points active: <URL>",
+        "scores": {
+          "TRF-demo": 0.9956,
+          "MLP": 0.092,
+          "LSTM": 0.993,
+          "TRF-aug": 0.4595
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Khao sat tang voucher",
+        "message": "Take our 2-minute survey about your recent shopping experience and get a free $50 Starbucks voucher! Start here: http://survey-star-rewards.xxx",
+        "normalized": "take our 2-minute survey about your recent shopping experience and get a free $<MONEY> starbucks voucher! start here: <URL>",
+        "scores": {
+          "TRF-demo": 0.9991,
+          "MLP": 0.9861,
+          "LSTM": 0.9999,
+          "TRF-aug": 0.9999
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Dich vu SEO",
+        "message": "Hi there, we can rank your website on the first page of Google in less than 30 days! Reply for a free SEO audit report of your domain.",
+        "normalized": "hi there, we can rank your website on the first page of google in less than 30 days! reply for a free seo audit report of your domain.",
+        "scores": {
+          "TRF-demo": 0.8985,
+          "MLP": 0.001,
+          "LSTM": 0.0007,
+          "TRF-aug": 0.0016
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Walmart gift card",
+        "message": "CONGRATULATIONS! Your phone number won a $1,000 Walmart Gift Card! Click here to claim your prize now: http://walmart-winner.xxx",
+        "normalized": "congratulations! your phone number won a $<MONEY> walmart gift card! click here to claim your prize now: <URL>",
+        "scores": {
+          "TRF-demo": 0.9989,
+          "MLP": 1.0,
+          "LSTM": 0.9999,
+          "TRF-aug": 0.9999
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Bitcoin x2",
+        "message": "Double your Bitcoin overnight! We are giving away 50 BTC to random users. Deposit 0.01 BTC to verify your wallet and get 0.1 BTC back instantly: bit.ly/crypto-gift",
+        "normalized": "double your bitcoin overnight! we are giving away 50 btc to random users. deposit 0.01 btc to verify your wallet and get 0.1 btc back instantly: <URL>",
+        "scores": {
+          "TRF-demo": 0.9988,
+          "MLP": 0.5431,
+          "LSTM": 0.9986,
+          "TRF-aug": 0.9997
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Chase khoa tai khoan",
+        "message": "ALERT: Your Chase Bank account has been temporarily locked due to suspicious login attempts. Verify your identity immediately at: http://chase-security-update.xxx",
+        "normalized": "alert: your chase bank account has been temporarily locked due to suspicious login attempts. verify your identity immediately at: <URL>",
+        "scores": {
+          "TRF-demo": 0.9983,
+          "MLP": 0.9503,
+          "LSTM": 0.997,
+          "TRF-aug": 0.9966
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Vay tien nhanh",
+        "message": "Need quick cash? You are pre-approved for a personal loan up to $5,000 with no credit check! Reply 'YES' or call 1-800-XXX-XXXX to apply",
+        "normalized": "need quick cash? you are pre-approved for a personal loan up to $<MONEY> with no credit check! reply 'yes' or call 1-800-xxx-xxxx to apply",
+        "scores": {
+          "TRF-demo": 0.997,
+          "MLP": 0.9695,
+          "LSTM": 0.9971,
+          "TRF-aug": 0.9997
+        }
+      },
+      {
+        "label": "spam",
+        "tag": "Amazon tuyen nhap lieu",
+        "message": "Amazon is hiring remote data entry clerks! Work 2 hours a day from home and earn $300/day. No experience needed. Contact us on WhatsApp: wa.me/xxxxxxx",
+        "normalized": "amazon is hiring remote data entry clerks! work 2 hours a day from home and earn $<MONEY> /day. no experience needed. contact us on whatsapp: <URL>",
+        "scores": {
+          "TRF-demo": 0.9989,
+          "MLP": 0.7096,
+          "LSTM": 0.998,
+          "TRF-aug": 0.9999
+        }
+      }
+    ]
+  },
+  "4": {
+    "correct": {
+      "TRF-demo": 12,
+      "MLP": 13,
+      "LSTM": 12,
+      "TRF-aug": 13
+    },
+    "total": 15,
+    "rows": [
+      {
+        "label": "ham",
+        "tag": "OTP ngan hang",
+        "message": "Your verification code is 582914. It expires in 10 minutes. Do not share it with anyone.",
+        "normalized": "your verification code is 582914. it expires in 10 minutes. do not share it with anyone.",
+        "scores": {
+          "TRF-demo": 0.0026,
+          "MLP": 0.0003,
+          "LSTM": 0.0,
+          "TRF-aug": 0.0002
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "FedEx giao hang",
+        "message": "Your FedEx package 7741 2093 is out for delivery today between 2pm and 5pm.",
+        "normalized": "your fedex package <PHONE> is out for delivery today between 2pm and 5pm.",
+        "scores": {
+          "TRF-demo": 0.9959,
+          "MLP": 0.9997,
+          "LSTM": 0.9997,
+          "TRF-aug": 0.9997
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Giao dich the that",
+        "message": "Wells Fargo: A purchase of $62.40 was made on your card ending 7781 at Trader Joe's.",
+        "normalized": "wells fargo: a purchase of $<MONEY> was made on your card ending 7781 at trader joe's.",
+        "scores": {
+          "TRF-demo": 0.9988,
+          "MLP": 0.0773,
+          "LSTM": 0.8436,
+          "TRF-aug": 0.0005
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Lich hen bac si",
+        "message": "Reminder: your appointment with Dr. Nguyen is on Thursday at 9:15 AM. Reply C to confirm.",
+        "normalized": "reminder: your appointment with dr. nguyen is on thursday at 9:15 am. reply c to confirm.",
+        "scores": {
+          "TRF-demo": 0.0071,
+          "MLP": 0.0429,
+          "LSTM": 0.6756,
+          "TRF-aug": 0.0003
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Ban be den muon",
+        "message": "I'm running late, stuck at the office. Start without me, I'll be there by 8.",
+        "normalized": "i'm running late, stuck at the office. start without me, i'll be there by 8.",
+        "scores": {
+          "TRF-demo": 0.0018,
+          "MLP": 0.0,
+          "LSTM": 0.0,
+          "TRF-aug": 0.0002
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Link tai lieu cong viec",
+        "message": "Here's the slide deck for tomorrow: drive.google.com/file/d/1k2x9 - can you review slide 4?",
+        "normalized": "here's the slide deck for tomorrow: <URL> - can you review slide 4?",
+        "scores": {
+          "TRF-demo": 0.2166,
+          "MLP": 0.3794,
+          "LSTM": 0.029,
+          "TRF-aug": 0.9976
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Chuyen tien ban be",
+        "message": "Sent you $25 for the pizza last night on Zelle, thanks again!",
+        "normalized": "sent you $<MONEY> for the pizza last night on zelle, thanks again!",
+        "scores": {
+          "TRF-demo": 0.0232,
+          "MLP": 0.0025,
+          "LSTM": 0.0006,
+          "TRF-aug": 0.0021
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Hoa don dien",
+        "message": "Your electricity bill of $84.20 is due on 2026-11-20. View it in the app.",
+        "normalized": "your electricity bill of $<MONEY> is due on 2026-11-20. view it in the app.",
+        "scores": {
+          "TRF-demo": 0.1862,
+          "MLP": 0.5949,
+          "LSTM": 0.0,
+          "TRF-aug": 0.0002
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Chuyen bay tre",
+        "message": "Delta flight DL287 to Seattle is delayed 40 minutes. New departure 7:25 PM, gate C14.",
+        "normalized": "delta flight dl287 to seattle is delayed 40 minutes. new departure 7:25 pm, gate c14.",
+        "scores": {
+          "TRF-demo": 0.0655,
+          "MLP": 0.0023,
+          "LSTM": 0.0006,
+          "TRF-aug": 0.0003
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Truong nghi hoc",
+        "message": "School closed tomorrow due to heavy rain. Classes resume Monday.",
+        "normalized": "school closed tomorrow due to heavy rain. classes resume monday.",
+        "scores": {
+          "TRF-demo": 0.0015,
+          "MLP": 0.0,
+          "LSTM": 0.0,
+          "TRF-aug": 0.0002
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Nguoi than nhan tin",
+        "message": "Grandma called, she says happy birthday and wants you to call her back tonight.",
+        "normalized": "grandma called, she says happy birthday and wants you to call her back tonight.",
+        "scores": {
+          "TRF-demo": 0.0031,
+          "MLP": 0.0,
+          "LSTM": 0.0005,
+          "TRF-aug": 0.0003
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Dat ban nha hang",
+        "message": "Your table for 4 at Hoa Sen is confirmed for Saturday 7:00 PM. Reply CANCEL to cancel.",
+        "normalized": "your table for 4 at hoa sen is confirmed for saturday 7:00 pm. reply cancel to cancel.",
+        "scores": {
+          "TRF-demo": 0.961,
+          "MLP": 0.0544,
+          "LSTM": 0.3464,
+          "TRF-aug": 0.0028
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Canh bao dang nhap that",
+        "message": "Chase: We detected a sign-in from a new device. If this was you, no action is needed.",
+        "normalized": "chase: we detected a sign-in from a new device. if this was you, no action is needed.",
+        "scores": {
+          "TRF-demo": 0.0026,
+          "MLP": 0.0439,
+          "LSTM": 0.0002,
+          "TRF-aug": 0.0002
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Dong nghiep hoi bai",
+        "message": "Can you send me the latest version of the report before the meeting?",
+        "normalized": "can you send me the latest version of the report before the meeting?",
+        "scores": {
+          "TRF-demo": 0.0033,
+          "MLP": 0.0,
+          "LSTM": 0.0,
+          "TRF-aug": 0.0003
+        }
+      },
+      {
+        "label": "ham",
+        "tag": "Amazon giao hang",
+        "message": "Your Amazon order of 2 items has shipped and will arrive Tuesday. Track it in the app.",
+        "normalized": "your amazon order of 2 items has shipped and will arrive tuesday. track it in the app.",
+        "scores": {
+          "TRF-demo": 0.0033,
+          "MLP": 0.1417,
+          "LSTM": 0.0004,
+          "TRF-aug": 0.0018
+        }
+      }
+    ]
+  }
+}

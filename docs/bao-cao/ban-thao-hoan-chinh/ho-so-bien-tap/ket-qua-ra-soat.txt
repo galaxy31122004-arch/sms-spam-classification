@@ -1,6 +1,6 @@
 ﻿CHAPTERS_OK: 9 parts present in order; combined body matches chapter files
 CITATIONS_OK: 18 references defined and cited; URL availability not verified
-CAPTIONS_OK: 24 tables and 7 figures with unique identifiers and source notes
+CAPTIONS_OK: 25 tables and 7 figures with unique identifiers and source notes
 MARKDOWN_OK: balanced code fences; no draft placeholders or replacement characters
 STORED_METRIC_TABLES_OK: 5 metric rows, 4 cost rows and all 3 matrices match JSON
-SIZE: 109817 characters in combined report
+SIZE: 112320 characters in combined report

@@ -195,11 +195,30 @@ Giới hạn của tập này cần được giữ khi diễn giải. Tập ch�
 
 ### 4.7.4. Kiểm tra định tính với SMS tự soạn
 
-Ngoài các tập có nhãn, 36 SMS tiếng Anh tự soạn (18 HAM, 18 SPAM, gồm cả dạng lừa đảo hiện đại như khóa tài khoản, phí hải quan, giả làm người thân) được dùng để kiểm tra nhanh qua `compare_demo_models.py`. Transformer baseline đúng 33/36, MLP augmented đúng 30/36 và MLP của lượt Colab đúng 27/36. Cả ba mô hình đều bỏ sót tin lừa đảo không có liên kết dạng “Hi mum, I dropped my phone… send me $300”, và Transformer gán nhầm SPAM cho hai tin giao dịch ngân hàng hợp lệ. Bộ tin này do người viết báo cáo soạn, quá nhỏ để báo cáo như một metric; nó chỉ minh họa các dạng lỗi còn tồn tại.
+Ngoài các tập có nhãn, 66 SMS tiếng Anh tự soạn (33 HAM, 33 SPAM) được dùng để kiểm tra định tính qua `compare_demo_models.py`. Bộ tin cố ý nhắm vào các dạng mà dữ liệu huấn luyện không có: lừa đảo khóa tài khoản, phí hải quan, đầu tư tiền mã hóa, giả làm người thân; phía HAM có thông báo giao dịch thẻ, giao hàng, OTP, hóa đơn và liên kết công việc.
+
+**Bảng 4.10. Kết quả trên 66 SMS tự soạn.**
+
+| Mô hình | Nhận đúng | Báo nhầm HAM | Bỏ sót SPAM |
+|---|---:|---:|---:|
+| Transformer baseline | 59/66 | 5 | 2 |
+| Transformer augmented | 56/66 | 5 | 5 |
+| BiLSTM baseline | 54/66 | 4 | 8 |
+| MLP baseline | 50/66 | 5 | 11 |
+
+*Nguồn: `compare_demo_models.py` và `docs/ket-qua-kiem-thu-thu-cong.json`; ngưỡng 0,5. Bộ tin do người viết báo cáo và người dùng soạn, không lấy từ bất kỳ split nào.*
+
+Thứ hạng trùng với kết quả trên `test_external.csv`. Bốn mô hình báo nhầm HAM gần bằng nhau; khác biệt nằm ở số SPAM bỏ sót.
+
+Chạy thêm các biến thể của từng tin sai cho phép tách hai loại nguyên nhân. Thứ nhất là hạn chế của bước chuẩn hóa: mã vận đơn “7741 2093” bị thay bằng `<PHONE>` do luật nhận số điện thoại bắt mọi dãy 7–15 chữ số, và chỉ riêng điều này đưa một thông báo giao hàng hợp lệ từ 0,02 lên 1,00. Thứ hai là hạn chế của dữ liệu: bốn tin HAM còn lại bị báo nhầm đều chứa `$<MONEY>` hoặc cụm “reply X to Y”; bỏ số tiền khỏi tin thanh toán tiền nước làm điểm giảm từ 0,94 xuống 0,22, viết số tiền bằng chữ làm điểm còn 0,01. Trong SMS Spam Collection, ký hiệu tiền tệ kèm số hầu như chỉ xuất hiện ở tin trúng thưởng hoặc dịch vụ tính phí, nên mô hình học `$<MONEY>` thành đặc trưng của lớp SPAM; thông báo giao dịch ngân hàng hợp lệ gần như không có trong dữ liệu.
+
+Hai tin SPAM bị bỏ sót đều là lừa đảo phi kỹ thuật không chứa liên kết hoặc từ khóa quảng cáo (“Hi mum, I dropped my phone… send me $300” và một tin mạo danh bạn bè). Với tin thứ hai, thay liên kết thành `<URL>` chỉ nâng điểm từ 0,01 lên 0,22, nên nguyên nhân là văn phong chứ không phải cách xử lý liên kết.
+
+Bộ tin này quá nhỏ và không chọn ngẫu nhiên nên không được báo cáo như một metric; quy trình đầy đủ và phân tích từng lỗi đặt tại `docs/kiem-thu-tin-nhan-thuc-te.md`.
 
 ## 4.8. Tổng hợp và cơ sở chọn mô hình cho demo
 
-**Bảng 4.10. Kết luận được số liệu hỗ trợ cho từng mô hình.**
+**Bảng 4.11. Kết luận được số liệu hỗ trợ cho từng mô hình.**
 
 | Mô hình | Điểm thuận lợi quan sát được | Giới hạn cần giữ khi diễn giải |
 |---|---|---|
@@ -207,6 +226,6 @@ Ngoài các tập có nhãn, 36 SMS tiếng Anh tự soạn (18 HAM, 18 SPAM, g�
 | BiLSTM | Latency batch 1 thấp nhất; 0 FP trên test ngoài | 10 FN trên test UCI; F1 thấp hơn Transformer trên test ngoài |
 | Transformer | ROC-AUC cao nhất trên cả hai tập; F1 cao nhất trên test ngoài (97,56%) | F1 thấp nhất trên test UCI; thời gian train và latency batch 32 cao nhất |
 
-*Nguồn: tổng hợp Bảng 4.2–4.9; nhận xét chỉ áp dụng cho cấu hình, dữ liệu và số liệu được lưu.*
+*Nguồn: tổng hợp Bảng 4.2–4.10; nhận xét chỉ áp dụng cho cấu hình, dữ liệu và số liệu được lưu.*
 
 Website dùng Transformer baseline vì đây là mô hình tổng quát tốt nhất trên dữ liệu thật ngoài nguồn, và mục tiêu của demo là phân loại SMS người dùng tự nhập, vốn không thuộc phân bố UCI. Lựa chọn này đánh đổi khoảng ba điểm phần trăm F1 trên test UCI. Số liệu hỗ trợ sự phù hợp của Transformer cho demo học thuật; chưa chứng minh mô hình đủ điều kiện triển khai thực tế.

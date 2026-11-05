@@ -20,7 +20,8 @@ Quy tắc chung cho mọi AI: [AGENTS.md](AGENTS.md).
 | `data/raw/`, `data/processed/`, `data/splits/` | Dữ liệu gốc, sau xử lý, splits đã khóa |
 | `eval/` | Benchmark chung 3 model + báo cáo so sánh |
 | `app.py`, `templates/` | Web demo Flask, dùng Transformer ở `models/transformer/demo_checkpoint` |
-| `compare_demo_models.py` | So các checkpoint trên 36 tin tự viết ngoài dataset |
+| `compare_demo_models.py` | So các checkpoint trên 66 tin tự viết ngoài dataset (4 bộ, `all` để chạy hết) |
+| [docs/kiem-thu-tin-nhan-thuc-te.md](docs/kiem-thu-tin-nhan-thuc-te.md) | Quy trình và kết quả kiểm thử thủ công, phân tích từng lỗi |
 | `docs/smishing-augmentation-log.md` | Nhật ký bổ sung smishing, test ngoài và kết quả trước/sau |
 
 `eval/results/` là artifact local được Git ignore; chạy lại `eval/evaluate.py` và `eval/report.py` để tạo số liệu cho checkpoint hiện tại.
