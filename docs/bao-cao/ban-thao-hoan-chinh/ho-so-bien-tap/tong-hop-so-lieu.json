@@ -1,0 +1,1065 @@
+{
+  "raw": {
+    "rows": 5572,
+    "ham": 4825,
+    "spam": 747
+  },
+  "splits": {
+    "train.csv": {
+      "rows": 7806,
+      "ham": 6564,
+      "spam": 1242
+    },
+    "train_base.csv": {
+      "rows": 3900,
+      "ham": 3377,
+      "spam": 523
+    },
+    "val.csv": {
+      "rows": 836,
+      "ham": 724,
+      "spam": 112
+    },
+    "test.csv": {
+      "rows": 836,
+      "ham": 724,
+      "spam": 112
+    },
+    "test_smishing.csv": {
+      "rows": 689,
+      "ham": 562,
+      "spam": 127
+    },
+    "test_external.csv": {
+      "rows": 387,
+      "ham": 221,
+      "spam": 166
+    }
+  },
+  "overlap_base_splits": {
+    "raw_text": {
+      "train:val": {
+        "shared_groups": 69,
+        "rows_in_right": 77,
+        "spam_rows_in_right": 20
+      },
+      "train:test": {
+        "shared_groups": 73,
+        "rows_in_right": 81,
+        "spam_rows_in_right": 20
+      },
+      "val:test": {
+        "shared_groups": 19,
+        "rows_in_right": 25,
+        "spam_rows_in_right": 6
+      }
+    },
+    "text": {
+      "train:val": {
+        "shared_groups": 72,
+        "rows_in_right": 81,
+        "spam_rows_in_right": 24
+      },
+      "train:test": {
+        "shared_groups": 76,
+        "rows_in_right": 84,
+        "spam_rows_in_right": 23
+      },
+      "val:test": {
+        "shared_groups": 19,
+        "rows_in_right": 25,
+        "spam_rows_in_right": 6
+      }
+    }
+  },
+  "augmentation_manifest": {
+    "seed": 42,
+    "source": "C:\\Users\\letha\\AppData\\Local\\Temp\\africa_smish_raw.jsonl",
+    "source_rows": 10000,
+    "source_labels": {
+      "spam": 5000,
+      "ham": 5000
+    },
+    "unique_normalized_texts": 4595,
+    "template_groups": 1109,
+    "dropped_conflicting_label_groups": 0,
+    "dropped_overlap_with_splits_groups": 0,
+    "added_train": {
+      "ham": 3187,
+      "spam": 719
+    },
+    "test_smishing": {
+      "ham": 562,
+      "spam": 127
+    },
+    "test_smishing_template_groups": 157,
+    "renormalized_rows_changed": {
+      "train": 169,
+      "val": 32,
+      "test": 39
+    },
+    "cross_split_text_overlap_before_renormalize": {
+      "train:val": 72,
+      "train:test": 75,
+      "val:test": 19
+    },
+    "cross_split_text_overlap_after_renormalize": {
+      "train:val": 72,
+      "train:test": 76,
+      "val:test": 19
+    },
+    "backup_dir": "data/splits/backup_20261105_173206"
+  },
+  "configs": {
+    "baseline_mlp": {
+      "kind": "mlp",
+      "input_type": "tfidf_word_char",
+      "vocab_size": 15000,
+      "max_len": null,
+      "embedding_dim": null,
+      "hidden_dim": null,
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "batch_size": 64,
+      "seed": 42,
+      "epochs_requested": 10,
+      "patience": 3,
+      "decision_threshold": 0.5,
+      "train_file": "data/splits/train_base.csv",
+      "train_examples": 3900,
+      "val_file": "data/splits/val.csv",
+      "checkpoint_selection": "max_val_spam_f1_first_tie",
+      "best_epoch": 8,
+      "epochs_trained": 10,
+      "train_seconds": 8.909,
+      "val_spam_f1": 0.9541284403669725,
+      "parameters": 3873281
+    },
+    "augmented_mlp": {
+      "kind": "mlp",
+      "input_type": "tfidf_word_char",
+      "vocab_size": 15000,
+      "max_len": null,
+      "embedding_dim": null,
+      "hidden_dim": null,
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "batch_size": 64,
+      "seed": 42,
+      "epochs_requested": 10,
+      "patience": 3,
+      "decision_threshold": 0.5,
+      "train_file": "data/splits/train.csv",
+      "train_examples": 7806,
+      "val_file": "data/splits/val.csv",
+      "checkpoint_selection": "max_val_spam_f1_first_tie",
+      "best_epoch": 3,
+      "epochs_trained": 6,
+      "train_seconds": 10.524,
+      "val_spam_f1": 0.9493087557603687,
+      "parameters": 3873281
+    },
+    "baseline_lstm": {
+      "kind": "lstm",
+      "input_type": "token_ids",
+      "vocab_size": 6856,
+      "max_len": 100,
+      "embedding_dim": 128,
+      "hidden_dim": 128,
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "batch_size": 64,
+      "seed": 42,
+      "epochs_requested": 10,
+      "patience": 3,
+      "decision_threshold": 0.5,
+      "train_file": "data/splits/train_base.csv",
+      "train_examples": 3900,
+      "val_file": "data/splits/val.csv",
+      "checkpoint_selection": "max_val_spam_f1_first_tie",
+      "best_epoch": 8,
+      "epochs_trained": 10,
+      "train_seconds": 29.752,
+      "val_spam_f1": 0.944954128440367,
+      "parameters": 1158273
+    },
+    "augmented_lstm": {
+      "kind": "lstm",
+      "input_type": "token_ids",
+      "vocab_size": 9172,
+      "max_len": 100,
+      "embedding_dim": 128,
+      "hidden_dim": 128,
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "batch_size": 64,
+      "seed": 42,
+      "epochs_requested": 10,
+      "patience": 3,
+      "decision_threshold": 0.5,
+      "train_file": "data/splits/train.csv",
+      "train_examples": 7806,
+      "val_file": "data/splits/val.csv",
+      "checkpoint_selection": "max_val_spam_f1_first_tie",
+      "best_epoch": 4,
+      "epochs_trained": 7,
+      "train_seconds": 40.671,
+      "val_spam_f1": 0.9411764705882353,
+      "parameters": 1454721
+    },
+    "baseline_transformer": {
+      "kind": "transformer",
+      "input_type": "token_ids",
+      "vocab_size": 6856,
+      "max_len": 100,
+      "embedding_dim": 128,
+      "hidden_dim": 128,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "batch_size": 64,
+      "seed": 42,
+      "epochs_requested": 10,
+      "patience": 3,
+      "decision_threshold": 0.5,
+      "train_file": "data/splits/train_base.csv",
+      "train_examples": 3900,
+      "val_file": "data/splits/val.csv",
+      "checkpoint_selection": "max_val_spam_f1_first_tie",
+      "best_epoch": 4,
+      "epochs_trained": 7,
+      "train_seconds": 104.944,
+      "val_spam_f1": 0.9107142857142857,
+      "parameters": 1155457
+    },
+    "augmented_transformer": {
+      "kind": "transformer",
+      "input_type": "token_ids",
+      "vocab_size": 9172,
+      "max_len": 100,
+      "embedding_dim": 128,
+      "hidden_dim": 128,
+      "optimizer": "AdamW",
+      "learning_rate": 0.001,
+      "batch_size": 64,
+      "seed": 42,
+      "epochs_requested": 10,
+      "patience": 3,
+      "decision_threshold": 0.5,
+      "train_file": "data/splits/train.csv",
+      "train_examples": 7806,
+      "val_file": "data/splits/val.csv",
+      "checkpoint_selection": "max_val_spam_f1_first_tie",
+      "best_epoch": 8,
+      "epochs_trained": 10,
+      "train_seconds": 376.017,
+      "val_spam_f1": 0.9459459459459459,
+      "parameters": 1451905
+    }
+  },
+  "results": {
+    "baseline_test": {
+      "dataset": {
+        "test_file": "data/splits/test.csv",
+        "examples": 836
+      },
+      "models": {
+        "mlp": {
+          "accuracy": 0.9916267942583732,
+          "spam_precision": 1.0,
+          "spam_recall": 0.9375,
+          "spam_f1": 0.967741935483871,
+          "roc_auc": 0.9813412588792424,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              724,
+              0
+            ],
+            [
+              7,
+              105
+            ]
+          ],
+          "latency_ms_batch_1": 2.5641,
+          "latency_ms_batch_32": 0.4355,
+          "parameters": 3873281,
+          "train_seconds": 8.909,
+          "config": {
+            "input_type": "tfidf_word_char",
+            "vocab_size": 15000,
+            "max_len": null,
+            "embedding_dim": null,
+            "hidden_dim": null,
+            "optimizer": "Adam",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 10,
+            "best_epoch": 8,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        },
+        "lstm": {
+          "accuracy": 0.9868421052631579,
+          "spam_precision": 0.9902912621359223,
+          "spam_recall": 0.9107142857142857,
+          "spam_f1": 0.9488372093023256,
+          "roc_auc": 0.9842516771902132,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              723,
+              1
+            ],
+            [
+              10,
+              102
+            ]
+          ],
+          "latency_ms_batch_1": 1.6477,
+          "latency_ms_batch_32": 0.4732,
+          "parameters": 1158273,
+          "train_seconds": 29.752,
+          "config": {
+            "input_type": "token_ids",
+            "vocab_size": 6856,
+            "max_len": 100,
+            "embedding_dim": 128,
+            "hidden_dim": 128,
+            "optimizer": "Adam",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 10,
+            "best_epoch": 8,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        },
+        "transformer": {
+          "accuracy": 0.9832535885167464,
+          "spam_precision": 0.9454545454545454,
+          "spam_recall": 0.9285714285714286,
+          "spam_f1": 0.9369369369369369,
+          "roc_auc": 0.9938338595106551,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              718,
+              6
+            ],
+            [
+              8,
+              104
+            ]
+          ],
+          "latency_ms_batch_1": 2.2641,
+          "latency_ms_batch_32": 0.808,
+          "parameters": 1155457,
+          "train_seconds": 104.944,
+          "config": {
+            "input_type": "token_ids",
+            "vocab_size": 6856,
+            "max_len": 100,
+            "embedding_dim": 128,
+            "hidden_dim": 128,
+            "optimizer": "AdamW",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 7,
+            "best_epoch": 4,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        }
+      }
+    },
+    "baseline_test_smishing": {
+      "dataset": {
+        "test_file": "data/splits/test_smishing.csv",
+        "examples": 689
+      },
+      "models": {
+        "mlp": {
+          "accuracy": 0.3599419448476052,
+          "spam_precision": 0.2113970588235294,
+          "spam_recall": 0.905511811023622,
+          "spam_f1": 0.34277198211624443,
+          "roc_auc": 0.4628155911116092,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              133,
+              429
+            ],
+            [
+              12,
+              115
+            ]
+          ],
+          "latency_ms_batch_1": 1.4646,
+          "latency_ms_batch_32": 0.2594,
+          "parameters": 3873281,
+          "train_seconds": 8.909,
+          "config": {
+            "input_type": "tfidf_word_char",
+            "vocab_size": 15000,
+            "max_len": null,
+            "embedding_dim": null,
+            "hidden_dim": null,
+            "optimizer": "Adam",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 10,
+            "best_epoch": 8,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        },
+        "lstm": {
+          "accuracy": 0.6618287373004355,
+          "spam_precision": 0.3322784810126582,
+          "spam_recall": 0.8267716535433071,
+          "spam_f1": 0.47404063205417607,
+          "roc_auc": 0.7799759015888139,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              351,
+              211
+            ],
+            [
+              22,
+              105
+            ]
+          ],
+          "latency_ms_batch_1": 0.7039,
+          "latency_ms_batch_32": 0.1236,
+          "parameters": 1158273,
+          "train_seconds": 29.752,
+          "config": {
+            "input_type": "token_ids",
+            "vocab_size": 6856,
+            "max_len": 100,
+            "embedding_dim": 128,
+            "hidden_dim": 128,
+            "optimizer": "Adam",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 10,
+            "best_epoch": 8,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        },
+        "transformer": {
+          "accuracy": 0.432510885341074,
+          "spam_precision": 0.24015748031496062,
+          "spam_recall": 0.9606299212598425,
+          "spam_f1": 0.384251968503937,
+          "roc_auc": 0.7768515145571215,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              176,
+              386
+            ],
+            [
+              5,
+              122
+            ]
+          ],
+          "latency_ms_batch_1": 1.186,
+          "latency_ms_batch_32": 0.5477,
+          "parameters": 1155457,
+          "train_seconds": 104.944,
+          "config": {
+            "input_type": "token_ids",
+            "vocab_size": 6856,
+            "max_len": 100,
+            "embedding_dim": 128,
+            "hidden_dim": 128,
+            "optimizer": "AdamW",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 7,
+            "best_epoch": 4,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        }
+      }
+    },
+    "baseline_test_external": {
+      "dataset": {
+        "test_file": "data/splits/test_external.csv",
+        "examples": 387
+      },
+      "models": {
+        "mlp": {
+          "accuracy": 0.8811369509043928,
+          "spam_precision": 1.0,
+          "spam_recall": 0.7228915662650602,
+          "spam_f1": 0.8391608391608392,
+          "roc_auc": 0.9898871504116011,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              221,
+              0
+            ],
+            [
+              46,
+              120
+            ]
+          ],
+          "latency_ms_batch_1": 1.4378,
+          "latency_ms_batch_32": 0.2753,
+          "parameters": 3873281,
+          "train_seconds": 8.909,
+          "config": {
+            "input_type": "tfidf_word_char",
+            "vocab_size": 15000,
+            "max_len": null,
+            "embedding_dim": null,
+            "hidden_dim": null,
+            "optimizer": "Adam",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 10,
+            "best_epoch": 8,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        },
+        "lstm": {
+          "accuracy": 0.9560723514211886,
+          "spam_precision": 1.0,
+          "spam_recall": 0.8975903614457831,
+          "spam_f1": 0.946031746031746,
+          "roc_auc": 0.9923676606880009,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              221,
+              0
+            ],
+            [
+              17,
+              149
+            ]
+          ],
+          "latency_ms_batch_1": 0.838,
+          "latency_ms_batch_32": 0.2175,
+          "parameters": 1158273,
+          "train_seconds": 29.752,
+          "config": {
+            "input_type": "token_ids",
+            "vocab_size": 6856,
+            "max_len": 100,
+            "embedding_dim": 128,
+            "hidden_dim": 128,
+            "optimizer": "Adam",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 10,
+            "best_epoch": 8,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        },
+        "transformer": {
+          "accuracy": 0.979328165374677,
+          "spam_precision": 0.9876543209876543,
+          "spam_recall": 0.963855421686747,
+          "spam_f1": 0.975609756097561,
+          "roc_auc": 0.9990186992313144,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              219,
+              2
+            ],
+            [
+              6,
+              160
+            ]
+          ],
+          "latency_ms_batch_1": 0.9982,
+          "latency_ms_batch_32": 0.3541,
+          "parameters": 1155457,
+          "train_seconds": 104.944,
+          "config": {
+            "input_type": "token_ids",
+            "vocab_size": 6856,
+            "max_len": 100,
+            "embedding_dim": 128,
+            "hidden_dim": 128,
+            "optimizer": "AdamW",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 7,
+            "best_epoch": 4,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        }
+      }
+    },
+    "augmented_test": {
+      "dataset": {
+        "test_file": "data/splits/test.csv",
+        "examples": 836
+      },
+      "models": {
+        "mlp": {
+          "accuracy": 0.9880382775119617,
+          "spam_precision": 0.9903846153846154,
+          "spam_recall": 0.9196428571428571,
+          "spam_f1": 0.9537037037037037,
+          "roc_auc": 0.9792694356748225,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              723,
+              1
+            ],
+            [
+              9,
+              103
+            ]
+          ],
+          "latency_ms_batch_1": 1.5759,
+          "latency_ms_batch_32": 0.3104,
+          "parameters": 3873281,
+          "train_seconds": 10.524,
+          "config": {
+            "input_type": "tfidf_word_char",
+            "vocab_size": 15000,
+            "max_len": null,
+            "embedding_dim": null,
+            "hidden_dim": null,
+            "optimizer": "Adam",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 6,
+            "best_epoch": 3,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        },
+        "lstm": {
+          "accuracy": 0.9808612440191388,
+          "spam_precision": 0.98,
+          "spam_recall": 0.875,
+          "spam_f1": 0.9245283018867925,
+          "roc_auc": 0.9855095698500396,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              722,
+              2
+            ],
+            [
+              14,
+              98
+            ]
+          ],
+          "latency_ms_batch_1": 0.9026,
+          "latency_ms_batch_32": 0.266,
+          "parameters": 1454721,
+          "train_seconds": 40.671,
+          "config": {
+            "input_type": "token_ids",
+            "vocab_size": 9172,
+            "max_len": 100,
+            "embedding_dim": 128,
+            "hidden_dim": 128,
+            "optimizer": "Adam",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 7,
+            "best_epoch": 4,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        },
+        "transformer": {
+          "accuracy": 0.9832535885167464,
+          "spam_precision": 0.9803921568627451,
+          "spam_recall": 0.8928571428571429,
+          "spam_f1": 0.9345794392523364,
+          "roc_auc": 0.9890119376479873,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              722,
+              2
+            ],
+            [
+              12,
+              100
+            ]
+          ],
+          "latency_ms_batch_1": 1.3919,
+          "latency_ms_batch_32": 0.5918,
+          "parameters": 1451905,
+          "train_seconds": 376.017,
+          "config": {
+            "input_type": "token_ids",
+            "vocab_size": 9172,
+            "max_len": 100,
+            "embedding_dim": 128,
+            "hidden_dim": 128,
+            "optimizer": "AdamW",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 10,
+            "best_epoch": 8,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        }
+      }
+    },
+    "augmented_test_smishing": {
+      "dataset": {
+        "test_file": "data/splits/test_smishing.csv",
+        "examples": 689
+      },
+      "models": {
+        "mlp": {
+          "accuracy": 1.0,
+          "spam_precision": 1.0,
+          "spam_recall": 1.0,
+          "spam_f1": 1.0,
+          "roc_auc": 1.0,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              562,
+              0
+            ],
+            [
+              0,
+              127
+            ]
+          ],
+          "latency_ms_batch_1": 1.6346,
+          "latency_ms_batch_32": 0.2894,
+          "parameters": 3873281,
+          "train_seconds": 10.524,
+          "config": {
+            "input_type": "tfidf_word_char",
+            "vocab_size": 15000,
+            "max_len": null,
+            "embedding_dim": null,
+            "hidden_dim": null,
+            "optimizer": "Adam",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 6,
+            "best_epoch": 3,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        },
+        "lstm": {
+          "accuracy": 1.0,
+          "spam_precision": 1.0,
+          "spam_recall": 1.0,
+          "spam_f1": 1.0,
+          "roc_auc": 1.0,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              562,
+              0
+            ],
+            [
+              0,
+              127
+            ]
+          ],
+          "latency_ms_batch_1": 0.774,
+          "latency_ms_batch_32": 0.1339,
+          "parameters": 1454721,
+          "train_seconds": 40.671,
+          "config": {
+            "input_type": "token_ids",
+            "vocab_size": 9172,
+            "max_len": 100,
+            "embedding_dim": 128,
+            "hidden_dim": 128,
+            "optimizer": "Adam",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 7,
+            "best_epoch": 4,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        },
+        "transformer": {
+          "accuracy": 1.0,
+          "spam_precision": 1.0,
+          "spam_recall": 1.0,
+          "spam_f1": 1.0,
+          "roc_auc": 1.0,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              562,
+              0
+            ],
+            [
+              0,
+              127
+            ]
+          ],
+          "latency_ms_batch_1": 1.3199,
+          "latency_ms_batch_32": 0.5657,
+          "parameters": 1451905,
+          "train_seconds": 376.017,
+          "config": {
+            "input_type": "token_ids",
+            "vocab_size": 9172,
+            "max_len": 100,
+            "embedding_dim": 128,
+            "hidden_dim": 128,
+            "optimizer": "AdamW",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 10,
+            "best_epoch": 8,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        }
+      }
+    },
+    "augmented_test_external": {
+      "dataset": {
+        "test_file": "data/splits/test_external.csv",
+        "examples": 387
+      },
+      "models": {
+        "mlp": {
+          "accuracy": 0.9147286821705426,
+          "spam_precision": 0.9925925925925926,
+          "spam_recall": 0.8072289156626506,
+          "spam_f1": 0.8903654485049833,
+          "roc_auc": 0.9889331079976013,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              220,
+              1
+            ],
+            [
+              32,
+              134
+            ]
+          ],
+          "latency_ms_batch_1": 1.4876,
+          "latency_ms_batch_32": 0.2852,
+          "parameters": 3873281,
+          "train_seconds": 10.524,
+          "config": {
+            "input_type": "tfidf_word_char",
+            "vocab_size": 15000,
+            "max_len": null,
+            "embedding_dim": null,
+            "hidden_dim": null,
+            "optimizer": "Adam",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 6,
+            "best_epoch": 3,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        },
+        "lstm": {
+          "accuracy": 0.9457364341085271,
+          "spam_precision": 1.0,
+          "spam_recall": 0.8734939759036144,
+          "spam_f1": 0.932475884244373,
+          "roc_auc": 0.9791746170201167,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              221,
+              0
+            ],
+            [
+              21,
+              145
+            ]
+          ],
+          "latency_ms_batch_1": 0.8524,
+          "latency_ms_batch_32": 0.2201,
+          "parameters": 1454721,
+          "train_seconds": 40.671,
+          "config": {
+            "input_type": "token_ids",
+            "vocab_size": 9172,
+            "max_len": 100,
+            "embedding_dim": 128,
+            "hidden_dim": 128,
+            "optimizer": "Adam",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 7,
+            "best_epoch": 4,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        },
+        "transformer": {
+          "accuracy": 0.958656330749354,
+          "spam_precision": 0.993421052631579,
+          "spam_recall": 0.9096385542168675,
+          "spam_f1": 0.949685534591195,
+          "roc_auc": 0.9986915989750859,
+          "confusion_matrix_labels": [
+            "ham",
+            "spam"
+          ],
+          "confusion_matrix": [
+            [
+              220,
+              1
+            ],
+            [
+              15,
+              151
+            ]
+          ],
+          "latency_ms_batch_1": 1.0923,
+          "latency_ms_batch_32": 0.4799,
+          "parameters": 1451905,
+          "train_seconds": 376.017,
+          "config": {
+            "input_type": "token_ids",
+            "vocab_size": 9172,
+            "max_len": 100,
+            "embedding_dim": 128,
+            "hidden_dim": 128,
+            "optimizer": "AdamW",
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "checkpoint_selection": "max_val_spam_f1_first_tie",
+            "patience": 3,
+            "epochs_requested": 10,
+            "epochs_trained": 10,
+            "best_epoch": 8,
+            "seed": 42,
+            "decision_threshold": 0.5
+          }
+        }
+      }
+    }
+  }
+}

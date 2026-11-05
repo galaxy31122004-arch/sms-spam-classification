@@ -1,0 +1,38 @@
+{
+  "seed": 42,
+  "source": "C:\\Users\\letha\\AppData\\Local\\Temp\\africa_smish_raw.jsonl",
+  "source_rows": 10000,
+  "source_labels": {
+    "spam": 5000,
+    "ham": 5000
+  },
+  "unique_normalized_texts": 4595,
+  "template_groups": 1109,
+  "dropped_conflicting_label_groups": 0,
+  "dropped_overlap_with_splits_groups": 0,
+  "added_train": {
+    "ham": 3187,
+    "spam": 719
+  },
+  "test_smishing": {
+    "ham": 562,
+    "spam": 127
+  },
+  "test_smishing_template_groups": 157,
+  "renormalized_rows_changed": {
+    "train": 169,
+    "val": 32,
+    "test": 39
+  },
+  "cross_split_text_overlap_before_renormalize": {
+    "train:val": 72,
+    "train:test": 75,
+    "val:test": 19
+  },
+  "cross_split_text_overlap_after_renormalize": {
+    "train:val": 72,
+    "train:test": 76,
+    "val:test": 19
+  },
+  "backup_dir": "data/splits/backup_20261105_173206"
+}

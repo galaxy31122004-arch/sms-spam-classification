@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Spam Detector</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #f0edff, #f8faff);
+            color: #252344;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 720px;
+            background: white;
+            border-radius: 24px;
+            padding: 36px;
+            box-shadow: 0 16px 50px rgba(75, 60, 140, 0.12);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .icon {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 16px;
+            border-radius: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eee9ff;
+            font-size: 34px;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: 30px;
+        }
+
+        .subtitle {
+            color: #77758f;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 160px;
+            padding: 16px;
+            border: 1px solid #dedbed;
+            border-radius: 14px;
+            font: inherit;
+            line-height: 1.6;
+            resize: vertical;
+            outline: none;
+        }
+
+        textarea:focus {
+            border-color: #7864d8;
+            box-shadow: 0 0 0 3px rgba(120, 100, 216, 0.12);
+        }
+
+        .counter {
+            text-align: right;
+            color: #88869e;
+            font-size: 13px;
+            margin-top: 7px;
+        }
+
+        button {
+            width: 100%;
+            border: none;
+            border-radius: 13px;
+            margin-top: 20px;
+            padding: 15px;
+            background: #7460d5;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #5f4bc0;
+        }
+
+        .result {
+            margin-top: 24px;
+            padding: 22px;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .result h2 {
+            margin: 8px 0;
+            font-size: 25px;
+        }
+
+        .spam {
+            background: #fff0f0;
+            color: #b42335;
+            border: 1px solid #ffd5d9;
+        }
+
+        .ham {
+            background: #eafaf1;
+            color: #167548;
+            border: 1px solid #c7efd8;
+        }
+
+        .error {
+            margin-top: 18px;
+            padding: 14px;
+            background: #fff0f0;
+            color: #b42335;
+            border-radius: 12px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 13px;
+            color: #8b89a0;
+        }
+
+        @media (max-width: 520px) {
+            .container {
+                padding: 24px 18px;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <header class="header">
+            <div class="icon">✉️</div>
+            <h1>SMS Spam Detector</h1>
+            <p class="subtitle">
+                Hệ thống sử dụng Machine Learning để phát hiện
+                tin nhắn rác và tin nhắn bình thường.
+            </p>
+        </header>
+
+        <form method="POST">
+            <label for="message">Nội dung tin nhắn SMS</label>
+
+            <textarea
+                id="message"
+                name="message"
+                maxlength="5000"
+                placeholder="Ví dụ: Congratulations! You have won a free prize..."
+                required
+            >{{ message }}</textarea>
+
+            <div class="counter">
+                Tối đa 5.000 ký tự
+            </div>
+
+            <button type="submit">Phân loại tin nhắn</button>
+        </form>
+
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+
+        {% if result %}
+            <section class="result {{ 'spam' if result == 'SPAM' else 'ham' }}">
+                {% if result == 'SPAM' %}
+                    <div>⚠️ Phát hiện tin nhắn có dấu hiệu rác</div>
+                    <h2>SPAM</h2>
+                {% else %}
+                    <div>✓ Tin nhắn có vẻ bình thường</div>
+                    <h2>HAM</h2>
+                {% endif %}
+
+                <p>
+                    Xác suất SPAM:
+                    <strong>{{ "%.2f"|format(probability * 100) }}%</strong>
+                </p>
+            </section>
+        {% endif %}
+
+        <footer class="footer">
+            Mô hình Transformer đã huấn luyện · Chạy cục bộ trên máy tính
+        </footer>
+    </main>
+</body>
+</html>

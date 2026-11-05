@@ -1,0 +1,23 @@
+{
+  "kind": "lstm",
+  "input_type": "token_ids",
+  "vocab_size": 6886,
+  "max_len": 100,
+  "embedding_dim": 128,
+  "hidden_dim": 128,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "batch_size": 64,
+  "seed": 42,
+  "epochs_requested": 10,
+  "patience": 3,
+  "decision_threshold": 0.5,
+  "train_file": "data/splits/train.csv",
+  "val_file": "data/splits/val.csv",
+  "checkpoint_selection": "max_val_spam_f1_first_tie",
+  "best_epoch": 9,
+  "epochs_trained": 10,
+  "train_seconds": 63.853,
+  "val_spam_f1": 0.9454545454545454,
+  "parameters": 1162113
+}

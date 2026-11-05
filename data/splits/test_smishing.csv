@@ -1,0 +1,690 @@
+label,raw_text,text
+ham,OPay: Your account balance is EGP322590. Date: 2026-08-12,opay: your account balance is egp322590. date: 2026-08-12
+ham,OPay: Your account balance is EGP455220. Date: 2026-06-15,opay: your account balance is egp455220. date: 2026-06-15
+ham,FNB: Your OTP is 331797. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 331797. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 209666. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 209666. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 318964. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 318964. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 843787. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 843787. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 483686. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 483686. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 964408. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 964408. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 512935. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 512935. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 680277. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 680277. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 604536. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 604536. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 766545. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 766545. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 244150. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 244150. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 852522. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 852522. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 465996. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 465996. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 638032. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 638032. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 618843. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 618843. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 888800. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 888800. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 744040. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 744040. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 368727. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 368727. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 687573. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 687573. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 971908. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 971908. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 686817. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 686817. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 986086. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 986086. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 528864. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 528864. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 777670. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 777670. valid for 5 minutes. do not share with anyone
+ham,FNB: Your OTP is 719807. Valid for 5 minutes. Do not share with anyone,fnb: your otp is 719807. valid for 5 minutes. do not share with anyone
+ham,Standard Bank: Bill payment of NGN5000 to Eskom confirmed. Ref: TXN913132,standard bank: bill payment of <MONEY> to eskom confirmed. ref: txn913132
+ham,Standard Bank: Bill payment of MZN10000 to Eskom confirmed. Ref: TXN905707,standard bank: bill payment of <MONEY> to eskom confirmed. ref: txn905707
+ham,You have received EGP5000 from Amina. New balance: EGP282290. Ref: TXN207751,you have received egp5000 from amina. new balance: egp282290. ref: txn207751
+ham,"Dear customer, your PalmPay statement is ready. Log in to view","dear customer, your palmpay statement is ready. log in to view"
+ham,"Dear customer, Orange rewards: You earned 3005 points this month","dear customer, orange rewards: you earned 3005 points this month"
+ham,"Dear customer, Orange rewards: You earned 2261 points this month","dear customer, orange rewards: you earned 2261 points this month"
+ham,"Dear customer, Orange rewards: You earned 2719 points this month","dear customer, orange rewards: you earned 2719 points this month"
+ham,"Dear customer, Orange rewards: You earned 2534 points this month","dear customer, orange rewards: you earned 2534 points this month"
+ham,"Dear customer, Orange rewards: You earned 3973 points this month","dear customer, orange rewards: you earned 3973 points this month"
+ham,"Dear customer, Orange rewards: You earned 4777 points this month","dear customer, orange rewards: you earned 4777 points this month"
+ham,"Dear customer, Orange rewards: You earned 3606 points this month","dear customer, orange rewards: you earned 3606 points this month"
+ham,"Dear customer, Orange rewards: You earned 4275 points this month","dear customer, orange rewards: you earned 4275 points this month"
+ham,"Dear customer, Orange rewards: You earned 3971 points this month","dear customer, orange rewards: you earned 3971 points this month"
+ham,"Dear customer, Orange rewards: You earned 1229 points this month","dear customer, orange rewards: you earned 1229 points this month"
+ham,"Dear customer, Orange rewards: You earned 3570 points this month","dear customer, orange rewards: you earned 3570 points this month"
+ham,"Dear customer, Orange rewards: You earned 1250 points this month","dear customer, orange rewards: you earned 1250 points this month"
+ham,"Dear customer, Orange rewards: You earned 2019 points this month","dear customer, orange rewards: you earned 2019 points this month"
+ham,"Dear customer, Orange rewards: You earned 3273 points this month","dear customer, orange rewards: you earned 3273 points this month"
+ham,"Dear customer, Orange rewards: You earned 4407 points this month","dear customer, orange rewards: you earned 4407 points this month"
+ham,"Dear customer, Orange rewards: You earned 2881 points this month","dear customer, orange rewards: you earned 2881 points this month"
+ham,"Dear customer, Orange rewards: You earned 1012 points this month","dear customer, orange rewards: you earned 1012 points this month"
+ham,"Dear customer, Orange rewards: You earned 2491 points this month","dear customer, orange rewards: you earned 2491 points this month"
+ham,"Dear customer, Orange rewards: You earned 4290 points this month","dear customer, orange rewards: you earned 4290 points this month"
+ham,"Dear customer, Orange rewards: You earned 1520 points this month","dear customer, orange rewards: you earned 1520 points this month"
+ham,"Dear customer, Orange rewards: You earned 2376 points this month","dear customer, orange rewards: you earned 2376 points this month"
+ham,"Dear customer, Orange rewards: You earned 2148 points this month","dear customer, orange rewards: you earned 2148 points this month"
+ham,"Dear customer, Orange rewards: You earned 3101 points this month","dear customer, orange rewards: you earned 3101 points this month"
+ham,Vodacom: Payment reminder. Your bill of EGP500 is due on 2026-02-20,vodacom: payment reminder. your bill of egp500 is due on 2026-02-20
+ham,Welcome to MTN! Your account is now active. Dial *150*00# to get started,welcome to mtn! your account is now active. dial *150*00# to get started
+ham,M-Pesa: Network upgrade in your area on 2026-09-14. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-09-14. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-07-13. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-07-13. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-09-19. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-09-19. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-03-22. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-03-22. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-08-23. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-08-23. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-06-27. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-06-27. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-03-17. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-03-17. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-03-18. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-03-18. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-03-25. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-03-25. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-04-19. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-04-19. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-01-20. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-01-20. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-06-17. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-06-17. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-04-10. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-04-10. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-08-14. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-08-14. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-01-10. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-01-10. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-06-26. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-06-26. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-03-24. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-03-24. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-02-23. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-02-23. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-07-24. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-07-24. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-03-14. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-03-14. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-01-17. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-01-17. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-08-15. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-08-15. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-03-28. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-03-28. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-09-18. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-09-18. expect brief interruptions
+ham,M-Pesa: Network upgrade in your area on 2026-09-15. Expect brief interruptions,m-pesa: network upgrade in your area on 2026-09-15. expect brief interruptions
+ham,Welcome to Vodacom! Your account is now active. Dial *182# to get started,welcome to vodacom! your account is now active. dial *182# to get started
+ham,Welcome to Vodacom! Your account is now active. Dial *384# to get started,welcome to vodacom! your account is now active. dial *384# to get started
+ham,Welcome to Vodacom! Your account is now active. Dial *334# to get started,welcome to vodacom! your account is now active. dial *334# to get started
+ham,Welcome to Vodacom! Your account is now active. Dial *737# to get started,welcome to vodacom! your account is now active. dial *737# to get started
+ham,MTN: Your loan of GHS1000 has been disbursed. Repay by 2026-03-24,mtn: your loan of <MONEY> has been disbursed. repay by 2026-03-24
+ham,MTN: Your loan of RWF10000 has been disbursed. Repay by 2026-03-23,mtn: your loan of <MONEY> has been disbursed. repay by 2026-03-23
+ham,MTN: Your loan of ZAR200 has been disbursed. Repay by 2026-06-26,mtn: your loan of <MONEY> has been disbursed. repay by 2026-06-26
+ham,MTN: Your loan of MZN500 has been disbursed. Repay by 2026-08-10,mtn: your loan of <MONEY> has been disbursed. repay by 2026-08-10
+ham,MTN: Your loan of RWF2500 has been disbursed. Repay by 2026-09-27,mtn: your loan of <MONEY> has been disbursed. repay by 2026-09-27
+ham,MTN: Your loan of ETB5000 has been disbursed. Repay by 2026-09-26,mtn: your loan of <MONEY> has been disbursed. repay by 2026-09-26
+ham,MTN: Your loan of ZAR5000 has been disbursed. Repay by 2026-09-13,mtn: your loan of <MONEY> has been disbursed. repay by 2026-09-13
+ham,MTN: Your loan of ZMW5000 has been disbursed. Repay by 2026-09-20,mtn: your loan of <MONEY> has been disbursed. repay by 2026-09-20
+ham,MTN: Your loan of GHS1000 has been disbursed. Repay by 2026-05-28,mtn: your loan of <MONEY> has been disbursed. repay by 2026-05-28
+ham,MTN: Your loan of XOF1000 has been disbursed. Repay by 2026-08-14,mtn: your loan of <MONEY> has been disbursed. repay by 2026-08-14
+ham,MTN: Your loan of TZS200 has been disbursed. Repay by 2026-03-22,mtn: your loan of <MONEY> has been disbursed. repay by 2026-03-22
+ham,MTN: Your loan of XOF1000 has been disbursed. Repay by 2026-08-23,mtn: your loan of <MONEY> has been disbursed. repay by 2026-08-23
+ham,MTN: Your loan of ZAR100 has been disbursed. Repay by 2026-01-11,mtn: your loan of <MONEY> has been disbursed. repay by 2026-01-11
+ham,MTN: Your loan of ZAR200 has been disbursed. Repay by 2026-04-12,mtn: your loan of <MONEY> has been disbursed. repay by 2026-04-12
+ham,MTN: Your loan of ETB500 has been disbursed. Repay by 2026-05-27,mtn: your loan of <MONEY> has been disbursed. repay by 2026-05-27
+ham,MTN: Your loan of UGX10000 has been disbursed. Repay by 2026-02-17,mtn: your loan of <MONEY> has been disbursed. repay by 2026-02-17
+ham,MTN: Your loan of MZN500 has been disbursed. Repay by 2026-03-28,mtn: your loan of <MONEY> has been disbursed. repay by 2026-03-28
+ham,MTN: Your loan of RWF2500 has been disbursed. Repay by 2026-03-17,mtn: your loan of <MONEY> has been disbursed. repay by 2026-03-17
+ham,MTN: Your loan of XOF100 has been disbursed. Repay by 2026-05-21,mtn: your loan of <MONEY> has been disbursed. repay by 2026-05-21
+ham,MTN: Your transaction of EGP5000 was successful. Ref: TXN464880,mtn: your transaction of egp5000 was successful. ref: txn464880
+ham,MTN: Your transaction of EGP5000 was successful. Ref: TXN923010,mtn: your transaction of egp5000 was successful. ref: txn923010
+ham,PalmPay: Cash withdrawal of RWF1000 at agent AG2766. Ref: TXN369677,palmpay: cash withdrawal of <MONEY> at agent ag2766. ref: txn369677
+ham,PalmPay: Cash withdrawal of RWF500 at agent AG7512. Ref: TXN966229,palmpay: cash withdrawal of <MONEY> at agent ag7512. ref: txn966229
+ham,PalmPay: Cash withdrawal of XAF10000 at agent AG3271. Ref: TXN722193,palmpay: cash withdrawal of <MONEY> at agent ag3271. ref: txn722193
+ham,PalmPay: Cash withdrawal of ZMW10000 at agent AG1496. Ref: TXN442210,palmpay: cash withdrawal of <MONEY> at agent ag1496. ref: txn442210
+ham,PalmPay: Cash withdrawal of TZS1000 at agent AG2559. Ref: TXN611043,palmpay: cash withdrawal of <MONEY> at agent ag2559. ref: txn611043
+ham,PalmPay: Cash withdrawal of ETB500 at agent AG2015. Ref: TXN459891,palmpay: cash withdrawal of <MONEY> at agent ag2015. ref: txn459891
+ham,PalmPay: Cash withdrawal of ETB10000 at agent AG7979. Ref: TXN194604,palmpay: cash withdrawal of <MONEY> at agent ag7979. ref: txn194604
+ham,PalmPay: Cash withdrawal of ZAR500 at agent AG3764. Ref: TXN685661,palmpay: cash withdrawal of <MONEY> at agent ag3764. ref: txn685661
+ham,PalmPay: Cash withdrawal of ZAR5000 at agent AG2083. Ref: TXN250616,palmpay: cash withdrawal of <MONEY> at agent ag2083. ref: txn250616
+ham,PalmPay: Cash withdrawal of ZAR100 at agent AG6413. Ref: TXN948298,palmpay: cash withdrawal of <MONEY> at agent ag6413. ref: txn948298
+ham,PalmPay: Cash withdrawal of ZMW500 at agent AG3105. Ref: TXN236512,palmpay: cash withdrawal of <MONEY> at agent ag3105. ref: txn236512
+ham,PalmPay: Cash withdrawal of ZMW2500 at agent AG3645. Ref: TXN753308,palmpay: cash withdrawal of <MONEY> at agent ag3645. ref: txn753308
+ham,PalmPay: Cash withdrawal of XOF5000 at agent AG4849. Ref: TXN680161,palmpay: cash withdrawal of <MONEY> at agent ag4849. ref: txn680161
+ham,PalmPay: Cash withdrawal of ETB5000 at agent AG1636. Ref: TXN502692,palmpay: cash withdrawal of <MONEY> at agent ag1636. ref: txn502692
+ham,PalmPay: Cash withdrawal of RWF5000 at agent AG1540. Ref: TXN597904,palmpay: cash withdrawal of <MONEY> at agent ag1540. ref: txn597904
+ham,PalmPay: Cash withdrawal of NGN5000 at agent AG4222. Ref: TXN873325,palmpay: cash withdrawal of <MONEY> at agent ag4222. ref: txn873325
+ham,PalmPay: Cash withdrawal of XOF2500 at agent AG1295. Ref: TXN708162,palmpay: cash withdrawal of <MONEY> at agent ag1295. ref: txn708162
+ham,PalmPay: Cash withdrawal of MZN100 at agent AG7131. Ref: TXN237148,palmpay: cash withdrawal of <MONEY> at agent ag7131. ref: txn237148
+ham,PalmPay: Cash withdrawal of KES1000 at agent AG6269. Ref: TXN270170,palmpay: cash withdrawal of <MONEY> at agent ag6269. ref: txn270170
+ham,PalmPay: Cash withdrawal of GHS500 at agent AG8604. Ref: TXN437280,palmpay: cash withdrawal of <MONEY> at agent ag8604. ref: txn437280
+ham,PalmPay: Cash withdrawal of TZS10000 at agent AG3877. Ref: TXN102072,palmpay: cash withdrawal of <MONEY> at agent ag3877. ref: txn102072
+ham,PalmPay: Cash withdrawal of KES500 at agent AG1906. Ref: TXN602407,palmpay: cash withdrawal of <MONEY> at agent ag1906. ref: txn602407
+ham,PalmPay: Cash withdrawal of UGX200 at agent AG4568. Ref: TXN751154,palmpay: cash withdrawal of <MONEY> at agent ag4568. ref: txn751154
+ham,PalmPay: Cash withdrawal of RWF50 at agent AG6873. Ref: TXN232649,palmpay: cash withdrawal of <MONEY> at agent ag6873. ref: txn232649
+ham,Safaricom: Payment reminder. Your bill of EGP2500 is due on 2026-04-19,safaricom: payment reminder. your bill of egp2500 is due on 2026-04-19
+ham,GTBank: Airtime of EGP1000 purchased successfully for +25429734325,gtbank: airtime of egp1000 purchased successfully for <PHONE>
+ham,PalmPay: Airtime of GHS50 purchased successfully for +24268702439,palmpay: airtime of <MONEY> purchased successfully for <PHONE>
+ham,FNB: Your account balance is EGP244479. Date: 2026-08-19,fnb: your account balance is egp244479. date: 2026-08-19
+ham,FNB: Your account balance is EGP306443. Date: 2026-04-22,fnb: your account balance is egp306443. date: 2026-04-22
+ham,FNB: Your account balance is EGP254411. Date: 2026-02-17,fnb: your account balance is egp254411. date: 2026-02-17
+ham,FNB: Your account balance is EGP142945. Date: 2026-03-19,fnb: your account balance is egp142945. date: 2026-03-19
+ham,"Dear customer, Safaricom rewards: You earned 751 points this month","dear customer, safaricom rewards: you earned 751 points this month"
+ham,"Dear customer, Safaricom rewards: You earned 660 points this month","dear customer, safaricom rewards: you earned 660 points this month"
+ham,"Dear customer, Safaricom rewards: You earned 840 points this month","dear customer, safaricom rewards: you earned 840 points this month"
+ham,Standard Bank: Bill payment of TZS200 to NAWEC confirmed. Ref: TXN544987,standard bank: bill payment of <MONEY> to nawec confirmed. ref: txn544987
+ham,Standard Bank: Bill payment of UGX5000 to NAWEC confirmed. Ref: TXN490185,standard bank: bill payment of <MONEY> to nawec confirmed. ref: txn490185
+ham,Equity Bank: Bill payment of RWF200 to Eskom confirmed. Ref: TXN216451,equity bank: bill payment of <MONEY> to eskom confirmed. ref: txn216451
+ham,Equity Bank: Bill payment of ZMW200 to Eskom confirmed. Ref: TXN920040,equity bank: bill payment of <MONEY> to eskom confirmed. ref: txn920040
+ham,OPay: Network upgrade in your area on 2026-05-23. Expect brief interruptions,opay: network upgrade in your area on 2026-05-23. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-09-17. Expect brief interruptions,opay: network upgrade in your area on 2026-09-17. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-04-24. Expect brief interruptions,opay: network upgrade in your area on 2026-04-24. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-07-11. Expect brief interruptions,opay: network upgrade in your area on 2026-07-11. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-06-20. Expect brief interruptions,opay: network upgrade in your area on 2026-06-20. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-08-11. Expect brief interruptions,opay: network upgrade in your area on 2026-08-11. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-01-24. Expect brief interruptions,opay: network upgrade in your area on 2026-01-24. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-08-26. Expect brief interruptions,opay: network upgrade in your area on 2026-08-26. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-02-27. Expect brief interruptions,opay: network upgrade in your area on 2026-02-27. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-03-22. Expect brief interruptions,opay: network upgrade in your area on 2026-03-22. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-06-21. Expect brief interruptions,opay: network upgrade in your area on 2026-06-21. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-01-26. Expect brief interruptions,opay: network upgrade in your area on 2026-01-26. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-07-27. Expect brief interruptions,opay: network upgrade in your area on 2026-07-27. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-03-17. Expect brief interruptions,opay: network upgrade in your area on 2026-03-17. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-02-12. Expect brief interruptions,opay: network upgrade in your area on 2026-02-12. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-02-14. Expect brief interruptions,opay: network upgrade in your area on 2026-02-14. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-01-15. Expect brief interruptions,opay: network upgrade in your area on 2026-01-15. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-04-19. Expect brief interruptions,opay: network upgrade in your area on 2026-04-19. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-04-20. Expect brief interruptions,opay: network upgrade in your area on 2026-04-20. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-02-11. Expect brief interruptions,opay: network upgrade in your area on 2026-02-11. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-03-20. Expect brief interruptions,opay: network upgrade in your area on 2026-03-20. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-08-23. Expect brief interruptions,opay: network upgrade in your area on 2026-08-23. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-06-26. Expect brief interruptions,opay: network upgrade in your area on 2026-06-26. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-05-10. Expect brief interruptions,opay: network upgrade in your area on 2026-05-10. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-02-28. Expect brief interruptions,opay: network upgrade in your area on 2026-02-28. expect brief interruptions
+ham,OPay: Network upgrade in your area on 2026-06-23. Expect brief interruptions,opay: network upgrade in your area on 2026-06-23. expect brief interruptions
+ham,Orange: Bill payment of TZS2500 to ECG confirmed. Ref: TXN544536,orange: bill payment of <MONEY> to ecg confirmed. ref: txn544536
+ham,Orange: Bill payment of UGX1000 to ECG confirmed. Ref: TXN857707,orange: bill payment of <MONEY> to ecg confirmed. ref: txn857707
+ham,Welcome to M-Pesa! Your account is now active. Dial *150*00# to get started,welcome to m-pesa! your account is now active. dial *150*00# to get started
+ham,You have received TZS1000 from Amina. New balance: TZS480195. Ref: TXN183560,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn183560
+ham,You have received USD10000 from Amina. New balance: USD381012. Ref: TXN539827,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn539827
+ham,You have received UGX5000 from Amina. New balance: UGX254646. Ref: TXN151539,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn151539
+ham,You have received NGN5000 from Amina. New balance: NGN158095. Ref: TXN539034,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn539034
+ham,You have received ZAR100 from Amina. New balance: ZAR100125. Ref: TXN562462,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn562462
+ham,You have received ZAR5000 from Amina. New balance: ZAR163905. Ref: TXN324897,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn324897
+ham,You have received RWF2500 from Amina. New balance: RWF125539. Ref: TXN265092,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn265092
+ham,You have received GHS5000 from Amina. New balance: GHS352194. Ref: TXN374429,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn374429
+ham,You have received XOF10000 from Amina. New balance: XOF65668. Ref: TXN769944,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn769944
+ham,You have received NGN50 from Amina. New balance: NGN452500. Ref: TXN187696,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn187696
+ham,You have received ZMW500 from Amina. New balance: ZMW212058. Ref: TXN143957,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn143957
+ham,You have received ETB100 from Amina. New balance: ETB435764. Ref: TXN987879,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn987879
+ham,You have received KES2500 from Amina. New balance: KES83290. Ref: TXN554006,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn554006
+ham,You have received XOF100 from Amina. New balance: XOF38901. Ref: TXN503531,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn503531
+ham,You have received KES500 from Amina. New balance: KES187262. Ref: TXN159778,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn159778
+ham,You have received USD200 from Amina. New balance: USD77138. Ref: TXN898558,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn898558
+ham,You have received XOF1000 from Amina. New balance: XOF448830. Ref: TXN750976,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn750976
+ham,You have received TZS1000 from Amina. New balance: TZS425519. Ref: TXN597778,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn597778
+ham,You have received MZN100 from Amina. New balance: MZN177971. Ref: TXN427683,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn427683
+ham,You have received XOF1000 from Amina. New balance: XOF160778. Ref: TXN489522,you have received <MONEY> from amina. new balance: <MONEY> . ref: txn489522
+ham,M-Pesa: Airtime of EGP2500 purchased successfully for +23176603325,m-pesa: airtime of egp2500 purchased successfully for <PHONE>
+ham,Equity Bank: Payment reminder. Your bill of EGP100 is due on 2026-01-18,equity bank: payment reminder. your bill of egp100 is due on 2026-01-18
+ham,GTBank: Cash withdrawal of EGP5000 at agent AG1144. Ref: TXN640712,gtbank: cash withdrawal of egp5000 at agent ag1144. ref: txn640712
+ham,GTBank: Cash withdrawal of EGP2500 at agent AG5444. Ref: TXN883766,gtbank: cash withdrawal of egp2500 at agent ag5444. ref: txn883766
+ham,FNB: Your loan of EGP2500 has been disbursed. Repay by 2026-09-17,fnb: your loan of egp2500 has been disbursed. repay by 2026-09-17
+ham,You have received ZAR5000 from Samuel. New balance: ZAR368155. Ref: TXN975651,you have received <MONEY> from samuel. new balance: <MONEY> . ref: txn975651
+ham,You have received ETB1000 from Samuel. New balance: ETB297026. Ref: TXN790615,you have received <MONEY> from samuel. new balance: <MONEY> . ref: txn790615
+ham,You have received UGX200 from Samuel. New balance: UGX432258. Ref: TXN344469,you have received <MONEY> from samuel. new balance: <MONEY> . ref: txn344469
+ham,You have received XOF1000 from Samuel. New balance: XOF71736. Ref: TXN681412,you have received <MONEY> from samuel. new balance: <MONEY> . ref: txn681412
+ham,You have received GHS5000 from Samuel. New balance: GHS237758. Ref: TXN411526,you have received <MONEY> from samuel. new balance: <MONEY> . ref: txn411526
+ham,You have received XAF5000 from Samuel. New balance: XAF213266. Ref: TXN426418,you have received <MONEY> from samuel. new balance: <MONEY> . ref: txn426418
+ham,You have received ZMW1000 from Samuel. New balance: ZMW73816. Ref: TXN253953,you have received <MONEY> from samuel. new balance: <MONEY> . ref: txn253953
+ham,You have received XOF100 from Samuel. New balance: XOF428878. Ref: TXN298548,you have received <MONEY> from samuel. new balance: <MONEY> . ref: txn298548
+ham,You have received KES2500 from Samuel. New balance: KES329938. Ref: TXN976721,you have received <MONEY> from samuel. new balance: <MONEY> . ref: txn976721
+ham,You have received XAF100 from Samuel. New balance: XAF56297. Ref: TXN303409,you have received <MONEY> from samuel. new balance: <MONEY> . ref: txn303409
+ham,You have received XAF5000 from Samuel. New balance: XAF104997. Ref: TXN428961,you have received <MONEY> from samuel. new balance: <MONEY> . ref: txn428961
+ham,You have received ZAR500 from Samuel. New balance: ZAR451301. Ref: TXN633426,you have received <MONEY> from samuel. new balance: <MONEY> . ref: txn633426
+ham,You have received ZAR5000 from Samuel. New balance: ZAR350031. Ref: TXN797805,you have received <MONEY> from samuel. new balance: <MONEY> . ref: txn797805
+ham,You have received XAF5000 from Samuel. New balance: XAF418463. Ref: TXN726003,you have received <MONEY> from samuel. new balance: <MONEY> . ref: txn726003
+ham,You have received ZAR500 from Samuel. New balance: ZAR63766. Ref: TXN891443,you have received <MONEY> from samuel. new balance: <MONEY> . ref: txn891443
+ham,You have received ETB100 from Samuel. New balance: ETB208105. Ref: TXN985054,you have received <MONEY> from samuel. new balance: <MONEY> . ref: txn985054
+ham,KCB: Bill payment of ZMW1000 to ECG confirmed. Ref: TXN368186,kcb: bill payment of <MONEY> to ecg confirmed. ref: txn368186
+ham,KCB: Bill payment of NGN100 to ECG confirmed. Ref: TXN827744,kcb: bill payment of <MONEY> to ecg confirmed. ref: txn827744
+ham,KCB: Bill payment of UGX1000 to ECG confirmed. Ref: TXN982348,kcb: bill payment of <MONEY> to ecg confirmed. ref: txn982348
+ham,KCB: Bill payment of XOF500 to ECG confirmed. Ref: TXN155826,kcb: bill payment of <MONEY> to ecg confirmed. ref: txn155826
+ham,KCB: Bill payment of XOF5000 to ECG confirmed. Ref: TXN670582,kcb: bill payment of <MONEY> to ecg confirmed. ref: txn670582
+ham,Airtel: Bill payment of ZAR2500 to Eskom confirmed. Ref: TXN376783,airtel: bill payment of <MONEY> to eskom confirmed. ref: txn376783
+ham,Equity Bank: Airtime of EGP500 purchased successfully for +25679455538,equity bank: airtime of egp500 purchased successfully for <PHONE>
+ham,You have received EGP100 from Zainab. New balance: EGP384413. Ref: TXN478758,you have received egp100 from zainab. new balance: egp384413. ref: txn478758
+ham,M-Pesa: Cash withdrawal of USD200 at agent AG7392. Ref: TXN486589,m-pesa: cash withdrawal of <MONEY> at agent ag7392. ref: txn486589
+ham,M-Pesa: Cash withdrawal of ETB100 at agent AG8839. Ref: TXN263451,m-pesa: cash withdrawal of <MONEY> at agent ag8839. ref: txn263451
+ham,M-Pesa: Cash withdrawal of KES1000 at agent AG6737. Ref: TXN258311,m-pesa: cash withdrawal of <MONEY> at agent ag6737. ref: txn258311
+ham,M-Pesa: Cash withdrawal of XAF10000 at agent AG2291. Ref: TXN590863,m-pesa: cash withdrawal of <MONEY> at agent ag2291. ref: txn590863
+ham,M-Pesa: Cash withdrawal of ETB10000 at agent AG1921. Ref: TXN431665,m-pesa: cash withdrawal of <MONEY> at agent ag1921. ref: txn431665
+ham,M-Pesa: Cash withdrawal of NGN10000 at agent AG6213. Ref: TXN211120,m-pesa: cash withdrawal of <MONEY> at agent ag6213. ref: txn211120
+ham,M-Pesa: Cash withdrawal of ZMW100 at agent AG8660. Ref: TXN831809,m-pesa: cash withdrawal of <MONEY> at agent ag8660. ref: txn831809
+ham,M-Pesa: Cash withdrawal of ZAR100 at agent AG8598. Ref: TXN309864,m-pesa: cash withdrawal of <MONEY> at agent ag8598. ref: txn309864
+ham,M-Pesa: Cash withdrawal of NGN5000 at agent AG7054. Ref: TXN630238,m-pesa: cash withdrawal of <MONEY> at agent ag7054. ref: txn630238
+ham,M-Pesa: Cash withdrawal of ZAR2500 at agent AG6423. Ref: TXN806329,m-pesa: cash withdrawal of <MONEY> at agent ag6423. ref: txn806329
+ham,M-Pesa: Cash withdrawal of XOF2500 at agent AG8652. Ref: TXN472184,m-pesa: cash withdrawal of <MONEY> at agent ag8652. ref: txn472184
+ham,M-Pesa: Cash withdrawal of MZN10000 at agent AG5752. Ref: TXN491416,m-pesa: cash withdrawal of <MONEY> at agent ag5752. ref: txn491416
+ham,M-Pesa: Cash withdrawal of USD5000 at agent AG3227. Ref: TXN783286,m-pesa: cash withdrawal of <MONEY> at agent ag3227. ref: txn783286
+ham,M-Pesa: Cash withdrawal of RWF2500 at agent AG5376. Ref: TXN863518,m-pesa: cash withdrawal of <MONEY> at agent ag5376. ref: txn863518
+ham,M-Pesa: Cash withdrawal of KES100 at agent AG5710. Ref: TXN246731,m-pesa: cash withdrawal of <MONEY> at agent ag5710. ref: txn246731
+ham,M-Pesa: Cash withdrawal of ETB500 at agent AG1935. Ref: TXN480832,m-pesa: cash withdrawal of <MONEY> at agent ag1935. ref: txn480832
+ham,M-Pesa: Cash withdrawal of NGN10000 at agent AG1725. Ref: TXN386851,m-pesa: cash withdrawal of <MONEY> at agent ag1725. ref: txn386851
+ham,M-Pesa: Cash withdrawal of ETB1000 at agent AG4670. Ref: TXN617300,m-pesa: cash withdrawal of <MONEY> at agent ag4670. ref: txn617300
+ham,KCB: Payment reminder. Your bill of NGN2500 is due on 2026-04-18,kcb: payment reminder. your bill of <MONEY> is due on 2026-04-18
+ham,KCB: Payment reminder. Your bill of ETB1000 is due on 2026-06-10,kcb: payment reminder. your bill of <MONEY> is due on 2026-06-10
+ham,KCB: Payment reminder. Your bill of GHS1000 is due on 2026-08-20,kcb: payment reminder. your bill of <MONEY> is due on 2026-08-20
+ham,KCB: Payment reminder. Your bill of XOF200 is due on 2026-04-25,kcb: payment reminder. your bill of <MONEY> is due on 2026-04-25
+ham,KCB: Payment reminder. Your bill of NGN2500 is due on 2026-09-25,kcb: payment reminder. your bill of <MONEY> is due on 2026-09-25
+ham,KCB: Payment reminder. Your bill of TZS2500 is due on 2026-05-20,kcb: payment reminder. your bill of <MONEY> is due on 2026-05-20
+ham,KCB: Payment reminder. Your bill of UGX2500 is due on 2026-09-15,kcb: payment reminder. your bill of <MONEY> is due on 2026-09-15
+ham,KCB: Payment reminder. Your bill of NGN100 is due on 2026-01-20,kcb: payment reminder. your bill of <MONEY> is due on 2026-01-20
+ham,KCB: Payment reminder. Your bill of XOF100 is due on 2026-06-24,kcb: payment reminder. your bill of <MONEY> is due on 2026-06-24
+ham,KCB: Payment reminder. Your bill of MZN200 is due on 2026-06-19,kcb: payment reminder. your bill of <MONEY> is due on 2026-06-19
+ham,KCB: Payment reminder. Your bill of ETB500 is due on 2026-03-18,kcb: payment reminder. your bill of <MONEY> is due on 2026-03-18
+ham,KCB: Payment reminder. Your bill of XOF50 is due on 2026-03-12,kcb: payment reminder. your bill of <MONEY> is due on 2026-03-12
+ham,KCB: Payment reminder. Your bill of GHS200 is due on 2026-07-15,kcb: payment reminder. your bill of <MONEY> is due on 2026-07-15
+ham,KCB: Payment reminder. Your bill of UGX500 is due on 2026-03-26,kcb: payment reminder. your bill of <MONEY> is due on 2026-03-26
+ham,KCB: Payment reminder. Your bill of TZS200 is due on 2026-05-14,kcb: payment reminder. your bill of <MONEY> is due on 2026-05-14
+ham,KCB: Payment reminder. Your bill of KES5000 is due on 2026-02-24,kcb: payment reminder. your bill of <MONEY> is due on 2026-02-24
+ham,KCB: Payment reminder. Your bill of XOF1000 is due on 2026-05-18,kcb: payment reminder. your bill of <MONEY> is due on 2026-05-18
+ham,KCB: Payment reminder. Your bill of ZMW50 is due on 2026-02-10,kcb: payment reminder. your bill of <MONEY> is due on 2026-02-10
+ham,KCB: Payment reminder. Your bill of USD100 is due on 2026-03-24,kcb: payment reminder. your bill of <MONEY> is due on 2026-03-24
+ham,KCB: Payment reminder. Your bill of UGX2500 is due on 2026-07-16,kcb: payment reminder. your bill of <MONEY> is due on 2026-07-16
+ham,KCB: Payment reminder. Your bill of XOF10000 is due on 2026-09-10,kcb: payment reminder. your bill of <MONEY> is due on 2026-09-10
+ham,KCB: Payment reminder. Your bill of USD5000 is due on 2026-01-22,kcb: payment reminder. your bill of <MONEY> is due on 2026-01-22
+ham,M-Pesa: Payment reminder. Your bill of TZS100 is due on 2026-08-15,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-08-15
+ham,M-Pesa: Payment reminder. Your bill of XOF2500 is due on 2026-06-20,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-06-20
+ham,M-Pesa: Payment reminder. Your bill of ETB2500 is due on 2026-02-17,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-02-17
+ham,M-Pesa: Payment reminder. Your bill of GHS500 is due on 2026-05-10,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-05-10
+ham,M-Pesa: Payment reminder. Your bill of ETB5000 is due on 2026-06-14,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-06-14
+ham,M-Pesa: Payment reminder. Your bill of XAF50 is due on 2026-01-14,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-01-14
+ham,M-Pesa: Payment reminder. Your bill of RWF100 is due on 2026-03-20,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-03-20
+ham,M-Pesa: Payment reminder. Your bill of XOF2500 is due on 2026-04-11,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-04-11
+ham,M-Pesa: Payment reminder. Your bill of ZAR100 is due on 2026-03-28,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-03-28
+ham,M-Pesa: Payment reminder. Your bill of MZN500 is due on 2026-05-25,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-05-25
+ham,M-Pesa: Payment reminder. Your bill of KES50 is due on 2026-09-28,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-09-28
+ham,M-Pesa: Payment reminder. Your bill of XAF100 is due on 2026-04-10,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-04-10
+ham,M-Pesa: Payment reminder. Your bill of KES500 is due on 2026-04-23,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-04-23
+ham,M-Pesa: Payment reminder. Your bill of XOF100 is due on 2026-09-22,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-09-22
+ham,M-Pesa: Payment reminder. Your bill of TZS500 is due on 2026-07-10,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-07-10
+ham,M-Pesa: Payment reminder. Your bill of ZAR200 is due on 2026-03-21,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-03-21
+ham,M-Pesa: Payment reminder. Your bill of XAF5000 is due on 2026-03-24,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-03-24
+ham,M-Pesa: Payment reminder. Your bill of ZMW50 is due on 2026-08-16,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-08-16
+ham,M-Pesa: Payment reminder. Your bill of NGN10000 is due on 2026-06-23,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-06-23
+ham,M-Pesa: Payment reminder. Your bill of TZS200 is due on 2026-04-17,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-04-17
+ham,M-Pesa: Payment reminder. Your bill of MZN2500 is due on 2026-06-10,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-06-10
+ham,M-Pesa: Payment reminder. Your bill of XAF1000 is due on 2026-09-13,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-09-13
+ham,M-Pesa: Payment reminder. Your bill of ETB100 is due on 2026-07-22,m-pesa: payment reminder. your bill of <MONEY> is due on 2026-07-22
+ham,You have received EGP5000 from Kwame. New balance: EGP310005. Ref: TXN424435,you have received egp5000 from kwame. new balance: egp310005. ref: txn424435
+ham,You have received KES500 from Precious. New balance: KES380416. Ref: TXN520847,you have received <MONEY> from precious. new balance: <MONEY> . ref: txn520847
+ham,You have received USD2500 from Precious. New balance: USD34071. Ref: TXN746282,you have received <MONEY> from precious. new balance: <MONEY> . ref: txn746282
+ham,You have received GHS50 from Precious. New balance: GHS220467. Ref: TXN998300,you have received <MONEY> from precious. new balance: <MONEY> . ref: txn998300
+ham,You have received ZAR2500 from Precious. New balance: ZAR232993. Ref: TXN378431,you have received <MONEY> from precious. new balance: <MONEY> . ref: txn378431
+ham,You have received USD10000 from Precious. New balance: USD143389. Ref: TXN980266,you have received <MONEY> from precious. new balance: <MONEY> . ref: txn980266
+ham,You have received TZS1000 from Precious. New balance: TZS39443. Ref: TXN445326,you have received <MONEY> from precious. new balance: <MONEY> . ref: txn445326
+ham,You have received XOF1000 from Precious. New balance: XOF114980. Ref: TXN753789,you have received <MONEY> from precious. new balance: <MONEY> . ref: txn753789
+ham,You have received XOF200 from Precious. New balance: XOF87705. Ref: TXN774777,you have received <MONEY> from precious. new balance: <MONEY> . ref: txn774777
+ham,You have received USD200 from Precious. New balance: USD416589. Ref: TXN713099,you have received <MONEY> from precious. new balance: <MONEY> . ref: txn713099
+ham,You have received MZN50 from Precious. New balance: MZN277667. Ref: TXN661762,you have received <MONEY> from precious. new balance: <MONEY> . ref: txn661762
+ham,You have received ZMW500 from Precious. New balance: ZMW177806. Ref: TXN816660,you have received <MONEY> from precious. new balance: <MONEY> . ref: txn816660
+ham,You have received GHS50 from Precious. New balance: GHS188207. Ref: TXN474387,you have received <MONEY> from precious. new balance: <MONEY> . ref: txn474387
+ham,You have received XOF2500 from Precious. New balance: XOF498923. Ref: TXN297584,you have received <MONEY> from precious. new balance: <MONEY> . ref: txn297584
+ham,You have received XOF100 from Precious. New balance: XOF453912. Ref: TXN507022,you have received <MONEY> from precious. new balance: <MONEY> . ref: txn507022
+ham,You have received TZS100 from Precious. New balance: TZS6597. Ref: TXN518614,you have received <MONEY> from precious. new balance: <MONEY> . ref: txn518614
+ham,Happy birthday! Access Bank wishes you a wonderful day. Enjoy special offers,happy birthday! access bank wishes you a wonderful day. enjoy special offers
+ham,FNB: Bill payment of EGP200 to ECG confirmed. Ref: TXN955651,fnb: bill payment of egp200 to ecg confirmed. ref: txn955651
+ham,Standard Bank: Your account balance is ZAR456880. Date: 2026-02-11,standard bank: your account balance is <MONEY> . date: 2026-02-11
+ham,Standard Bank: Your account balance is UGX365446. Date: 2026-02-16,standard bank: your account balance is <MONEY> . date: 2026-02-16
+ham,Standard Bank: Your account balance is NGN259873. Date: 2026-05-26,standard bank: your account balance is <MONEY> . date: 2026-05-26
+ham,Standard Bank: Your account balance is XOF26215. Date: 2026-03-20,standard bank: your account balance is <MONEY> . date: 2026-03-20
+ham,Standard Bank: Your account balance is XOF197673. Date: 2026-02-27,standard bank: your account balance is <MONEY> . date: 2026-02-27
+ham,Standard Bank: Your account balance is ZMW27913. Date: 2026-02-10,standard bank: your account balance is <MONEY> . date: 2026-02-10
+ham,Standard Bank: Your account balance is KES470370. Date: 2026-07-21,standard bank: your account balance is <MONEY> . date: 2026-07-21
+ham,Standard Bank: Your account balance is USD85745. Date: 2026-03-17,standard bank: your account balance is <MONEY> . date: 2026-03-17
+ham,Standard Bank: Your account balance is NGN45342. Date: 2026-01-19,standard bank: your account balance is <MONEY> . date: 2026-01-19
+ham,Standard Bank: Your account balance is GHS365431. Date: 2026-04-10,standard bank: your account balance is <MONEY> . date: 2026-04-10
+ham,Standard Bank: Your account balance is XAF177668. Date: 2026-08-11,standard bank: your account balance is <MONEY> . date: 2026-08-11
+ham,Standard Bank: Your account balance is GHS494304. Date: 2026-05-20,standard bank: your account balance is <MONEY> . date: 2026-05-20
+ham,Standard Bank: Your account balance is MZN73403. Date: 2026-06-21,standard bank: your account balance is <MONEY> . date: 2026-06-21
+ham,Standard Bank: Your account balance is UGX406830. Date: 2026-03-22,standard bank: your account balance is <MONEY> . date: 2026-03-22
+ham,Standard Bank: Your account balance is ETB299025. Date: 2026-09-11,standard bank: your account balance is <MONEY> . date: 2026-09-11
+ham,Standard Bank: Your account balance is ZAR143074. Date: 2026-05-27,standard bank: your account balance is <MONEY> . date: 2026-05-27
+ham,Standard Bank: Your account balance is MZN347332. Date: 2026-01-28,standard bank: your account balance is <MONEY> . date: 2026-01-28
+ham,Standard Bank: Your account balance is TZS444992. Date: 2026-02-19,standard bank: your account balance is <MONEY> . date: 2026-02-19
+ham,Standard Bank: Your account balance is RWF339836. Date: 2026-05-11,standard bank: your account balance is <MONEY> . date: 2026-05-11
+ham,Standard Bank: Your account balance is UGX291887. Date: 2026-06-23,standard bank: your account balance is <MONEY> . date: 2026-06-23
+ham,Standard Bank: Your account balance is ZAR186122. Date: 2026-04-25,standard bank: your account balance is <MONEY> . date: 2026-04-25
+ham,Standard Bank: Your account balance is RWF68132. Date: 2026-09-26,standard bank: your account balance is <MONEY> . date: 2026-09-26
+ham,Standard Bank: Your account balance is NGN441306. Date: 2026-09-13,standard bank: your account balance is <MONEY> . date: 2026-09-13
+ham,Welcome to KCB! Your account is now active. Dial *150*00# to get started,welcome to kcb! your account is now active. dial *150*00# to get started
+ham,Vodacom: Your account balance is EGP276929. Date: 2026-06-16,vodacom: your account balance is egp276929. date: 2026-06-16
+ham,OPay: Your loan of EGP5000 has been disbursed. Repay by 2026-06-17,opay: your loan of egp5000 has been disbursed. repay by 2026-06-17
+ham,Equity Bank: Scheduled maintenance on 2026-08-26 from 2AM-4AM. Services may be affected,equity bank: scheduled maintenance on 2026-08-26 from 2am-4am. services may be affected
+ham,Equity Bank: Scheduled maintenance on 2026-02-26 from 2AM-4AM. Services may be affected,equity bank: scheduled maintenance on 2026-02-26 from 2am-4am. services may be affected
+ham,Equity Bank: Scheduled maintenance on 2026-03-23 from 2AM-4AM. Services may be affected,equity bank: scheduled maintenance on 2026-03-23 from 2am-4am. services may be affected
+ham,Equity Bank: Scheduled maintenance on 2026-07-13 from 2AM-4AM. Services may be affected,equity bank: scheduled maintenance on 2026-07-13 from 2am-4am. services may be affected
+ham,Equity Bank: Scheduled maintenance on 2026-06-13 from 2AM-4AM. Services may be affected,equity bank: scheduled maintenance on 2026-06-13 from 2am-4am. services may be affected
+ham,Equity Bank: Scheduled maintenance on 2026-04-20 from 2AM-4AM. Services may be affected,equity bank: scheduled maintenance on 2026-04-20 from 2am-4am. services may be affected
+ham,Equity Bank: Scheduled maintenance on 2026-03-13 from 2AM-4AM. Services may be affected,equity bank: scheduled maintenance on 2026-03-13 from 2am-4am. services may be affected
+ham,Equity Bank: Scheduled maintenance on 2026-09-19 from 2AM-4AM. Services may be affected,equity bank: scheduled maintenance on 2026-09-19 from 2am-4am. services may be affected
+ham,Equity Bank: Scheduled maintenance on 2026-04-26 from 2AM-4AM. Services may be affected,equity bank: scheduled maintenance on 2026-04-26 from 2am-4am. services may be affected
+ham,Equity Bank: Scheduled maintenance on 2026-08-21 from 2AM-4AM. Services may be affected,equity bank: scheduled maintenance on 2026-08-21 from 2am-4am. services may be affected
+ham,Equity Bank: Scheduled maintenance on 2026-05-14 from 2AM-4AM. Services may be affected,equity bank: scheduled maintenance on 2026-05-14 from 2am-4am. services may be affected
+ham,Equity Bank: Scheduled maintenance on 2026-08-17 from 2AM-4AM. Services may be affected,equity bank: scheduled maintenance on 2026-08-17 from 2am-4am. services may be affected
+ham,Equity Bank: Scheduled maintenance on 2026-09-24 from 2AM-4AM. Services may be affected,equity bank: scheduled maintenance on 2026-09-24 from 2am-4am. services may be affected
+ham,Equity Bank: Scheduled maintenance on 2026-05-27 from 2AM-4AM. Services may be affected,equity bank: scheduled maintenance on 2026-05-27 from 2am-4am. services may be affected
+ham,Equity Bank: Scheduled maintenance on 2026-07-18 from 2AM-4AM. Services may be affected,equity bank: scheduled maintenance on 2026-07-18 from 2am-4am. services may be affected
+ham,FNB: Cash withdrawal of XOF2500 at agent AG4757. Ref: TXN616919,fnb: cash withdrawal of <MONEY> at agent ag4757. ref: txn616919
+ham,FNB: Cash withdrawal of TZS1000 at agent AG8452. Ref: TXN379007,fnb: cash withdrawal of <MONEY> at agent ag8452. ref: txn379007
+ham,FNB: Cash withdrawal of MZN2500 at agent AG9641. Ref: TXN215496,fnb: cash withdrawal of <MONEY> at agent ag9641. ref: txn215496
+ham,FNB: Cash withdrawal of ETB50 at agent AG5550. Ref: TXN469305,fnb: cash withdrawal of <MONEY> at agent ag5550. ref: txn469305
+ham,FNB: Cash withdrawal of RWF1000 at agent AG8395. Ref: TXN506215,fnb: cash withdrawal of <MONEY> at agent ag8395. ref: txn506215
+ham,FNB: Cash withdrawal of TZS10000 at agent AG5893. Ref: TXN714763,fnb: cash withdrawal of <MONEY> at agent ag5893. ref: txn714763
+ham,FNB: Cash withdrawal of UGX50 at agent AG2968. Ref: TXN108545,fnb: cash withdrawal of <MONEY> at agent ag2968. ref: txn108545
+ham,FNB: Cash withdrawal of MZN2500 at agent AG4984. Ref: TXN251021,fnb: cash withdrawal of <MONEY> at agent ag4984. ref: txn251021
+ham,FNB: Cash withdrawal of XOF5000 at agent AG7764. Ref: TXN320004,fnb: cash withdrawal of <MONEY> at agent ag7764. ref: txn320004
+ham,FNB: Cash withdrawal of ZMW50 at agent AG3597. Ref: TXN187988,fnb: cash withdrawal of <MONEY> at agent ag3597. ref: txn187988
+ham,FNB: Cash withdrawal of XOF100 at agent AG3117. Ref: TXN596983,fnb: cash withdrawal of <MONEY> at agent ag3117. ref: txn596983
+ham,FNB: Cash withdrawal of GHS500 at agent AG1188. Ref: TXN477042,fnb: cash withdrawal of <MONEY> at agent ag1188. ref: txn477042
+ham,FNB: Cash withdrawal of TZS100 at agent AG9770. Ref: TXN992357,fnb: cash withdrawal of <MONEY> at agent ag9770. ref: txn992357
+ham,FNB: Cash withdrawal of XAF5000 at agent AG1748. Ref: TXN968522,fnb: cash withdrawal of <MONEY> at agent ag1748. ref: txn968522
+ham,FNB: Cash withdrawal of ZMW1000 at agent AG4669. Ref: TXN519018,fnb: cash withdrawal of <MONEY> at agent ag4669. ref: txn519018
+ham,FNB: Cash withdrawal of UGX2500 at agent AG6716. Ref: TXN206368,fnb: cash withdrawal of <MONEY> at agent ag6716. ref: txn206368
+ham,FNB: Cash withdrawal of GHS100 at agent AG6757. Ref: TXN933451,fnb: cash withdrawal of <MONEY> at agent ag6757. ref: txn933451
+ham,FNB: Cash withdrawal of NGN100 at agent AG8349. Ref: TXN957407,fnb: cash withdrawal of <MONEY> at agent ag8349. ref: txn957407
+ham,FNB: Cash withdrawal of KES500 at agent AG2802. Ref: TXN829328,fnb: cash withdrawal of <MONEY> at agent ag2802. ref: txn829328
+ham,FNB: Cash withdrawal of XOF10000 at agent AG4890. Ref: TXN251074,fnb: cash withdrawal of <MONEY> at agent ag4890. ref: txn251074
+ham,FNB: Cash withdrawal of KES100 at agent AG6338. Ref: TXN642547,fnb: cash withdrawal of <MONEY> at agent ag6338. ref: txn642547
+ham,FNB: Cash withdrawal of XOF500 at agent AG9142. Ref: TXN315774,fnb: cash withdrawal of <MONEY> at agent ag9142. ref: txn315774
+ham,FNB: Cash withdrawal of ETB2500 at agent AG2927. Ref: TXN827962,fnb: cash withdrawal of <MONEY> at agent ag2927. ref: txn827962
+ham,FNB: Cash withdrawal of ETB5000 at agent AG2554. Ref: TXN515999,fnb: cash withdrawal of <MONEY> at agent ag2554. ref: txn515999
+ham,Welcome to Safaricom! Your account is now active. Dial *150*00# to get started,welcome to safaricom! your account is now active. dial *150*00# to get started
+ham,M-Pesa: Your transaction of UGX100 was successful. Ref: TXN739410,m-pesa: your transaction of <MONEY> was successful. ref: txn739410
+ham,M-Pesa: Your transaction of MZN2500 was successful. Ref: TXN985367,m-pesa: your transaction of <MONEY> was successful. ref: txn985367
+ham,M-Pesa: Your transaction of GHS5000 was successful. Ref: TXN541673,m-pesa: your transaction of <MONEY> was successful. ref: txn541673
+ham,M-Pesa: Your transaction of GHS200 was successful. Ref: TXN325445,m-pesa: your transaction of <MONEY> was successful. ref: txn325445
+ham,M-Pesa: Your transaction of ETB1000 was successful. Ref: TXN416575,m-pesa: your transaction of <MONEY> was successful. ref: txn416575
+ham,M-Pesa: Your transaction of RWF500 was successful. Ref: TXN234637,m-pesa: your transaction of <MONEY> was successful. ref: txn234637
+ham,M-Pesa: Your transaction of XOF500 was successful. Ref: TXN575682,m-pesa: your transaction of <MONEY> was successful. ref: txn575682
+ham,M-Pesa: Your transaction of TZS1000 was successful. Ref: TXN583620,m-pesa: your transaction of <MONEY> was successful. ref: txn583620
+ham,M-Pesa: Your transaction of TZS100 was successful. Ref: TXN147653,m-pesa: your transaction of <MONEY> was successful. ref: txn147653
+ham,M-Pesa: Your transaction of GHS100 was successful. Ref: TXN951909,m-pesa: your transaction of <MONEY> was successful. ref: txn951909
+ham,M-Pesa: Your transaction of MZN10000 was successful. Ref: TXN345041,m-pesa: your transaction of <MONEY> was successful. ref: txn345041
+ham,M-Pesa: Your transaction of ETB200 was successful. Ref: TXN874668,m-pesa: your transaction of <MONEY> was successful. ref: txn874668
+ham,M-Pesa: Your transaction of ZMW50 was successful. Ref: TXN238599,m-pesa: your transaction of <MONEY> was successful. ref: txn238599
+ham,M-Pesa: Your transaction of XOF5000 was successful. Ref: TXN179854,m-pesa: your transaction of <MONEY> was successful. ref: txn179854
+ham,M-Pesa: Your transaction of TZS2500 was successful. Ref: TXN742116,m-pesa: your transaction of <MONEY> was successful. ref: txn742116
+ham,M-Pesa: Your transaction of RWF5000 was successful. Ref: TXN557592,m-pesa: your transaction of <MONEY> was successful. ref: txn557592
+ham,M-Pesa: Your transaction of MZN5000 was successful. Ref: TXN602521,m-pesa: your transaction of <MONEY> was successful. ref: txn602521
+ham,M-Pesa: Your transaction of XOF100 was successful. Ref: TXN684731,m-pesa: your transaction of <MONEY> was successful. ref: txn684731
+ham,M-Pesa: Your transaction of ETB5000 was successful. Ref: TXN265047,m-pesa: your transaction of <MONEY> was successful. ref: txn265047
+ham,M-Pesa: Your transaction of RWF2500 was successful. Ref: TXN654886,m-pesa: your transaction of <MONEY> was successful. ref: txn654886
+ham,M-Pesa: Your transaction of MZN10000 was successful. Ref: TXN285150,m-pesa: your transaction of <MONEY> was successful. ref: txn285150
+ham,M-Pesa: Your transaction of ETB5000 was successful. Ref: TXN795186,m-pesa: your transaction of <MONEY> was successful. ref: txn795186
+ham,Welcome to M-Pesa! Your account is now active. Dial *384# to get started,welcome to m-pesa! your account is now active. dial *384# to get started
+ham,Welcome to M-Pesa! Your account is now active. Dial *334# to get started,welcome to m-pesa! your account is now active. dial *334# to get started
+ham,Welcome to M-Pesa! Your account is now active. Dial *737# to get started,welcome to m-pesa! your account is now active. dial *737# to get started
+ham,Welcome to M-Pesa! Your account is now active. Dial *182# to get started,welcome to m-pesa! your account is now active. dial *182# to get started
+ham,MTN: Your transaction of EGP200 was successful. Ref: TXN889392,mtn: your transaction of egp200 was successful. ref: txn889392
+ham,"Dear customer, M-Pesa rewards: You earned 93 points this month","dear customer, m-pesa rewards: you earned 93 points this month"
+ham,Airtel: Your account balance is XOF188875. Date: 2026-05-21,airtel: your account balance is <MONEY> . date: 2026-05-21
+ham,Airtel: Your account balance is KES74805. Date: 2026-05-12,airtel: your account balance is <MONEY> . date: 2026-05-12
+ham,Airtel: Your account balance is NGN346370. Date: 2026-07-23,airtel: your account balance is <MONEY> . date: 2026-07-23
+ham,Airtel: Your account balance is RWF79072. Date: 2026-04-25,airtel: your account balance is <MONEY> . date: 2026-04-25
+ham,Airtel: Your account balance is XAF264125. Date: 2026-05-10,airtel: your account balance is <MONEY> . date: 2026-05-10
+ham,Airtel: Your account balance is UGX26295. Date: 2026-05-26,airtel: your account balance is <MONEY> . date: 2026-05-26
+ham,Airtel: Your account balance is XAF320051. Date: 2026-09-13,airtel: your account balance is <MONEY> . date: 2026-09-13
+ham,Airtel: Your account balance is TZS5696. Date: 2026-01-12,airtel: your account balance is <MONEY> . date: 2026-01-12
+ham,Airtel: Your account balance is XOF147189. Date: 2026-08-15,airtel: your account balance is <MONEY> . date: 2026-08-15
+ham,Airtel: Your account balance is KES363443. Date: 2026-04-22,airtel: your account balance is <MONEY> . date: 2026-04-22
+ham,Airtel: Your account balance is ZAR147917. Date: 2026-09-22,airtel: your account balance is <MONEY> . date: 2026-09-22
+ham,Airtel: Your account balance is ZAR411840. Date: 2026-05-27,airtel: your account balance is <MONEY> . date: 2026-05-27
+ham,Airtel: Your account balance is GHS244998. Date: 2026-04-27,airtel: your account balance is <MONEY> . date: 2026-04-27
+ham,Airtel: Your account balance is XOF322292. Date: 2026-09-10,airtel: your account balance is <MONEY> . date: 2026-09-10
+ham,Airtel: Your account balance is TZS497057. Date: 2026-08-16,airtel: your account balance is <MONEY> . date: 2026-08-16
+ham,Airtel: Your account balance is GHS176368. Date: 2026-04-14,airtel: your account balance is <MONEY> . date: 2026-04-14
+ham,Airtel: Your account balance is ZMW170688. Date: 2026-04-11,airtel: your account balance is <MONEY> . date: 2026-04-11
+ham,Airtel: Your account balance is XOF273090. Date: 2026-07-27,airtel: your account balance is <MONEY> . date: 2026-07-27
+ham,Airtel: Your account balance is ZMW345885. Date: 2026-08-22,airtel: your account balance is <MONEY> . date: 2026-08-22
+ham,Airtel: Your account balance is RWF478960. Date: 2026-09-12,airtel: your account balance is <MONEY> . date: 2026-09-12
+ham,Airtel: Your account balance is GHS113815. Date: 2026-02-19,airtel: your account balance is <MONEY> . date: 2026-02-19
+ham,PalmPay: Cash withdrawal of EGP10000 at agent AG5220. Ref: TXN816856,palmpay: cash withdrawal of egp10000 at agent ag5220. ref: txn816856
+ham,GTBank: Cash withdrawal of EGP50 at agent AG8424. Ref: TXN344546,gtbank: cash withdrawal of egp50 at agent ag8424. ref: txn344546
+ham,MTN: Your transaction of GHS10000 was successful. Ref: TXN688242,mtn: your transaction of <MONEY> was successful. ref: txn688242
+ham,MTN: Your transaction of GHS10000 was successful. Ref: TXN894010,mtn: your transaction of <MONEY> was successful. ref: txn894010
+ham,MTN: Your transaction of GHS200 was successful. Ref: TXN128381,mtn: your transaction of <MONEY> was successful. ref: txn128381
+ham,MTN: Your transaction of ZMW5000 was successful. Ref: TXN468686,mtn: your transaction of <MONEY> was successful. ref: txn468686
+ham,MTN: Your transaction of MZN200 was successful. Ref: TXN144206,mtn: your transaction of <MONEY> was successful. ref: txn144206
+ham,MTN: Your transaction of ZAR10000 was successful. Ref: TXN241134,mtn: your transaction of <MONEY> was successful. ref: txn241134
+ham,MTN: Your transaction of ZAR1000 was successful. Ref: TXN170794,mtn: your transaction of <MONEY> was successful. ref: txn170794
+ham,MTN: Your transaction of GHS2500 was successful. Ref: TXN674004,mtn: your transaction of <MONEY> was successful. ref: txn674004
+ham,MTN: Your transaction of MZN1000 was successful. Ref: TXN386520,mtn: your transaction of <MONEY> was successful. ref: txn386520
+ham,MTN: Your transaction of XAF100 was successful. Ref: TXN699354,mtn: your transaction of <MONEY> was successful. ref: txn699354
+ham,MTN: Your transaction of KES5000 was successful. Ref: TXN363210,mtn: your transaction of <MONEY> was successful. ref: txn363210
+ham,MTN: Your transaction of USD5000 was successful. Ref: TXN633039,mtn: your transaction of <MONEY> was successful. ref: txn633039
+ham,MTN: Your transaction of RWF1000 was successful. Ref: TXN468557,mtn: your transaction of <MONEY> was successful. ref: txn468557
+ham,MTN: Your transaction of GHS50 was successful. Ref: TXN356622,mtn: your transaction of <MONEY> was successful. ref: txn356622
+ham,MTN: Your transaction of XOF500 was successful. Ref: TXN950140,mtn: your transaction of <MONEY> was successful. ref: txn950140
+ham,MTN: Your transaction of XOF500 was successful. Ref: TXN857962,mtn: your transaction of <MONEY> was successful. ref: txn857962
+ham,MTN: Your transaction of ZAR200 was successful. Ref: TXN954127,mtn: your transaction of <MONEY> was successful. ref: txn954127
+ham,MTN: Your transaction of ETB500 was successful. Ref: TXN565153,mtn: your transaction of <MONEY> was successful. ref: txn565153
+ham,MTN: Your transaction of TZS200 was successful. Ref: TXN425730,mtn: your transaction of <MONEY> was successful. ref: txn425730
+ham,MTN: Your transaction of ZAR500 was successful. Ref: TXN418861,mtn: your transaction of <MONEY> was successful. ref: txn418861
+ham,MTN: Your transaction of ZAR50 was successful. Ref: TXN320631,mtn: your transaction of <MONEY> was successful. ref: txn320631
+ham,MTN: Your transaction of UGX2500 was successful. Ref: TXN766800,mtn: your transaction of <MONEY> was successful. ref: txn766800
+ham,MTN: Your transaction of ZAR50 was successful. Ref: TXN973258,mtn: your transaction of <MONEY> was successful. ref: txn973258
+ham,MTN: Your transaction of ETB2500 was successful. Ref: TXN974026,mtn: your transaction of <MONEY> was successful. ref: txn974026
+ham,Standard Bank: Your loan of EGP5000 has been disbursed. Repay by 2026-08-21,standard bank: your loan of egp5000 has been disbursed. repay by 2026-08-21
+ham,Access Bank: Bill payment of NGN10000 to NAWEC confirmed. Ref: TXN313978,access bank: bill payment of <MONEY> to nawec confirmed. ref: txn313978
+ham,Equity Bank: Airtime of EGP1000 purchased successfully for +26043069836,equity bank: airtime of egp1000 purchased successfully for <PHONE>
+ham,Capitec: Your loan of TZS2500 has been disbursed. Repay by 2026-08-18,capitec: your loan of <MONEY> has been disbursed. repay by 2026-08-18
+ham,Capitec: Your loan of XOF2500 has been disbursed. Repay by 2026-03-12,capitec: your loan of <MONEY> has been disbursed. repay by 2026-03-12
+ham,Capitec: Your loan of GHS200 has been disbursed. Repay by 2026-07-24,capitec: your loan of <MONEY> has been disbursed. repay by 2026-07-24
+ham,Capitec: Your loan of XOF10000 has been disbursed. Repay by 2026-01-28,capitec: your loan of <MONEY> has been disbursed. repay by 2026-01-28
+ham,Capitec: Your loan of ZAR500 has been disbursed. Repay by 2026-05-17,capitec: your loan of <MONEY> has been disbursed. repay by 2026-05-17
+ham,Capitec: Your loan of KES5000 has been disbursed. Repay by 2026-07-27,capitec: your loan of <MONEY> has been disbursed. repay by 2026-07-27
+ham,Capitec: Your loan of ETB2500 has been disbursed. Repay by 2026-05-15,capitec: your loan of <MONEY> has been disbursed. repay by 2026-05-15
+ham,Capitec: Your loan of XOF1000 has been disbursed. Repay by 2026-07-13,capitec: your loan of <MONEY> has been disbursed. repay by 2026-07-13
+ham,Capitec: Your loan of RWF500 has been disbursed. Repay by 2026-03-18,capitec: your loan of <MONEY> has been disbursed. repay by 2026-03-18
+ham,Capitec: Your loan of RWF500 has been disbursed. Repay by 2026-06-17,capitec: your loan of <MONEY> has been disbursed. repay by 2026-06-17
+ham,Capitec: Your loan of NGN200 has been disbursed. Repay by 2026-05-12,capitec: your loan of <MONEY> has been disbursed. repay by 2026-05-12
+ham,Capitec: Your loan of KES50 has been disbursed. Repay by 2026-04-12,capitec: your loan of <MONEY> has been disbursed. repay by 2026-04-12
+ham,Capitec: Your loan of MZN5000 has been disbursed. Repay by 2026-01-11,capitec: your loan of <MONEY> has been disbursed. repay by 2026-01-11
+ham,Capitec: Your loan of NGN2500 has been disbursed. Repay by 2026-01-17,capitec: your loan of <MONEY> has been disbursed. repay by 2026-01-17
+ham,Vodacom: Cash withdrawal of EGP10000 at agent AG3381. Ref: TXN785936,vodacom: cash withdrawal of egp10000 at agent ag3381. ref: txn785936
+ham,FNB: Your account balance is XOF437667. Date: 2026-07-24,fnb: your account balance is <MONEY> . date: 2026-07-24
+ham,FNB: Your account balance is NGN8179. Date: 2026-08-21,fnb: your account balance is <MONEY> . date: 2026-08-21
+ham,FNB: Your account balance is TZS408653. Date: 2026-07-17,fnb: your account balance is <MONEY> . date: 2026-07-17
+ham,FNB: Your account balance is KES182639. Date: 2026-01-12,fnb: your account balance is <MONEY> . date: 2026-01-12
+ham,FNB: Your account balance is XOF213962. Date: 2026-09-18,fnb: your account balance is <MONEY> . date: 2026-09-18
+ham,FNB: Your account balance is ETB96698. Date: 2026-03-22,fnb: your account balance is <MONEY> . date: 2026-03-22
+ham,FNB: Your account balance is XOF96594. Date: 2026-01-26,fnb: your account balance is <MONEY> . date: 2026-01-26
+ham,FNB: Your account balance is XAF164532. Date: 2026-09-19,fnb: your account balance is <MONEY> . date: 2026-09-19
+ham,FNB: Your account balance is USD499814. Date: 2026-09-28,fnb: your account balance is <MONEY> . date: 2026-09-28
+ham,FNB: Your account balance is RWF435964. Date: 2026-08-11,fnb: your account balance is <MONEY> . date: 2026-08-11
+ham,FNB: Your account balance is MZN51763. Date: 2026-09-15,fnb: your account balance is <MONEY> . date: 2026-09-15
+ham,FNB: Your account balance is KES485028. Date: 2026-02-19,fnb: your account balance is <MONEY> . date: 2026-02-19
+ham,FNB: Your account balance is UGX489842. Date: 2026-07-28,fnb: your account balance is <MONEY> . date: 2026-07-28
+ham,FNB: Your account balance is RWF68638. Date: 2026-05-16,fnb: your account balance is <MONEY> . date: 2026-05-16
+ham,FNB: Your account balance is NGN17537. Date: 2026-07-11,fnb: your account balance is <MONEY> . date: 2026-07-11
+ham,FNB: Your account balance is MZN119782. Date: 2026-02-18,fnb: your account balance is <MONEY> . date: 2026-02-18
+ham,FNB: Your account balance is ZAR267145. Date: 2026-03-14,fnb: your account balance is <MONEY> . date: 2026-03-14
+ham,FNB: Your account balance is GHS271580. Date: 2026-02-27,fnb: your account balance is <MONEY> . date: 2026-02-27
+ham,FNB: Your account balance is TZS40358. Date: 2026-05-14,fnb: your account balance is <MONEY> . date: 2026-05-14
+ham,FNB: Your account balance is XOF499606. Date: 2026-05-19,fnb: your account balance is <MONEY> . date: 2026-05-19
+ham,FNB: Your account balance is TZS498286. Date: 2026-05-26,fnb: your account balance is <MONEY> . date: 2026-05-26
+ham,FNB: Your account balance is XOF97827. Date: 2026-08-15,fnb: your account balance is <MONEY> . date: 2026-08-15
+ham,FNB: Your account balance is TZS305602. Date: 2026-02-16,fnb: your account balance is <MONEY> . date: 2026-02-16
+ham,FNB: Your account balance is RWF496151. Date: 2026-04-16,fnb: your account balance is <MONEY> . date: 2026-04-16
+ham,FNB: Your account balance is KES423966. Date: 2026-01-23,fnb: your account balance is <MONEY> . date: 2026-01-23
+ham,"Dear customer, your Vodacom statement is ready. Log in to view","dear customer, your vodacom statement is ready. log in to view"
+ham,Welcome to Safaricom! Your account is now active. Dial *384# to get started,welcome to safaricom! your account is now active. dial *384# to get started
+ham,Welcome to Safaricom! Your account is now active. Dial *182# to get started,welcome to safaricom! your account is now active. dial *182# to get started
+ham,Welcome to Safaricom! Your account is now active. Dial *737# to get started,welcome to safaricom! your account is now active. dial *737# to get started
+ham,Welcome to Safaricom! Your account is now active. Dial *334# to get started,welcome to safaricom! your account is now active. dial *334# to get started
+ham,"Dear customer, your M-Pesa statement is ready. Log in to view","dear customer, your m-pesa statement is ready. log in to view"
+ham,PalmPay: Network upgrade in your area on 2026-06-21. Expect brief interruptions,palmpay: network upgrade in your area on 2026-06-21. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-05-21. Expect brief interruptions,palmpay: network upgrade in your area on 2026-05-21. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-04-17. Expect brief interruptions,palmpay: network upgrade in your area on 2026-04-17. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-07-10. Expect brief interruptions,palmpay: network upgrade in your area on 2026-07-10. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-02-17. Expect brief interruptions,palmpay: network upgrade in your area on 2026-02-17. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-03-18. Expect brief interruptions,palmpay: network upgrade in your area on 2026-03-18. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-02-10. Expect brief interruptions,palmpay: network upgrade in your area on 2026-02-10. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-01-21. Expect brief interruptions,palmpay: network upgrade in your area on 2026-01-21. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-01-28. Expect brief interruptions,palmpay: network upgrade in your area on 2026-01-28. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-04-12. Expect brief interruptions,palmpay: network upgrade in your area on 2026-04-12. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-04-20. Expect brief interruptions,palmpay: network upgrade in your area on 2026-04-20. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-09-28. Expect brief interruptions,palmpay: network upgrade in your area on 2026-09-28. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-09-10. Expect brief interruptions,palmpay: network upgrade in your area on 2026-09-10. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-09-12. Expect brief interruptions,palmpay: network upgrade in your area on 2026-09-12. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-03-28. Expect brief interruptions,palmpay: network upgrade in your area on 2026-03-28. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-08-27. Expect brief interruptions,palmpay: network upgrade in your area on 2026-08-27. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-09-21. Expect brief interruptions,palmpay: network upgrade in your area on 2026-09-21. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-04-16. Expect brief interruptions,palmpay: network upgrade in your area on 2026-04-16. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-02-18. Expect brief interruptions,palmpay: network upgrade in your area on 2026-02-18. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-04-18. Expect brief interruptions,palmpay: network upgrade in your area on 2026-04-18. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-09-14. Expect brief interruptions,palmpay: network upgrade in your area on 2026-09-14. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-05-24. Expect brief interruptions,palmpay: network upgrade in your area on 2026-05-24. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-02-25. Expect brief interruptions,palmpay: network upgrade in your area on 2026-02-25. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-06-19. Expect brief interruptions,palmpay: network upgrade in your area on 2026-06-19. expect brief interruptions
+ham,PalmPay: Network upgrade in your area on 2026-07-27. Expect brief interruptions,palmpay: network upgrade in your area on 2026-07-27. expect brief interruptions
+ham,"Dear customer, GTBank rewards: You earned 63 points this month","dear customer, gtbank rewards: you earned 63 points this month"
+ham,Happy birthday! FNB wishes you a wonderful day. Enjoy special offers,happy birthday! fnb wishes you a wonderful day. enjoy special offers
+ham,MTN: Airtime of RWF200 purchased successfully for +24979464840,mtn: airtime of <MONEY> purchased successfully for <PHONE>
+ham,"Dear customer, Standard Bank rewards: You earned 804 points this month","dear customer, standard bank rewards: you earned 804 points this month"
+ham,"Dear customer, Standard Bank rewards: You earned 375 points this month","dear customer, standard bank rewards: you earned 375 points this month"
+ham,Standard Bank: Bill payment of NGN5000 to TANESCO confirmed. Ref: TXN749059,standard bank: bill payment of <MONEY> to tanesco confirmed. ref: txn749059
+ham,Standard Bank: Bill payment of KES100 to TANESCO confirmed. Ref: TXN821887,standard bank: bill payment of <MONEY> to tanesco confirmed. ref: txn821887
+ham,OPay: Bill payment of UGX50 to KPLC confirmed. Ref: TXN847063,opay: bill payment of <MONEY> to kplc confirmed. ref: txn847063
+ham,OPay: Bill payment of ZAR10000 to KPLC confirmed. Ref: TXN863878,opay: bill payment of <MONEY> to kplc confirmed. ref: txn863878
+ham,OPay: Bill payment of XOF2500 to KPLC confirmed. Ref: TXN782591,opay: bill payment of <MONEY> to kplc confirmed. ref: txn782591
+ham,OPay: Bill payment of XAF2500 to KPLC confirmed. Ref: TXN230419,opay: bill payment of <MONEY> to kplc confirmed. ref: txn230419
+ham,KCB: Bill payment of USD100 to Eskom confirmed. Ref: TXN517035,kcb: bill payment of <MONEY> to eskom confirmed. ref: txn517035
+ham,KCB: Bill payment of ETB5000 to Eskom confirmed. Ref: TXN768695,kcb: bill payment of <MONEY> to eskom confirmed. ref: txn768695
+ham,KCB: Bill payment of GHS50 to Eskom confirmed. Ref: TXN853026,kcb: bill payment of <MONEY> to eskom confirmed. ref: txn853026
+ham,KCB: Bill payment of NGN100 to Eskom confirmed. Ref: TXN598991,kcb: bill payment of <MONEY> to eskom confirmed. ref: txn598991
+ham,KCB: Bill payment of KES1000 to Eskom confirmed. Ref: TXN538811,kcb: bill payment of <MONEY> to eskom confirmed. ref: txn538811
+ham,KCB: Bill payment of NGN1000 to Eskom confirmed. Ref: TXN946445,kcb: bill payment of <MONEY> to eskom confirmed. ref: txn946445
+ham,KCB: Bill payment of XOF2500 to Eskom confirmed. Ref: TXN830138,kcb: bill payment of <MONEY> to eskom confirmed. ref: txn830138
+ham,You have received EGP2500 from Ngozi. New balance: EGP86392. Ref: TXN330393,you have received egp2500 from ngozi. new balance: egp86392. ref: txn330393
+ham,M-Pesa: Payment reminder. Your bill of EGP1000 is due on 2026-07-12,m-pesa: payment reminder. your bill of egp1000 is due on 2026-07-12
+ham,M-Pesa: Payment reminder. Your bill of EGP5000 is due on 2026-03-28,m-pesa: payment reminder. your bill of egp5000 is due on 2026-03-28
+ham,Orange: Your OTP is 505905. Valid for 5 minutes. Do not share with anyone,orange: your otp is 505905. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 391587. Valid for 5 minutes. Do not share with anyone,orange: your otp is 391587. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 995296. Valid for 5 minutes. Do not share with anyone,orange: your otp is 995296. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 147925. Valid for 5 minutes. Do not share with anyone,orange: your otp is 147925. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 657230. Valid for 5 minutes. Do not share with anyone,orange: your otp is 657230. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 645793. Valid for 5 minutes. Do not share with anyone,orange: your otp is 645793. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 246081. Valid for 5 minutes. Do not share with anyone,orange: your otp is 246081. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 386998. Valid for 5 minutes. Do not share with anyone,orange: your otp is 386998. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 878111. Valid for 5 minutes. Do not share with anyone,orange: your otp is 878111. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 271139. Valid for 5 minutes. Do not share with anyone,orange: your otp is 271139. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 754047. Valid for 5 minutes. Do not share with anyone,orange: your otp is 754047. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 766721. Valid for 5 minutes. Do not share with anyone,orange: your otp is 766721. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 470858. Valid for 5 minutes. Do not share with anyone,orange: your otp is 470858. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 769077. Valid for 5 minutes. Do not share with anyone,orange: your otp is 769077. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 812074. Valid for 5 minutes. Do not share with anyone,orange: your otp is 812074. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 555076. Valid for 5 minutes. Do not share with anyone,orange: your otp is 555076. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 174018. Valid for 5 minutes. Do not share with anyone,orange: your otp is 174018. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 237400. Valid for 5 minutes. Do not share with anyone,orange: your otp is 237400. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 707700. Valid for 5 minutes. Do not share with anyone,orange: your otp is 707700. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 642232. Valid for 5 minutes. Do not share with anyone,orange: your otp is 642232. valid for 5 minutes. do not share with anyone
+ham,Orange: Your OTP is 522905. Valid for 5 minutes. Do not share with anyone,orange: your otp is 522905. valid for 5 minutes. do not share with anyone
+ham,Airtel: Your transaction of EGP200 was successful. Ref: TXN310351,airtel: your transaction of egp200 was successful. ref: txn310351
+ham,PalmPay: Bill payment of EGP50 to KPLC confirmed. Ref: TXN426053,palmpay: bill payment of egp50 to kplc confirmed. ref: txn426053
+spam,Equity Bank NOTICE: Refund of MZN10000 pending. Verify bank details: update-account.equitybank.co/wsfdib,equity bank notice: refund of <MONEY> pending. verify bank details: <URL>
+spam,Your SARS card ending 9992 has been compromised. Secure your account: verify-sars.com/lm10ps,your sars card ending 9992 has been compromised. secure your account: <URL>
+spam,Your SARS card ending 3311 has been compromised. Secure your account: update-account.sars.co/p7mtjl,your sars card ending 3311 has been compromised. secure your account: <URL>
+spam,Your SARS card ending 8458 has been compromised. Secure your account: verify-sars.com/brqit4,your sars card ending 8458 has been compromised. secure your account: <URL>
+spam,Your SARS card ending 6482 has been compromised. Secure your account: sars-alert.com/verify,your sars card ending 6482 has been compromised. secure your account: <URL>
+spam,Your SARS card ending 9629 has been compromised. Secure your account: tinyurl.com/ycyjiv,your sars card ending 9629 has been compromised. secure your account: <URL>
+spam,Your SARS card ending 8246 has been compromised. Secure your account: update-account.sars.co/wzbwmu,your sars card ending 8246 has been compromised. secure your account: <URL>
+spam,Your SARS card ending 5161 has been compromised. Secure your account: verify-sars.com/5d5afq,your sars card ending 5161 has been compromised. secure your account: <URL>
+spam,Your SARS card ending 6952 has been compromised. Secure your account: bit.ly/3xbgytw6,your sars card ending 6952 has been compromised. secure your account: <URL>
+spam,"Dear WhatsApp user, your wallet is locked. Send PIN to +23489162580 to unlock","dear whatsapp user, your wallet is locked. send pin to <PHONE> to unlock"
+spam,Your loan of KES1000 has been approved by Capitec. Accept: bit.ly/3xa2litz,your loan of <MONEY> has been approved by capitec. accept: <URL>
+spam,Instant loan! Get UGX5000 in minutes from Equity Bank. Processing fee UGX500,instant loan! get <MONEY> in minutes from equity bank. processing fee <MONEY>
+spam,PalmPay: Social grant payment of KES5000 ready. Verify: palmpay-alert.com/verify,palmpay: social grant payment of <MONEY> ready. verify: <URL>
+spam,Your OPay SIM will be deactivated in 48hrs. Verify identity: secure-opay.net/wo0rq2,your opay sim will be deactivated in 48hrs. verify identity: <URL>
+spam,CONGRATULATIONS! You won MZN100000 in the PalmPay monthly draw! Claim: palmpay-alert.com/verify,congratulations! you won <MONEY> in the palmpay monthly draw! claim: <URL>
+spam,WARNING: Your FNB account will be suspended. Update details immediately: secure-fnb.net/apqjfc,warning: your fnb account will be suspended. update details immediately: <URL>
+spam,Safaricom ALERT: Someone tried to access your wallet. Confirm PIN to secure account,safaricom alert: someone tried to access your wallet. confirm pin to secure account
+spam,WARNING: Your WhatsApp account will be suspended. Update details immediately: whatsapp-alert.com/verify,warning: your whatsapp account will be suspended. update details immediately: <URL>
+spam,Your MTN card ending 9285 has been compromised. Secure your account: verify-mtn.com/zup68c,your mtn card ending 9285 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 2507 has been compromised. Secure your account: update-account.mtn.co/wxmtrb,your mtn card ending 2507 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 2599 has been compromised. Secure your account: secure-mtn.net/bzs119,your mtn card ending 2599 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 7646 has been compromised. Secure your account: tinyurl.com/a9wsl4,your mtn card ending 7646 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 4393 has been compromised. Secure your account: mtn-alert.com/verify,your mtn card ending 4393 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 1226 has been compromised. Secure your account: mtn-alert.com/verify,your mtn card ending 1226 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 3732 has been compromised. Secure your account: bit.ly/3xcewhc0,your mtn card ending 3732 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 7858 has been compromised. Secure your account: bit.ly/3xobdc4i,your mtn card ending 7858 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 9023 has been compromised. Secure your account: bit.ly/3xoaflkt,your mtn card ending 9023 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 3211 has been compromised. Secure your account: verify-mtn.com/kle1tl,your mtn card ending 3211 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 3651 has been compromised. Secure your account: mtn-alert.com/verify,your mtn card ending 3651 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 4845 has been compromised. Secure your account: t.me/w590z9,your mtn card ending 4845 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 3224 has been compromised. Secure your account: secure-mtn.net/4084w5,your mtn card ending 3224 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 9699 has been compromised. Secure your account: t.me/hg6189,your mtn card ending 9699 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 5805 has been compromised. Secure your account: update-account.mtn.co/8t6eqj,your mtn card ending 5805 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 7226 has been compromised. Secure your account: mtn-alert.com/verify,your mtn card ending 7226 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 6336 has been compromised. Secure your account: tinyurl.com/25lptr,your mtn card ending 6336 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 8587 has been compromised. Secure your account: mtn-alert.com/verify,your mtn card ending 8587 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 3689 has been compromised. Secure your account: verify-mtn.com/25o92o,your mtn card ending 3689 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 3828 has been compromised. Secure your account: bit.ly/3xnstgf7,your mtn card ending 3828 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 6834 has been compromised. Secure your account: bit.ly/3xwcw6yr,your mtn card ending 6834 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 1581 has been compromised. Secure your account: bit.ly/3xj0vbo7,your mtn card ending 1581 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 2548 has been compromised. Secure your account: update-account.mtn.co/i6r81p,your mtn card ending 2548 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 7520 has been compromised. Secure your account: verify-mtn.com/r19bu6,your mtn card ending 7520 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 1430 has been compromised. Secure your account: secure-mtn.net/y2wngq,your mtn card ending 1430 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 4952 has been compromised. Secure your account: mtn-alert.com/verify,your mtn card ending 4952 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 6248 has been compromised. Secure your account: mtn-alert.com/verify,your mtn card ending 6248 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 5952 has been compromised. Secure your account: tinyurl.com/edm228,your mtn card ending 5952 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 7754 has been compromised. Secure your account: verify-mtn.com/s3mgvv,your mtn card ending 7754 has been compromised. secure your account: <URL>
+spam,Your MTN card ending 9602 has been compromised. Secure your account: update-account.mtn.co/1wdj99,your mtn card ending 9602 has been compromised. secure your account: <URL>
+spam,Capitec: Social grant payment of UGX1000 ready. Verify: tinyurl.com/nekanz,capitec: social grant payment of <MONEY> ready. verify: <URL>
+spam,"FIRS: Unusual transaction of TZS2500 detected. If not you, click: bit.ly/3xyrc00z","firs: unusual transaction of <MONEY> detected. if not you, click: <URL>"
+spam,"Dear PalmPay user, your wallet is locked. Send PIN to +26323976377 to unlock","dear palmpay user, your wallet is locked. send pin to <PHONE> to unlock"
+spam,JOB ALERT: Vodacom is hiring. Earn ZAR25000/week. Apply: t.me/rjfb5x,job alert: vodacom is hiring. earn <MONEY> /week. apply: <URL>
+spam,Work from home opportunity! DHL needs online agents. Fee: GHS1000,work from home opportunity! dhl needs online agents. fee: <MONEY>
+spam,"Dear Customer, your OPay account has been flagged for suspicious activity. Verify now: bit.ly/3xal44lo","dear customer, your opay account has been flagged for suspicious activity. verify now: <URL>"
+spam,Airtel: Package delivery failed. Reschedule and pay EGP1000: t.me/q9v98o,airtel: package delivery failed. reschedule and pay egp1000: <URL>
+spam,"Access Bank: Unusual transaction of KES10000 detected. If not you, click: bit.ly/3xitkal8","access bank: unusual transaction of <MONEY> detected. if not you, click: <URL>"
+spam,Your Unknown SIM will be deactivated in 48hrs. Verify identity: update-account.unknown.co/mtkz2i,your unknown sim will be deactivated in 48hrs. verify identity: <URL>
+spam,Your FNB SIM will be deactivated in 48hrs. Verify identity: verify-fnb.com/labeha,your fnb sim will be deactivated in 48hrs. verify identity: <URL>
+spam,WhatsApp: Your mobile money account needs verification. Reply with your PIN to confirm,whatsapp: your mobile money account needs verification. reply with your pin to confirm
+spam,Vodacom: Pre-approved loan of NGN2500 at 2% interest. Apply: update-account.vodacom.co/98kobp,vodacom: pre-approved loan of <MONEY> at 2% interest. apply: <URL>
+spam,"Dear winner, collect your EGP1000000 reward. Registration fee: EGP50","dear winner, collect your egp1000000 reward. registration fee: egp50"
+spam,Your Equity Bank transaction of EGP10000 failed. Resend PIN to complete,your equity bank transaction of egp10000 failed. resend pin to complete
+spam,WARNING: Your MTN account will be suspended. Update details immediately: bit.ly/3x8a9kep,warning: your mtn account will be suspended. update details immediately: <URL>
+spam,Airtel: Social grant payment of KES500 ready. Verify: tinyurl.com/yiir41,airtel: social grant payment of <MONEY> ready. verify: <URL>
+spam,"FNB: Unusual transaction of KES1000 detected. If not you, click: tinyurl.com/5l5n00","fnb: unusual transaction of <MONEY> detected. if not you, click: <URL>"
+spam,Access Bank: You won free ZMW5000 airtime! Redeem code: verify-accessbank.com/l4y4om,access bank: you won free <MONEY> airtime! redeem code: <URL>
+spam,Unknown: You won free KES50000 airtime! Redeem code: tinyurl.com/3nppmh,unknown: you won free <MONEY> airtime! redeem code: <URL>
+spam,"Orange: Unusual transaction of EGP5000 detected. If not you, click: update-account.orange.co/as3vbc","orange: unusual transaction of egp5000 detected. if not you, click: <URL>"
+spam,Your parcel from KRA is held at customs. Pay NGN100 clearance: tinyurl.com/52rb3b,your parcel from kra is held at customs. pay <MONEY> clearance: <URL>
+spam,Your Equity Bank SIM will be deactivated in 48hrs. Verify identity: bit.ly/3xn6kvpu,your equity bank sim will be deactivated in 48hrs. verify identity: <URL>
+spam,"PalmPay: Unusual transaction of KES25000 detected. If not you, click: secure-palmpay.net/ma1024","palmpay: unusual transaction of <MONEY> detected. if not you, click: <URL>"
+spam,"Standard Bank: Unusual transaction of ZMW25000 detected. If not you, click: verify-standardbank.com/py3lqr","standard bank: unusual transaction of <MONEY> detected. if not you, click: <URL>"
+spam,Work from home opportunity! OPay needs online agents. Fee: ZMW200,work from home opportunity! opay needs online agents. fee: <MONEY>
+spam,SARS ALERT: Someone tried to access your wallet. Confirm PIN to secure account,sars alert: someone tried to access your wallet. confirm pin to secure account
+spam,WARNING: Your Standard Bank account will be suspended. Update details immediately: update-account.standardbank.co/cgrwji,warning: your standard bank account will be suspended. update details immediately: <URL>
+spam,Your loan of TZS25000 has been approved by Vodacom. Accept: verify-vodacom.com/2xxdmm,your loan of <MONEY> has been approved by vodacom. accept: <URL>
+spam,"MTN: Unusual transaction of GHS1000 detected. If not you, click: t.me/p5rwc2","mtn: unusual transaction of <MONEY> detected. if not you, click: <URL>"
+spam,Your loan of ZMW5000 has been approved by DHL. Accept: t.me/adxdf2,your loan of <MONEY> has been approved by dhl. accept: <URL>
+spam,KRA: Package delivery failed. Reschedule and pay UGX100: update-account.kra.co/cg2key,kra: package delivery failed. reschedule and pay <MONEY> : <URL>
+spam,Access Bank: Your mobile money account needs verification. Reply with your PIN to confirm,access bank: your mobile money account needs verification. reply with your pin to confirm
+spam,CONGRATULATIONS! You won KES50000 in the Airtel monthly draw! Claim: bit.ly/3xe3zdjy,congratulations! you won <MONEY> in the airtel monthly draw! claim: <URL>
+spam,Work from home opportunity! Standard Bank needs online agents. Fee: KES50,work from home opportunity! standard bank needs online agents. fee: <MONEY>
+spam,FIRS PROMO: Your number won TZS100000! Reply YES to claim your prize,firs promo: your number won <MONEY> ! reply yes to claim your prize
+spam,BONUS: Capitec is giving XOF50000 airtime to loyal customers. Claim: update-account.capitec.co/8d5l8v,bonus: capitec is giving <MONEY> airtime to loyal customers. claim: <URL>
+spam,Instant loan! Get NGN1000 in minutes from OPay. Processing fee NGN500,instant loan! get <MONEY> in minutes from opay. processing fee <MONEY>
+spam,Work from home opportunity! Safaricom needs online agents. Fee: EGP500,work from home opportunity! safaricom needs online agents. fee: egp500
+spam,Work from home opportunity! Safaricom needs online agents. Fee: EGP200,work from home opportunity! safaricom needs online agents. fee: egp200
+spam,BONUS: Standard Bank is giving NGN2500 airtime to loyal customers. Claim: standardbank-alert.com/verify,bonus: standard bank is giving <MONEY> airtime to loyal customers. claim: <URL>
+spam,Standard Bank: You won free NGN50000 airtime! Redeem code: standardbank-alert.com/verify,standard bank: you won free <MONEY> airtime! redeem code: <URL>
+spam,JOB ALERT: Capitec is hiring. Earn ETB1000/week. Apply: tinyurl.com/6coenw,job alert: capitec is hiring. earn <MONEY> /week. apply: <URL>
+spam,URGENT: Standard Bank account will be blocked in 24hrs. Click to verify: verify-standardbank.com/q97rcq,urgent: standard bank account will be blocked in 24hrs. click to verify: <URL>
+spam,URGENT: Vodacom account will be blocked in 24hrs. Click to verify: vodacom-alert.com/verify,urgent: vodacom account will be blocked in 24hrs. click to verify: <URL>
+spam,PalmPay: Package delivery failed. Reschedule and pay MZN100: verify-palmpay.com/0rkqxj,palmpay: package delivery failed. reschedule and pay <MONEY> : <URL>
+spam,Instant loan! Get ZAR2500 in minutes from M-Pesa. Processing fee ZAR100,instant loan! get <MONEY> in minutes from m-pesa. processing fee <MONEY>
+spam,"KCB: Unusual transaction of NGN10000 detected. If not you, click: t.me/f20355","kcb: unusual transaction of <MONEY> detected. if not you, click: <URL>"
+spam,OPay: Update your NIN/ID registration to avoid SIM deactivation: update-account.opay.co/pfsefx,opay: update your nin/id registration to avoid sim deactivation: <URL>
+spam,PalmPay: Pre-approved loan of ZAR1000 at 2% interest. Apply: palmpay-alert.com/verify,palmpay: pre-approved loan of <MONEY> at 2% interest. apply: <URL>
+spam,Airtel: Pre-approved loan of TZS10000 at 2% interest. Apply: tinyurl.com/xnx4sn,airtel: pre-approved loan of <MONEY> at 2% interest. apply: <URL>
+spam,Airtel: You are eligible for a tax refund of ETB5000. Submit details: tinyurl.com/o56rx1,airtel: you are eligible for a tax refund of <MONEY> . submit details: <URL>
+spam,Your Standard Bank card ending 5025 has been compromised. Secure your account: verify-standardbank.com/g5kgov,your standard bank card ending 5025 has been compromised. secure your account: <URL>
+spam,Your Standard Bank card ending 8240 has been compromised. Secure your account: tinyurl.com/p4di9s,your standard bank card ending 8240 has been compromised. secure your account: <URL>
+spam,Your Standard Bank card ending 9888 has been compromised. Secure your account: bit.ly/3xnsrd1b,your standard bank card ending 9888 has been compromised. secure your account: <URL>
+spam,Your Standard Bank card ending 7288 has been compromised. Secure your account: bit.ly/3xjwomr2,your standard bank card ending 7288 has been compromised. secure your account: <URL>
+spam,Your Standard Bank card ending 8466 has been compromised. Secure your account: standardbank-alert.com/verify,your standard bank card ending 8466 has been compromised. secure your account: <URL>
+spam,Your Standard Bank card ending 5177 has been compromised. Secure your account: secure-standardbank.net/i6qgcm,your standard bank card ending 5177 has been compromised. secure your account: <URL>
+spam,Your Standard Bank card ending 8839 has been compromised. Secure your account: bit.ly/3xbcpegt,your standard bank card ending 8839 has been compromised. secure your account: <URL>
+spam,Your Standard Bank card ending 8085 has been compromised. Secure your account: update-account.standardbank.co/pydro6,your standard bank card ending 8085 has been compromised. secure your account: <URL>
+spam,Your Standard Bank card ending 7416 has been compromised. Secure your account: t.me/qyskfg,your standard bank card ending 7416 has been compromised. secure your account: <URL>
+spam,Your Standard Bank card ending 5769 has been compromised. Secure your account: verify-standardbank.com/78997j,your standard bank card ending 5769 has been compromised. secure your account: <URL>
+spam,Your Standard Bank card ending 6258 has been compromised. Secure your account: standardbank-alert.com/verify,your standard bank card ending 6258 has been compromised. secure your account: <URL>
+spam,MTN: Package delivery failed. Reschedule and pay UGX50: t.me/yjr76m,mtn: package delivery failed. reschedule and pay <MONEY> : <URL>
+spam,Invest KES200 and earn KES2500 daily with Capitec: update-account.capitec.co/cjsoc5,invest <MONEY> and earn <MONEY> daily with capitec: <URL>
+spam,Your Capitec SIM will be deactivated in 48hrs. Verify identity: tinyurl.com/h376zu,your capitec sim will be deactivated in 48hrs. verify identity: <URL>
+spam,OPay ALERT: Someone tried to access your wallet. Confirm PIN to secure account,opay alert: someone tried to access your wallet. confirm pin to secure account
+spam,BONUS: DHL is giving KES5000 airtime to loyal customers. Claim: bit.ly/3x9mxmz3,bonus: dhl is giving <MONEY> airtime to loyal customers. claim: <URL>
+spam,DHL: Pre-approved loan of NGN10000 at 2% interest. Apply: tinyurl.com/o1pob7,dhl: pre-approved loan of <MONEY> at 2% interest. apply: <URL>
+spam,GOVT NOTICE: Your national ID needs renewal. Register online: tinyurl.com/1zj9ll,govt notice: your national id needs renewal. register online: <URL>
+spam,Safaricom: Double your money in 24hrs. Min deposit GHS500: secure-safaricom.net/scumd2,safaricom: double your money in 24hrs. min deposit <MONEY> : <URL>
+spam,Instant loan! Get ZAR25000 in minutes from PalmPay. Processing fee ZAR100,instant loan! get <MONEY> in minutes from palmpay. processing fee <MONEY>
+spam,Your loan of NGN5000 has been approved by KCB. Accept: verify-kcb.com/ea4kpv,your loan of <MONEY> has been approved by kcb. accept: <URL>
+spam,Airtel: Your mobile money account needs verification. Reply with your PIN to confirm,airtel: your mobile money account needs verification. reply with your pin to confirm
+spam,URGENT: Airtel account will be blocked in 24hrs. Click to verify: tinyurl.com/70ikjt,urgent: airtel account will be blocked in 24hrs. click to verify: <URL>
+spam,Your parcel from Access Bank is held at customs. Pay NGN50 clearance: bit.ly/3xpkvr5p,your parcel from access bank is held at customs. pay <MONEY> clearance: <URL>
+spam,Your parcel from Standard Bank is held at customs. Pay TZS200 clearance: standardbank-alert.com/verify,your parcel from standard bank is held at customs. pay <MONEY> clearance: <URL>
+spam,DHL: Social grant payment of NGN2500 ready. Verify: verify-dhl.com/fxoms9,dhl: social grant payment of <MONEY> ready. verify: <URL>
+spam,URGENT: Unknown account will be blocked in 24hrs. Click to verify: tinyurl.com/4mfr89,urgent: unknown account will be blocked in 24hrs. click to verify: <URL>
+spam,PalmPay NOTICE: Refund of NGN5000 pending. Verify bank details: palmpay-alert.com/verify,palmpay notice: refund of <MONEY> pending. verify bank details: <URL>

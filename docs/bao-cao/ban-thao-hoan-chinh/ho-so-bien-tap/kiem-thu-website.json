@@ -1,0 +1,60 @@
+{
+  "model_kind": "transformer",
+  "model_dir": "models\\transformer\\demo_checkpoint",
+  "cases": [
+    {
+      "case": "GET",
+      "status": 200,
+      "shows_empty_error": false,
+      "shows_length_error": false,
+      "classify_result": null,
+      "label_in_html": null
+    },
+    {
+      "case": "POST spam",
+      "status": 200,
+      "shows_empty_error": false,
+      "shows_length_error": false,
+      "classify_result": [
+        "SPAM",
+        0.9591524004936218
+      ],
+      "label_in_html": "SPAM"
+    },
+    {
+      "case": "POST ham",
+      "status": 200,
+      "shows_empty_error": false,
+      "shows_length_error": false,
+      "classify_result": [
+        "HAM",
+        0.0016384848859161139
+      ],
+      "label_in_html": "HAM"
+    },
+    {
+      "case": "POST empty",
+      "status": 200,
+      "shows_empty_error": true,
+      "shows_length_error": false,
+      "classify_result": null,
+      "label_in_html": null
+    },
+    {
+      "case": "POST missing field",
+      "status": 200,
+      "shows_empty_error": true,
+      "shows_length_error": false,
+      "classify_result": null,
+      "label_in_html": null
+    },
+    {
+      "case": "POST too long",
+      "status": 200,
+      "shows_empty_error": false,
+      "shows_length_error": true,
+      "classify_result": null,
+      "label_in_html": null
+    }
+  ]
+}
