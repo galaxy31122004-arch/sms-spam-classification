@@ -10,8 +10,10 @@ from __future__ import annotations
 import argparse
 import csv
 import difflib
+import io
 import json
 import re
+import zipfile
 from collections import Counter
 from pathlib import Path
 
@@ -26,10 +28,16 @@ def letters_key(text: str) -> str:
 
 
 def read_mendeley(path: Path) -> list[dict[str, str]]:
+    """Read Dataset_5971.csv directly or from the Mendeley zip that contains it."""
+    if path.suffix.lower() == ".zip":
+        with zipfile.ZipFile(path) as archive:
+            name = next(item for item in archive.namelist() if item.lower().endswith(".csv"))
+            data = archive.read(name)
+    else:
+        data = path.read_bytes()
     for encoding in ("utf-8-sig", "cp1252"):
         try:
-            with path.open(encoding=encoding, newline="") as source:
-                return list(csv.DictReader(source))
+            return list(csv.DictReader(io.StringIO(data.decode(encoding), newline="")))
         except UnicodeDecodeError:
             continue
     raise ValueError(f"Cannot decode {path}")
@@ -37,7 +45,8 @@ def read_mendeley(path: Path) -> list[dict[str, str]]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--input", type=Path, required=True, help="Dataset_5971.csv from Mendeley")
+    parser.add_argument("--input", type=Path, default=PROJECT_ROOT / "data/raw/mendeley_sms_phishing_5971.zip",
+                        help="Mendeley Dataset_5971.zip or the extracted Dataset_5971.csv")
     parser.add_argument("--output", type=Path, default=PROJECT_ROOT / "data/splits/test_external.csv")
     args = parser.parse_args()
 

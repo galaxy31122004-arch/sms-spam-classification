@@ -7,6 +7,8 @@ AGENTS.md, CLAUDE.md              Quy tắc chung và tệp trỏ
 README.md, PLAN.md                Chỉ dẫn và kế hoạch benchmark
 data/
   raw/spam.csv                   SMS Spam Collection cục bộ
+  raw/africa_smish_raw.jsonl     10.000 SMS tổng hợp africa-smishing [17]
+  raw/mendeley_sms_phishing_5971.zip  Bộ Mendeley SMS Phishing [18]
   splits/train_base.csv          3.900 SMS UCI, train của kết quả chính
   splits/train.csv               7.806 SMS = train_base + 3.906 tin tổng hợp
   splits/val.csv                 836 SMS
@@ -18,6 +20,7 @@ data/
   prepare_data.py                Chuẩn hóa, đọc CSV, chia nhóm
   augment_smishing.py            Sinh lại text, thêm dữ liệu tổng hợp
   build_external_test.py         Tạo test ngoài nguồn từ bộ Mendeley
+  fetch_africa_smishing.py       Tải lại africa-smishing từ Hugging Face
 models/
   common.py                      Biểu diễn, mạng, train, load checkpoint
   {mlp,lstm,transformer}/train.py
@@ -34,6 +37,7 @@ eval/
 tests/
   test_prepare_data.py           Test chuẩn hóa, đọc CSV, chia nhóm
   test_benchmark.py              Test model, metric, latency, report
+  test_augmentation.py           Test chia template, đọc zip, --train-file
 app.py                           Ứng dụng Flask dùng Transformer
 templates/index.html             Biểu mẫu và vùng kết quả Jinja
 start_website.bat                Khởi chạy bằng eval/.venv hoặc .venv
@@ -84,17 +88,19 @@ Mọi lệnh dưới đây đã được chạy thành công trên máy nêu ở
 
 ```powershell
 py -3.11 eval/setup_env.py
-.\eval\.venv\Scripts\python.exe -m pip install flask
 ```
+
+`eval/requirements.txt` gồm cả Flask cho website.
 
 ### C.2. Chuẩn bị dữ liệu bổ sung
 
 ```powershell
-.\eval\.venv\Scripts\python.exe data/augment_smishing.py --input <africa_smish_raw.jsonl> --apply
-.\eval\.venv\Scripts\python.exe data/build_external_test.py --input <Dataset_5971.csv>
+.\eval\.venv\Scripts\python.exe data/fetch_africa_smishing.py
+.\eval\.venv\Scripts\python.exe data/augment_smishing.py --apply
+.\eval\.venv\Scripts\python.exe data/build_external_test.py
 ```
 
-`augment_smishing.py` chạy ở chế độ xem thử nếu không có `--apply`, sao lưu split trước khi ghi và từ chối chạy lần hai khi đã có manifest. Tệp đầu vào được tải từ nguồn [17], [18].
+Dữ liệu thô từ nguồn [17], [18] đã có trong `data/raw/` (`africa_smish_raw.jsonl`, `mendeley_sms_phishing_5971.zip`), nên lệnh tải đầu tiên chỉ cần khi muốn lấy lại từ Hugging Face. `augment_smishing.py` chạy ở chế độ xem thử nếu không có `--apply`, sao lưu split trước khi ghi và từ chối chạy lần hai khi đã có manifest. Chạy lại `build_external_test.py` từ tệp zip trong repo cho ra `test_external.csv` giống hệt từng byte.
 
 ### C.3. Huấn luyện và đánh giá
 
@@ -111,14 +117,14 @@ Lượt augmented dùng cùng lệnh train không có `--train-file` (mặc đ�
 ### C.4. Unit test, website và kiểm tra báo cáo
 
 ```powershell
-.\eval\.venv\Scripts\python.exe -m unittest tests.test_prepare_data tests.test_benchmark
+.\eval\.venv\Scripts\python.exe -m unittest discover -s tests -t .
 .\eval\.venv\Scripts\python.exe app.py
 .\eval\.venv\Scripts\python.exe docs/bao-cao/ban-thao-hoan-chinh/ho-so-bien-tap/kiem-thu-website.py
 .\eval\.venv\Scripts\python.exe docs/bao-cao/ban-thao-hoan-chinh/ho-so-bien-tap/tong-hop-so-lieu.py
 powershell -File docs/bao-cao/ban-thao-hoan-chinh/ho-so-bien-tap/ghep-va-ra-soat.ps1
 ```
 
-Lệnh `unittest discover -s tests` ghi trong README cũ không chạy được vì thư mục `tests` không có `__init__.py`; gọi theo tên module như trên thì chạy được.
+`eval/evaluate.py` chỉ tìm checkpoint trong `--checkpoint-root` đã chỉ định; muốn chấm checkpoint Colab thì truyền `--checkpoint-root outputs`.
 
 ## Phụ lục D. Các đoạn mã ngắn giải thích quyết định quan trọng
 
@@ -178,7 +184,7 @@ label = "SPAM" if probability >= threshold else "HAM"
 | Latency | `test_latency_is_amortized_per_message_including_partial_batch` | Chia thời gian cho số mẫu, kể cả batch cuối | Đạt |
 | Report | `test_report_compares_three_models_without_legacy_routes` | Bảng đủ ba mô hình và metadata | Đạt |
 
-*Nguồn: `tests/test_prepare_data.py`, `tests/test_benchmark.py`. Toàn bộ 35 test chạy đạt: “Ran 35 tests … OK”.*
+*Nguồn: `tests/test_prepare_data.py`, `tests/test_benchmark.py`, `tests/test_augmentation.py`. Toàn bộ 42 test chạy đạt: “Ran 42 tests … OK”. `test_augmentation.py` kiểm tra chia theo template, đọc zip Mendeley và tham số `--train-file`.*
 
 **Bảng PL.E.2. Các kiểm tra khác đã thực hiện.**
 

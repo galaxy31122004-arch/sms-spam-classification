@@ -52,13 +52,13 @@ def benchmark_prediction(model, encoder, kind: str, texts: list[str], max_len: i
 
 
 def resolve_checkpoint_dir(checkpoint_root: Path, kind: str) -> Path:
+    # Never fall back to another root: outputs/<kind> holds Colab checkpoints trained on the old
+    # normalization, and silently mixing them with re-normalized test splits gives wrong numbers.
+    # Pass --checkpoint-root outputs explicitly to evaluate those.
     candidates = [
         checkpoint_root / kind,
         checkpoint_root / kind / "checkpoint",
     ]
-    # Backward compatibility: early runs saved checkpoints under outputs/<kind>/.
-    if checkpoint_root.name != "outputs":
-        candidates.append(ROOT / "outputs" / kind)
     for directory in candidates:
         if (directory / "config.json").is_file():
             return directory

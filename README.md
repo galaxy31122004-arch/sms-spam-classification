@@ -30,8 +30,9 @@ Quy tắc chung cho mọi AI: [AGENTS.md](AGENTS.md).
 | Script | Chức năng |
 |---|---|
 | `data/prepare_data.py` | Chuẩn hóa SMS Spam Collection, tạo train/validation/test stratified, seed 42. |
-| `data/augment_smishing.py` | Chuẩn hóa lại `text` của split, thêm africa-smishing vào train và tạo `test_smishing.csv` (đã chạy một lần, có manifest + backup). |
-| `data/build_external_test.py` | Tạo `test_external.csv` từ bộ Mendeley SMS phishing, loại mọi tin trùng/gần trùng UCI. |
+| `data/fetch_africa_smishing.py` | Tải africa-smishing từ Hugging Face vào `data/raw/africa_smish_raw.jsonl` (đã có sẵn trong repo). |
+| `data/augment_smishing.py` | Chuẩn hóa lại `text` của split, thêm africa-smishing vào train và tạo `test_smishing.csv` (đã chạy một lần, có manifest + backup; từ chối chạy lại khi đã có manifest). |
+| `data/build_external_test.py` | Tạo `test_external.csv` từ `data/raw/mendeley_sms_phishing_5971.zip`, loại mọi tin trùng/gần trùng UCI. |
 | `models/{mlp,lstm,transformer}/train.py` | Train từng model từ đầu, lưu checkpoint và config. `--train-file` chọn file train (mặc định `train.csv`). |
 | `eval/evaluate.py` | Benchmark 3 model trên một test split (`--test`). |
 | `eval/report.py` | Tạo báo cáo Markdown so sánh 3 model. |
@@ -39,8 +40,8 @@ Quy tắc chung cho mọi AI: [AGENTS.md](AGENTS.md).
 
 ## Chạy pipeline
 
-1. Tạo môi trường: `py -3.11 eval/setup_env.py` (`.venv` ở gốc repo tạo trên máy khác, không dùng được). Demo cần thêm `eval/.venv/Scripts/python.exe -m pip install flask`.
-2. Dataset ở `data/raw/spam.csv`. Split hiện tại trong `data/splits/`:
+1. Tạo môi trường: `py -3.11 eval/setup_env.py` (cài cả Flask cho website). Chạy website: `start_website.bat` hoặc `eval/.venv/Scripts/python.exe app.py`.
+2. Dữ liệu thô trong `data/raw/`: `spam.csv` (UCI), `africa_smish_raw.jsonl` (africa-smishing, tổng hợp), `mendeley_sms_phishing_5971.zip` (Mendeley, CC BY 4.0). Split hiện tại trong `data/splits/`:
    - `train.csv`: 7.806 tin = 3.900 UCI + 3.906 africa-smishing (3.187 ham / 719 spam, dữ liệu tổng hợp).
    - `train_base.csv`: 3.900 tin UCI gốc (baseline).
    - `val.csv` 836 / `test.csv` 836: UCI, thành viên không đổi; cột `text` sinh lại bằng `normalize_text` mới.
@@ -48,12 +49,12 @@ Quy tắc chung cho mọi AI: [AGENTS.md](AGENTS.md).
    - `test_external.csv`: 387 tin thật từ Mendeley (221 ham / 166 spam), không trùng/gần trùng UCI.
    - Split trước khi bổ sung: `data/splits/backup_20261105_173206/`; thống kê: `augmentation_manifest.json`.
    Chỉ tạo lại có chủ ý bằng `python data/prepare_data.py --force`.
-3. Train mặc định 10 epoch (`--epochs 10`): `eval/.venv/Scripts/python.exe models/mlp/train.py`, `models/lstm/train.py`, `models/transformer/train.py` (dùng cùng Python trong môi trường ảo). Mỗi script mặc định lưu vào `models/<kind>/checkpoint`. Nếu hai người cùng dùng repo, truyền `--output-dir` khác nhau (ví dụ `outputs/<ten>/<kind>`) để không đè checkpoint của nhau.
-4. Chạy `eval/.venv/Scripts/python.exe eval/evaluate.py`, rồi `eval/.venv/Scripts/python.exe eval/report.py`. Trên Linux/macOS dùng `eval/.venv/bin/python`. `evaluate.py` tự tìm checkpoint theo thứ tự `models/<kind>/`, `models/<kind>/checkpoint/`, rồi `outputs/<kind>/` để tương thích checkpoint cũ.
+3. Train mặc định 10 epoch trên `train.csv` (augmented), lưu vào `models/<kind>/checkpoint`. Benchmark chính (baseline) dùng `--train-file data/splits/train_base.csv --output-dir eval/results/baseline/<kind>`. Lệnh đầy đủ ở Phụ lục C của báo cáo.
+4. Chạy `eval/.venv/Scripts/python.exe eval/evaluate.py --checkpoint-root <thư mục> --test <split>`, rồi `eval/report.py`. `evaluate.py` chỉ tìm trong `<root>/<kind>/` và `<root>/<kind>/checkpoint/`; thiếu thì báo lỗi, không tự dùng checkpoint Colab trong `outputs/` (chuẩn hóa cũ). Muốn chấm checkpoint Colab thì truyền `--checkpoint-root outputs`. Trên Linux/macOS dùng `eval/.venv/bin/python`.
 
 Split hiện tại còn tin nhắn trùng giữa train/val/test. Code chuẩn bị dữ liệu mới chia theo nhóm `text` đã chuẩn hóa, giữ toàn bộ bản ghi và cố gắng đạt 70/15/15 theo từng nhãn. Chạy `python data/prepare_data.py --dry-run` để xem duplicate và phương án chia trong bộ nhớ, không ghi file. Chỉ tạo split mới sau khi được duyệt; thay đổi test set cần train lại cả ba model để so sánh.
 
-Các CSV trong `data/splits/` đã có cột `text` chuẩn hóa (lowercase, `<URL>`, `<PHONE>`, `<MONEY>`). Split hiện tại vẫn còn tin nhắn trùng giữa train/val/test theo kiểm tra trước đó. Benchmark/report đã hỗ trợ Accuracy, learning rate, batch size và tiêu chí chọn checkpoint; artifact cũ thiếu trường nào sẽ hiển thị `n/a`. Chạy unit test bằng `eval/.venv/Scripts/python.exe -m unittest tests.test_prepare_data tests.test_benchmark` (`discover -s tests` không chạy được vì `tests/` không có `__init__.py`).
+Các CSV trong `data/splits/` đã có cột `text` chuẩn hóa (lowercase, `<URL>`, `<PHONE>`, `<MONEY>`). Split hiện tại vẫn còn tin nhắn trùng giữa train/val/test theo kiểm tra trước đó. Benchmark/report đã hỗ trợ Accuracy, learning rate, batch size và tiêu chí chọn checkpoint; artifact cũ thiếu trường nào sẽ hiển thị `n/a`. Chạy unit test bằng `eval/.venv/Scripts/python.exe -m unittest discover -s tests -t .`.
 
 ## Kết quả hiện tại (spam F1, ngưỡng 0.5)
 

@@ -1,3 +1,4 @@
+import tempfile
 import unittest
 from copy import deepcopy
 from pathlib import Path
@@ -110,6 +111,16 @@ class BenchmarkTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "fixed decision threshold 0.5"):
                 evaluate(Path("unused.csv"), Path("unused-checkpoints"))
         predict.assert_not_called()
+
+    def test_checkpoint_lookup_never_falls_back_to_another_root(self):
+        from eval.evaluate import resolve_checkpoint_dir
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            with self.assertRaisesRegex(FileNotFoundError, "Missing mlp checkpoint"):
+                resolve_checkpoint_dir(root, "mlp")
+            (root / "mlp" / "checkpoint").mkdir(parents=True)
+            (root / "mlp" / "checkpoint" / "config.json").write_text("{}", encoding="utf-8")
+            self.assertEqual(resolve_checkpoint_dir(root, "mlp"), root / "mlp" / "checkpoint")
 
     def test_evaluator_exports_each_checkpoints_training_settings(self):
         # In-memory fixtures exercise metadata wiring without models or result files.

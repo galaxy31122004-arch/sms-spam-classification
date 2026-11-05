@@ -32,8 +32,10 @@ Các sơ đồ dùng Mermaid; công thức dùng LaTeX trong Markdown. Khi chuy�
 
 - [tong-hop-so-lieu.py](ho-so-bien-tap/tong-hop-so-lieu.py) → [tong-hop-so-lieu.json](ho-so-bien-tap/tong-hop-so-lieu.json): mọi số liệu báo cáo dẫn, sinh trực tiếp từ CSV, config và JSON kết quả.
 - [kiem-thu-website.py](ho-so-bien-tap/kiem-thu-website.py) → [kiem-thu-website.json](ho-so-bien-tap/kiem-thu-website.json): kiểm thử sáu nhánh của website.
-- [ghep-va-ra-soat.ps1](ho-so-bien-tap/ghep-va-ra-soat.ps1) → [ket-qua-ra-soat.txt](ho-so-bien-tap/ket-qua-ra-soat.txt): ghép chương, kiểm tra citation/caption/Markdown và so bảng Chương 4 với `eval/results/baseline_test.json`. Tệp có BOM UTF-8 để Windows PowerShell 5.1 đọc đúng tiếng Việt.
-- `kiem-tra-du-lieu.json`, `source-hashes.json`, `kiem-tra-nguon.ps1`, `kiem-dinh-*`, `ket-qua-kiem-tra-nguon.txt`: hồ sơ của bản 28/10/2026, không phản ánh số liệu hiện tại. `kiem-tra-nguon.ps1` không còn chạy được vì các bản nháp lập kế hoạch nó kiểm tra đã bị xóa ngày 05/11/2026.
+- [ghep-va-ra-soat.ps1](ho-so-bien-tap/ghep-va-ra-soat.ps1) → [ket-qua-ra-soat.txt](ho-so-bien-tap/ket-qua-ra-soat.txt): ghép chương, kiểm tra citation/caption/Markdown và so bảng Chương 4 với bản sao kết quả baseline trong `tong-hop-so-lieu.json` (chạy được ngay sau khi clone). Tệp có BOM UTF-8 để Windows PowerShell 5.1 đọc đúng tiếng Việt.
+- [chup-giao-dien.py](ho-so-bien-tap/chup-giao-dien.py) → `hinh/*.png`: ảnh giao diện website (cần Microsoft Edge).
+
+Hồ sơ kiểm tra của bản 28/10/2026 đã được xóa ngày 05/11/2026 vì dựa trên số liệu Colab cũ; xem lịch sử git nếu cần.
 
 ## Giới hạn còn lại
 

@@ -11,8 +11,15 @@
 1. SMS Spam Collection gồm 5.572 mẫu (4.825 ham, 747 spam), lưu tại `data/raw/spam.csv`.
 2. Chuẩn hóa nhãn thành `ham` và `spam`.
 3. Chia stratified với seed 42 theo tỷ lệ train/val/test 70/15/15: 3.900 / 836 / 836 mẫu. Cả ba model dùng cùng các file split.
-4. `data/splits/test.csv` đã khóa. Không tạo lại split bằng `--force` khi chưa có yêu cầu rõ ràng.
-5. Split hiện tại còn duplicate giữa các tập. Phương án mới trong code gom nhóm theo văn bản sau chuẩn hóa, giữ toàn bộ bản ghi và phân bổ nhóm theo nhãn gần 70/15/15; từ chối nhóm có nhãn mâu thuẫn. Dùng `--dry-run` để xem thống kê mà không ghi CSV. Chưa áp dụng phương án mới vào dữ liệu; cần được duyệt trước khi thay split.
+4. Thành viên `data/splits/test.csv` đã khóa. Không tạo lại split bằng `--force` khi chưa có yêu cầu rõ ràng.
+5. Ngày 05/11/2026 (đã duyệt), cột `text` của train/val/test được sinh lại từ `raw_text` bằng `normalize_text` hiện tại; thành viên và nhãn không đổi. Bản trước đó: `data/splits/backup_20261105_173206/`.
+6. Split vẫn còn duplicate giữa các tập (84 dòng test trùng train theo `text`). Phương án gom nhóm theo văn bản sau chuẩn hóa đã có trong `prepare_data.py` (`--dry-run` để xem), chưa áp dụng; cần được duyệt trước khi thay split.
+7. Dữ liệu bổ sung (`data/augment_smishing.py`, `data/build_external_test.py`):
+   - `train_base.csv`: 3.900 SMS UCI — train của benchmark chính.
+   - `train.csv`: `train_base` + 3.906 SMS tổng hợp africa-smishing — train của thí nghiệm augmented.
+   - `test_smishing.csv`: 689 SMS africa-smishing, chia theo template, không trùng train.
+   - `test_external.csv`: 387 SMS thật từ Mendeley SMS Phishing, loại mọi tin trùng/gần trùng UCI.
+   - Nguồn thô trong `data/raw/`; tải lại africa-smishing bằng `data/fetch_africa_smishing.py`.
 
 ## 2. Chuẩn hóa và vector hóa
 
@@ -40,6 +47,7 @@ Kiểm tra trực quan 100 mẫu sau chuẩn hóa khi thay đổi quy trình d�
 
 ## 6. Đánh giá chung
 
+- Benchmark chính: train trên `train_base.csv`, chấm `test.csv`. Đánh giá phụ: chấm thêm `test_smishing.csv` và `test_external.csv`, và lặp lại với train `train.csv` (augmented) để so trước/sau.
 - Dùng ngưỡng xác suất spam cố định 0,5 cho cả ba model khi chọn checkpoint trên validation và chấm test. Ngưỡng này không được tối ưu riêng cho từng model; vì dữ liệu lệch lớp, Precision/Recall/F1 có thể khác nếu dùng ngưỡng khác. ROC-AUC không phụ thuộc ngưỡng.
 - Trên cùng `test.csv` đã khóa, báo cáo Accuracy, spam Precision/Recall/F1, Confusion Matrix (ham/spam), ROC-AUC, latency CPU trung bình ở batch size 1 và 32, số tham số và thời gian train.
 - Latency CPU tính cả vector hóa (TF-IDF hoặc token ID) và inference, không phải thời gian inference thuần. Warmup riêng cho batch 1 và batch 32 (tối đa 32 mẫu) trước khi đo; các lượt warmup không tính vào kết quả thời gian hay metric.
@@ -48,13 +56,18 @@ Kiểm tra trực quan 100 mẫu sau chuẩn hóa khi thay đổi quy trình d�
 ## 7. Cấu trúc thư mục
 
 ```text
-data/raw/                     dữ liệu gốc
-data/splits/                  train/val/test đã khóa
+data/raw/                     dữ liệu gốc (UCI, africa-smishing, Mendeley)
+data/splits/                  train_base/train/val/test + test_smishing/test_external
 data/prepare_data.py          chuẩn hóa CSV, chia stratified với seed 42
+data/augment_smishing.py      sinh lại text, thêm africa-smishing
+data/build_external_test.py   tạo test ngoài nguồn từ Mendeley
+data/fetch_africa_smishing.py tải africa-smishing từ Hugging Face
 models/common.py              dữ liệu, vector hóa, model và quy trình train chung
 models/mlp/                   script train MLP từ đầu
 models/lstm/                  script train LSTM từ đầu
 models/transformer/           script train Transformer nhỏ từ đầu
+models/transformer/demo_checkpoint/  Transformer baseline dùng cho website (được commit)
+outputs/                      checkpoint và kết quả lượt Colab cũ (chuẩn hóa cũ), chỉ để đối chiếu
 legacy/bert-tiny-sms-spam/    checkpoint pretrained cũ, không nằm trong benchmark
 eval/                         đánh giá chung và báo cáo so sánh
 tests/                        test dữ liệu, model, metric và report
@@ -63,8 +76,9 @@ tests/                        test dữ liệu, model, metric và report
 ## 8. Script
 
 - `data/prepare_data.py --input data/raw/spam.csv`: chuẩn hóa và chia dữ liệu; từ chối ghi đè split nếu không có `--force`.
-- `models/{mlp,lstm,transformer}/train.py`: train từ đầu trên train split, chọn checkpoint theo validation, lưu trọng số và config JSON.
-- `eval/evaluate.py`: nạp ba checkpoint, chấm cùng test split bằng metric chung, lưu JSON.
+- `models/{mlp,lstm,transformer}/train.py`: train từ đầu trên train split (`--train-file`, mặc định `train.csv`), chọn checkpoint theo validation, lưu trọng số và config JSON.
+- `eval/evaluate.py`: nạp ba checkpoint từ `--checkpoint-root` (không tự rơi về thư mục khác), chấm cùng test split (`--test`) bằng metric chung, lưu JSON.
 - `eval/report.py`: tạo bảng so sánh Markdown từ JSON.
-- `eval/setup_env.py`: tạo `eval/.venv` và cài dependencies.
+- `eval/setup_env.py`: tạo `eval/.venv` và cài dependencies (gồm Flask cho website).
+- `app.py` / `start_website.bat`: website demo dùng Transformer baseline.
 - `eval/results/`: artifact JSON và Markdown tạo khi chạy, được Git ignore để tránh dùng nhầm số liệu cũ.

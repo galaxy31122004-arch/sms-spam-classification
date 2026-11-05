@@ -2,3 +2,4 @@ numpy>=1.24
 scikit-learn==1.7.2
 joblib>=1.5.0
 torch>=2.1
+flask>=3.0

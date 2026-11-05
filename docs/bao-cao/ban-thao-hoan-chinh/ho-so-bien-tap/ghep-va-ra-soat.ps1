@@ -36,7 +36,8 @@ foreach ($part in $parts) {
 }
 $culture = [System.Globalization.CultureInfo]::GetCultureInfo('vi-VN')
 $projectRoot = (Resolve-Path (Join-Path $AuditDirectory '../../../..')).Path
-$payload = Get-Content -LiteralPath (Join-Path $projectRoot 'eval/results/baseline_test.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+# tong-hop-so-lieu.json is committed and holds a copy of eval/results/baseline_test.json (git-ignored).
+$payload = (Get-Content -LiteralPath (Join-Path $AuditDirectory 'tong-hop-so-lieu.json') -Raw -Encoding UTF8 | ConvertFrom-Json).results.baseline_test
 $resultPart = $parts[4]
 foreach ($metric in @('accuracy','spam_precision','spam_recall','spam_f1','roc_auc')) {
     $values = @('mlp','lstm','transformer') | ForEach-Object { (100*$payload.models.$_.$metric).ToString('F2',$culture)+'%' }

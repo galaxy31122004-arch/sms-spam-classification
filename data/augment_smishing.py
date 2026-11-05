@@ -87,7 +87,8 @@ def group_split(groups: list[list[dict[str, str]]], seed: int) -> tuple[list, li
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--input", type=Path, required=True, help="africa-smishing JSONL (sms_text, label)")
+    parser.add_argument("--input", type=Path, default=PROJECT_ROOT / "data/raw/africa_smish_raw.jsonl",
+                        help="africa-smishing JSONL (sms_text, label) from data/fetch_africa_smishing.py")
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--apply", action="store_true", help="Write files; default is a dry run")
     args = parser.parse_args()
