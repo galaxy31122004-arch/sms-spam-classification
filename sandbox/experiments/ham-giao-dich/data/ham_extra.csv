@@ -1,0 +1,501 @@
+label,raw_text,text
+ham,Disney+: Your subscription renewed for £16.97. Receipt sent to your email.,disney+: your subscription renewed for £<MONEY> . receipt sent to your email.
+ham,"Your security code for Uniqlo is 159083. If you didn't request it, you can ignore this message.","your security code for uniqlo is 159083. if you didn't request it, you can ignore this message."
+ham,Wells Fargo: Use one-time passcode 661318 to approve your payment of £56.02. We will never call to ask for it.,wells fargo: use one-time passcode <CODE> to approve your payment of £<MONEY> . we will never call to ask for it.
+ham,Check-in is now open for your flight to Chicago on Apr 21. Booking ref W90996.,check-in is now open for your flight to chicago on apr 21. booking ref <CODE> .
+ham,G-308246 is your Google verification code.,g-308246 is your google verification code.
+ham,Revolut: Your balance is below $135.64. Current balance: €40.99.,revolut: your balance is below $<MONEY> . current balance: €<MONEY> .
+ham,Wells Fargo: Your new card has been activated. You can now use it for purchases.,wells fargo: your new card has been activated. you can now use it for purchases.
+ham,Your table for 6 at The Oak Room is booked for Saturday at 2:05 AM. Reply C to confirm or X to cancel.,your table for 6 at the oak room is booked for saturday at 2:05 am. reply c to confirm or x to cancel.
+ham,Check-in is now open for your flight to Boston on Oct 7. Booking ref R86579.,check-in is now open for your flight to boston on oct 7. booking ref <CODE> .
+ham,Your Deliveroo order from Burger Barn is on the way. ETA 17 min.,your deliveroo order from burger barn is on the way. eta 17 min.
+ham,Your timesheet for the week ending Mar 23 has been approved.,your timesheet for the week ending mar 23 has been approved.
+ham,Reminder: the team meeting has moved to 4:00 PM in room 368.,reminder: the team meeting has moved to 4:00 pm in room 368.
+ham,Thanks for riding with Lyft. Your trip total was £20.84.,thanks for riding with lyft. your trip total was £<MONEY> .
+ham,"Your security code for eBay is 862527. If you didn't request it, you can ignore this message.","your security code for ebay is 862527. if you didn't request it, you can ignore this message."
+ham,Good news! Your Amazon order has been dispatched. Tracking number 189555979711.,good news! your amazon order has been dispatched. tracking number <CODE> .
+ham,You paid Grace $16.83 with PayPal.,you paid grace $<MONEY> with paypal.
+ham,Dr. Okafor: Reminder of your appointment on tomorrow at 5:20 PM. Reply YES to confirm or call us to reschedule.,dr. okafor: reminder of your appointment on tomorrow at 5:20 pm. reply yes to confirm or call us to reschedule.
+ham,Your prescription is ready to collect at Boots. Order 0752917.,your prescription is ready to collect at boots. order <CODE> .
+ham,G-342366 is your Google verification code.,g-342366 is your google verification code.
+ham,Thanks for riding with Uber. Your trip total was $29.71.,thanks for riding with uber. your trip total was $<MONEY> .
+ham,Southwest: Your flight WN660 is delayed. New departure time 7:40 PM. We apologize for the inconvenience.,southwest: your flight wn660 is delayed. new departure time 7:40 pm. we apologize for the inconvenience.
+ham,Reminder: your vet appointment for Charlie is Saturday at 11:45 AM.,reminder: your vet appointment for charlie is saturday at 11:45 am.
+ham,Wells Fargo: Your balance is below $72.69. Current balance: $1.59.,wells fargo: your balance is below $<MONEY> . current balance: $<MONEY> .
+ham,Your insurance policy 924402685 renews on Oct 19. No action needed if your details are unchanged.,your insurance policy <CODE> renews on oct 19. no action needed if your details are unchanged.
+ham,Disney+: Your subscription renewed for €23.86. Receipt sent to your email.,disney+: your subscription renewed for €<MONEY> . receipt sent to your email.
+ham,Eye Care Center: Reminder of your appointment on Monday at 8:40 PM. Reply YES to confirm or call us to reschedule.,eye care center: reminder of your appointment on monday at 8:40 pm. reply yes to confirm or call us to reschedule.
+ham,Your ASOS order #617-6031372 has shipped. Estimated arrival Tuesday.,your asos order # <CODE> has shipped. estimated arrival tuesday.
+ham,Your Netflix free trial ends on Feb 1. Manage your plan in account settings.,your netflix free trial ends on feb 1. manage your plan in account settings.
+ham,Check-in is now open for your flight to Denver on Sep 4. Booking ref M90139.,check-in is now open for your flight to denver on sep 4. booking ref <CODE> .
+ham,DHL: Package delivered to your front door at 11:30 PM.,dhl: package delivered to your front door at 11:30 pm.
+ham,Your train ticket to Austin on Aug 4 is confirmed. Ticket number 1777741215.,your train ticket to austin on aug 4 is confirmed. ticket number <CODE> .
+ham,Library notice: the book you reserved is ready to collect. Your hold expires on May 16.,library notice: the book you reserved is ready to collect. your hold expires on may 16.
+ham,Your insurance policy 280385280 renews on Sep 10. No action needed if your details are unchanged.,your insurance policy <CODE> renews on sep 10. no action needed if your details are unchanged.
+ham,Northside Physio: Reminder of your appointment on Tuesday at 12:40 PM. Reply YES to confirm or call us to reschedule.,northside physio: reminder of your appointment on tuesday at 12:40 pm. reply yes to confirm or call us to reschedule.
+ham,Your reservation at Holiday Inn Denver for 3 nights is confirmed. Confirmation no. 388853933.,your reservation at holiday inn denver for 3 nights is confirmed. confirmation no. <CODE> .
+ham,Your appointment at the DMV is confirmed for Jul 24 at 4:15 PM. Case number 50047439.,your appointment at the dmv is confirmed for jul 24 at 4:15 pm. case number <CODE> .
+ham,Your internet meter reading is due this week. Submit it in the T-Mobile app.,your internet meter reading is due this week. submit it in the t-mobile app.
+ham,FedEx: Your parcel 3137 3537 9907 will arrive Saturday between 8am and 6pm.,fedex: your parcel <CODE> will arrive saturday between 8am and 6pm.
+ham,"Ally alert: You spent £704.73 at McDonald's. Available balance $2,442.36.",ally alert: you spent £<MONEY> at mcdonald's. available balance $<MONEY> .
+ham,Barclays: Your new card has been activated. You can now use it for purchases.,barclays: your new card has been activated. you can now use it for purchases.
+ham,Your timesheet for the week ending Nov 11 has been approved.,your timesheet for the week ending nov 11 has been approved.
+ham,Lloyds: Code 676122 to confirm the new payee Marco. Valid for 10 min.,lloyds: code <CODE> to confirm the new payee marco. valid for 10 min.
+ham,Your Apple login code is 972997. It expires in 15 minutes.,your apple login code is <CODE> . it expires in 15 minutes.
+ham,Your gas meter reading is due this week. Submit it in the AT&T app.,your gas meter reading is due this week. submit it in the at&t app.
+ham,Your Google login code is 182633. It expires in 5 minutes.,your google login code is <CODE> . it expires in 5 minutes.
+ham,"Zelle: Ben sent you €51.91 for ""gas"".","zelle: ben sent you €<MONEY> for ""gas""."
+ham,YouTube Premium: Your subscription renewed for €11.64. Receipt sent to your email.,youtube premium: your subscription renewed for €<MONEY> . receipt sent to your email.
+ham,"Chase: A deposit of $2,698.23 was credited to your account ending 9868.",chase: a deposit of $<MONEY> was credited to your account ending <CODE> .
+ham,"Revolut: A deposit of $1,594.34 was credited to your account ending 0729.",revolut: a deposit of $<MONEY> was credited to your account ending <CODE> .
+ham,LinkedIn: 222791 is your verification code. Don't share it with anyone.,linkedin: 222791 is your verification code. don't share it with anyone.
+ham,United: Your flight UA1435 is delayed. New departure time 11:05 PM. We apologize for the inconvenience.,united: your flight ua1435 is delayed. new departure time 11:05 pm. we apologize for the inconvenience.
+ham,Your timesheet for the week ending Feb 18 has been approved.,your timesheet for the week ending feb 18 has been approved.
+ham,G-334018 is your Google verification code.,g-334018 is your google verification code.
+ham,Your order from Uniqlo is ready for pickup at the store. Bring your order number 017598.,your order from uniqlo is ready for pickup at the store. bring your order number <CODE> .
+ham,Your train ticket to Atlanta on Apr 23 is confirmed. Ticket number 4788783848.,your train ticket to atlanta on apr 23 is confirmed. ticket number <CODE> .
+ham,NatWest: Your monthly statement for account ending 7261 is now available in the app.,natwest: your monthly statement for account ending <CODE> is now available in the app.
+ham,Your Wayfair order #513-6134125 has shipped. Estimated arrival Wednesday.,your wayfair order # <CODE> has shipped. estimated arrival wednesday.
+ham,"Zelle: Grace sent you $150.60 for ""dinner"".","zelle: grace sent you $<MONEY> for ""dinner""."
+ham,Your Wayfair order #232-6865635 has shipped. Estimated arrival Saturday.,your wayfair order # <CODE> has shipped. estimated arrival saturday.
+ham,TD Bank: Code 505877 to confirm the new payee Rosa. Valid for 10 min.,td bank: code <CODE> to confirm the new payee rosa. valid for 10 min.
+ham,Your Venmo login code is 589481. It expires in 5 minutes.,your venmo login code is <CODE> . it expires in 5 minutes.
+ham,Your timesheet for the week ending Apr 4 has been approved.,your timesheet for the week ending apr 4 has been approved.
+ham,Capital One: Code 402426 to confirm the new payee Kenji. Valid for 10 min.,capital one: code <CODE> to confirm the new payee kenji. valid for 10 min.
+ham,Your appointment at the DMV is confirmed for May 13 at 3:05 PM. Case number 51402614.,your appointment at the dmv is confirmed for may 13 at 3:05 pm. case number <CODE> .
+ham,Your Discord login code is 141931. It expires in 10 minutes.,your discord login code is <CODE> . it expires in 10 minutes.
+ham,"Monzo alert: You spent $307.22 at Sainsbury's. Available balance £4,640.68.",monzo alert: you spent $<MONEY> at sainsbury's. available balance £<MONEY> .
+ham,You paid Mia $13.43 with Zelle.,you paid mia $<MONEY> with zelle.
+ham,"Bank of America alert: You spent $48.19 at Starbucks. Available balance $3,180.49.",bank of america alert: you spent $<MONEY> at starbucks. available balance $<MONEY> .
+ham,Your reservation at Marriott Seattle for 4 nights is confirmed. Confirmation no. 824504000.,your reservation at marriott seattle for 4 nights is confirmed. confirmation no. <CODE> .
+ham,Westfield High: School will close early at 2:30 PM tomorrow due to weather.,westfield high: school will close early at 2:30 pm tomorrow due to weather.
+ham,Your order from eBay is ready for pickup at the store. Bring your order number 678684.,your order from ebay is ready for pickup at the store. bring your order number <CODE> .
+ham,Your car service at Kwik Fit is complete. Total $197.64. You can pick it up now.,your car service at kwik fit is complete. total $<MONEY> . you can pick it up now.
+ham,Your insurance policy 265020146 renews on Mar 2. No action needed if your details are unchanged.,your insurance policy <CODE> renews on mar 2. no action needed if your details are unchanged.
+ham,PNC: Code 684934 to confirm the new payee Sam. Valid for 10 min.,pnc: code <CODE> to confirm the new payee sam. valid for 10 min.
+ham,Your Uber Eats order from Thai Garden is on the way. ETA 18 min.,your uber eats order from thai garden is on the way. eta 18 min.
+ham,Your order from Amazon is ready for pickup at the store. Bring your order number 455853.,your order from amazon is ready for pickup at the store. bring your order number <CODE> .
+ham,Ally: Use one-time passcode 435205 to approve your payment of £78.25. We will never call to ask for it.,ally: use one-time passcode <CODE> to approve your payment of £<MONEY> . we will never call to ask for it.
+ham,You paid Tom $53.39 with Venmo.,you paid tom $<MONEY> with venmo.
+ham,Capital One: Code 126906 to confirm the new payee Sam. Valid for 10 min.,capital one: code <CODE> to confirm the new payee sam. valid for 10 min.
+ham,Thanks! We received your payment of $196.31 to Verizon. Confirmation 982965724.,thanks! we received your payment of $<MONEY> to verizon. confirmation <CODE> .
+ham,Westfield High: School will close early at 12:30 PM today due to a power outage.,westfield high: school will close early at 12:30 pm today due to a power outage.
+ham,DHL: We missed you today. Your package will be redelivered today.,dhl: we missed you today. your package will be redelivered today.
+ham,IT Helpdesk: your ticket 890931 has been resolved. Reply if the issue continues.,it helpdesk: your ticket <CODE> has been resolved. reply if the issue continues.
+ham,Your rental car pickup is Monday at 11:05 AM. Reservation 74071881. Bring your driving licence.,your rental car pickup is monday at 11:05 am. reservation <CODE> . bring your driving licence.
+ham,Your prescription is ready to collect at CVS. Order 7414333.,your prescription is ready to collect at cvs. order <CODE> .
+ham,Library notice: the book you reserved is ready to collect. Your hold expires on Nov 15.,library notice: the book you reserved is ready to collect. your hold expires on nov 15.
+ham,Thanks for riding with Lyft. Your trip total was $31.35.,thanks for riding with lyft. your trip total was $<MONEY> .
+ham,Your haircut at The Barber Shop is booked for Monday at 10:20 AM. Reply CANCEL if you can't make it.,your haircut at the barber shop is booked for monday at 10:20 am. reply cancel if you can't make it.
+ham,"Your security code for Argos is 254499. If you didn't request it, you can ignore this message.","your security code for argos is 254499. if you didn't request it, you can ignore this message."
+ham,Chase: A deposit of £228.95 was credited to your account ending 4137.,chase: a deposit of £<MONEY> was credited to your account ending <CODE> .
+ham,Octopus Energy: Your internet bill of £150.57 is due on Feb 18. Autopay is on.,octopus energy: your internet bill of £<MONEY> is due on feb 18. autopay is on.
+ham,Capital One: Your monthly statement for account ending 1704 is now available in the app.,capital one: your monthly statement for account ending <CODE> is now available in the app.
+ham,Your DoorDash order from Taco Town is on the way. ETA 40 min.,your doordash order from taco town is on the way. eta 40 min.
+ham,Your order from Nike is ready for pickup at the store. Bring your order number 633191.,your order from nike is ready for pickup at the store. bring your order number <CODE> .
+ham,TD Bank: Your balance is below €89.27. Current balance: $7.50.,td bank: your balance is below €<MONEY> . current balance: $<MONEY> .
+ham,Your appointment at the DMV is confirmed for Nov 17 at 5:00 PM. Case number 37760207.,your appointment at the dmv is confirmed for nov 17 at 5:00 pm. case number <CODE> .
+ham,Your haircut at The Barber Shop is booked for Sunday at 5:20 AM. Reply CANCEL if you can't make it.,your haircut at the barber shop is booked for sunday at 5:20 am. reply cancel if you can't make it.
+ham,Good news! Your Apple order has been dispatched. Tracking number 651505561304.,good news! your apple order has been dispatched. tracking number <CODE> .
+ham,"PayPal: Priya sent you £81.08 for ""gas"".","paypal: priya sent you £<MONEY> for ""gas""."
+ham,"Your security code for Apple is 640410. If you didn't request it, you can ignore this message.","your security code for apple is 640410. if you didn't request it, you can ignore this message."
+ham,Your insurance policy 423468535 renews on Jul 1. No action needed if your details are unchanged.,your insurance policy <CODE> renews on jul 1. no action needed if your details are unchanged.
+ham,Gym: your membership payment of £74.37 was received. See you soon!,gym: your membership payment of £<MONEY> was received. see you soon!
+ham,British Airways: Your flight BA430 is delayed. New departure time 1:20 PM. We apologize for the inconvenience.,british airways: your flight ba430 is delayed. new departure time 1:20 pm. we apologize for the inconvenience.
+ham,Your order from Argos is ready for pickup at the store. Bring your order number 247082.,your order from argos is ready for pickup at the store. bring your order number <CODE> .
+ham,Monzo: Transfer of £311.27 to Ben completed. Ref 44634786.,monzo: transfer of £<MONEY> to ben completed. ref <CODE> .
+ham,"Bank of America alert: You spent $70.43 at Sainsbury's. Available balance £2,796.89.",bank of america alert: you spent $<MONEY> at sainsbury's. available balance £<MONEY> .
+ham,Your order from Apple is ready for pickup at the store. Bring your order number 762833.,your order from apple is ready for pickup at the store. bring your order number <CODE> .
+ham,Bank of America: Code 581535 to confirm the new payee Ben. Valid for 10 min.,bank of america: code <CODE> to confirm the new payee ben. valid for 10 min.
+ham,Gym: your membership payment of €28.14 was received. See you soon!,gym: your membership payment of €<MONEY> was received. see you soon!
+ham,Your Dropbox login code is 666836. It expires in 10 minutes.,your dropbox login code is <CODE> . it expires in 10 minutes.
+ham,Your Netflix free trial ends on Aug 9. Manage your plan in account settings.,your netflix free trial ends on aug 9. manage your plan in account settings.
+ham,Check-in is now open for your flight to Austin on Mar 22. Booking ref S83143.,check-in is now open for your flight to austin on mar 22. booking ref <CODE> .
+ham,DPD: Package delivered to your front door at 11:45 PM.,dpd: package delivered to your front door at 11:45 pm.
+ham,Thanks! We received your payment of $55.63 to Spectrum. Confirmation 797016877.,thanks! we received your payment of $<MONEY> to spectrum. confirmation <CODE> .
+ham,Refund of $203.75 from Etsy has been issued to your card ending 8171. Allow 3-5 days.,refund of $<MONEY> from etsy has been issued to your card ending <CODE> . allow 3-5 days.
+ham,United: Your flight UA105 is delayed. New departure time 3:15 AM. We apologize for the inconvenience.,united: your flight ua105 is delayed. new departure time 3:15 am. we apologize for the inconvenience.
+ham,Eye Care Center: Reminder of your appointment on Friday at 3:20 PM. Reply YES to confirm or call us to reschedule.,eye care center: reminder of your appointment on friday at 3:20 pm. reply yes to confirm or call us to reschedule.
+ham,Your reservation at Best Western Miami for 1 nights is confirmed. Confirmation no. 114893643.,your reservation at best western miami for 1 nights is confirmed. confirmation no. <CODE> .
+ham,Your timesheet for the week ending Oct 1 has been approved.,your timesheet for the week ending oct 1 has been approved.
+ham,Coinbase: 474537 is your verification code. Don't share it with anyone.,coinbase: 474537 is your verification code. don't share it with anyone.
+ham,Your reservation at Marriott Atlanta for 2 nights is confirmed. Confirmation no. 064003761.,your reservation at marriott atlanta for 2 nights is confirmed. confirmation no. <CODE> .
+ham,"Zelle: Kenji sent you £185.41 for ""rent"".","zelle: kenji sent you £<MONEY> for ""rent""."
+ham,DPD: Your parcel 3048 1373 4337 will arrive Thursday between 10am and 3pm.,dpd: your parcel <CODE> will arrive thursday between 10am and 3pm.
+ham,US Bank: Card ending 7923 was charged £377.08 at IKEA on Jan 20.,us bank: card ending <CODE> was charged £<MONEY> at ikea on jan 20.
+ham,Ally: Your balance is below £58.15. Current balance: $48.73.,ally: your balance is below £<MONEY> . current balance: $<MONEY> .
+ham,Barclays: Your balance is below $156.48. Current balance: $20.27.,barclays: your balance is below $<MONEY> . current balance: $<MONEY> .
+ham,Reminder: your vet appointment for Luna is Tuesday at 2:15 PM.,reminder: your vet appointment for luna is tuesday at 2:15 pm.
+ham,Bank of America: Your monthly statement for account ending 8704 is now available in the app.,bank of america: your monthly statement for account ending <CODE> is now available in the app.
+ham,Your prescription is ready to collect at Rite Aid. Order 5572101.,your prescription is ready to collect at rite aid. order <CODE> .
+ham,You paid Priya $86.94 with Venmo.,you paid priya $<MONEY> with venmo.
+ham,British Airways: Your flight BA1657 is delayed. New departure time 6:40 PM. We apologize for the inconvenience.,british airways: your flight ba1657 is delayed. new departure time 6:40 pm. we apologize for the inconvenience.
+ham,Your appointment at the DMV is confirmed for Jul 3 at 1:20 PM. Case number 35873557.,your appointment at the dmv is confirmed for jul 3 at 1:20 pm. case number <CODE> .
+ham,"Your security code for Amazon is 431955. If you didn't request it, you can ignore this message.","your security code for amazon is 431955. if you didn't request it, you can ignore this message."
+ham,You paid Lena €13.50 with PayPal.,you paid lena €<MONEY> with paypal.
+ham,You paid Ben $145.71 with Venmo.,you paid ben $<MONEY> with venmo.
+ham,Your Uber login code is 317764. It expires in 10 minutes.,your uber login code is <CODE> . it expires in 10 minutes.
+ham,Your appointment at the DMV is confirmed for Aug 5 at 8:15 AM. Case number 42935575.,your appointment at the dmv is confirmed for aug 5 at 8:15 am. case number <CODE> .
+ham,Your timesheet for the week ending Oct 3 has been approved.,your timesheet for the week ending oct 3 has been approved.
+ham,Marriott: Your stay on Jul 25 is confirmed. Booking reference 23610788. Check-in from 3 PM.,marriott: your stay on jul 25 is confirmed. booking reference <CODE> . check-in from 3 pm.
+ham,"Your security code for Nike is 913167. If you didn't request it, you can ignore this message.","your security code for nike is 913167. if you didn't request it, you can ignore this message."
+ham,Reminder: your vet appointment for Charlie is Wednesday at 4:15 PM.,reminder: your vet appointment for charlie is wednesday at 4:15 pm.
+ham,Your Uber Eats order from Taco Town is on the way. ETA 37 min.,your uber eats order from taco town is on the way. eta 37 min.
+ham,Reminder: the team meeting has moved to 11:40 AM in room 499.,reminder: the team meeting has moved to 11:40 am in room 499.
+ham,Your insurance policy 444945443 renews on Aug 8. No action needed if your details are unchanged.,your insurance policy <CODE> renews on aug 8. no action needed if your details are unchanged.
+ham,Citi: Your new card has been activated. You can now use it for purchases.,citi: your new card has been activated. you can now use it for purchases.
+ham,Refund of $255.37 from Argos has been issued to your card ending 3516. Allow 3-5 days.,refund of $<MONEY> from argos has been issued to your card ending <CODE> . allow 3-5 days.
+ham,"Zelle: Tom sent you €50.12 for ""dinner"".","zelle: tom sent you €<MONEY> for ""dinner""."
+ham,Riverside Clinic: Reminder of your appointment on Monday at 2:00 PM. Reply YES to confirm or call us to reschedule.,riverside clinic: reminder of your appointment on monday at 2:00 pm. reply yes to confirm or call us to reschedule.
+ham,Your appointment at the DMV is confirmed for Apr 27 at 8:30 AM. Case number 43103993.,your appointment at the dmv is confirmed for apr 27 at 8:30 am. case number <CODE> .
+ham,"Your security code for Apple is 827940. If you didn't request it, you can ignore this message.","your security code for apple is 827940. if you didn't request it, you can ignore this message."
+ham,PNC: Card ending 9953 was charged $333.73 at Costco on Jan 7.,pnc: card ending <CODE> was charged $<MONEY> at costco on jan 7.
+ham,"Venmo: Mia sent you $163.88 for ""tickets"".","venmo: mia sent you $<MONEY> for ""tickets""."
+ham,Your timesheet for the week ending Jul 22 has been approved.,your timesheet for the week ending jul 22 has been approved.
+ham,American: Your flight AA2718 is delayed. New departure time 9:00 AM. We apologize for the inconvenience.,american: your flight aa2718 is delayed. new departure time 9:00 am. we apologize for the inconvenience.
+ham,Your Nike order #644-6049566 has shipped. Estimated arrival Monday.,your nike order # <CODE> has shipped. estimated arrival monday.
+ham,Reminder: the team meeting has moved to 6:20 AM in room 300.,reminder: the team meeting has moved to 6:20 am in room 300.
+ham,St Mary Primary: School will close early at 12:30 PM Monday due to staff training.,st mary primary: school will close early at 12:30 pm monday due to staff training.
+ham,Barclays: Transfer of $738.87 to Omar completed. Ref 95722008.,barclays: transfer of $<MONEY> to omar completed. ref <CODE> .
+ham,PNC: Your balance is below £63.35. Current balance: €46.43.,pnc: your balance is below £<MONEY> . current balance: €<MONEY> .
+ham,Library notice: the book you reserved is ready to collect. Your hold expires on Sep 6.,library notice: the book you reserved is ready to collect. your hold expires on sep 6.
+ham,HSBC: Your balance is below $74.27. Current balance: $46.35.,hsbc: your balance is below $<MONEY> . current balance: $<MONEY> .
+ham,Barclays: Card ending 7342 was charged $878.07 at Tesco on Jun 2.,barclays: card ending <CODE> was charged $<MONEY> at tesco on jun 2.
+ham,Your train ticket to Miami on Feb 23 is confirmed. Ticket number 9239693729.,your train ticket to miami on feb 23 is confirmed. ticket number <CODE> .
+ham,Chase: Autopay of £564.36 for your credit card is scheduled for Mar 13.,chase: autopay of £<MONEY> for your credit card is scheduled for mar 13.
+ham,Your electricity meter reading is due this week. Submit it in the AT&T app.,your electricity meter reading is due this week. submit it in the at&t app.
+ham,Refund of $39.87 from Uniqlo has been issued to your card ending 0516. Allow 3-5 days.,refund of $<MONEY> from uniqlo has been issued to your card ending <CODE> . allow 3-5 days.
+ham,Your train ticket to Dublin on Sep 28 is confirmed. Ticket number 4649366578.,your train ticket to dublin on sep 28 is confirmed. ticket number <CODE> .
+ham,Your order from Etsy is ready for pickup at the store. Bring your order number 009773.,your order from etsy is ready for pickup at the store. bring your order number <CODE> .
+ham,"HSBC: A deposit of £1,127.73 was credited to your account ending 7880.",hsbc: a deposit of £<MONEY> was credited to your account ending <CODE> .
+ham,PNC: Use one-time passcode 215810 to approve your payment of €805.70. We will never call to ask for it.,pnc: use one-time passcode <CODE> to approve your payment of €<MONEY> . we will never call to ask for it.
+ham,Northside Physio: Reminder of your appointment on Wednesday at 1:40 AM. Reply YES to confirm or call us to reschedule.,northside physio: reminder of your appointment on wednesday at 1:40 am. reply yes to confirm or call us to reschedule.
+ham,Airbnb: Your host Rosa confirmed your booking in Chicago for Apr 5.,airbnb: your host rosa confirmed your booking in chicago for apr 5.
+ham,Westfield High: School will close early at 12:30 PM Saturday due to a power outage.,westfield high: school will close early at 12:30 pm saturday due to a power outage.
+ham,Capital One: Your balance is below €194.65. Current balance: £11.21.,capital one: your balance is below €<MONEY> . current balance: £<MONEY> .
+ham,"Zelle: Lena sent you $12.18 for ""rent"".","zelle: lena sent you $<MONEY> for ""rent""."
+ham,Your Etsy order #456-2418057 has shipped. Estimated arrival today.,your etsy order # <CODE> has shipped. estimated arrival today.
+ham,Your reservation at Premier Inn Chicago for 3 nights is confirmed. Confirmation no. 865465925.,your reservation at premier inn chicago for 3 nights is confirmed. confirmation no. <CODE> .
+ham,Your Spotify free trial ends on Aug 8. Manage your plan in account settings.,your spotify free trial ends on aug 8. manage your plan in account settings.
+ham,US Bank: Your new card has been activated. You can now use it for purchases.,us bank: your new card has been activated. you can now use it for purchases.
+ham,Library notice: the book you reserved is ready to collect. Your hold expires on Jan 10.,library notice: the book you reserved is ready to collect. your hold expires on jan 10.
+ham,Your appointment at the DMV is confirmed for Sep 9 at 5:20 PM. Case number 00324966.,your appointment at the dmv is confirmed for sep 9 at 5:20 pm. case number <CODE> .
+ham,Holiday Inn: Your stay on Jan 5 is confirmed. Booking reference 73900009. Check-in from 3 PM.,holiday inn: your stay on jan 5 is confirmed. booking reference <CODE> . check-in from 3 pm.
+ham,Your water meter reading is due this week. Submit it in the Verizon app.,your water meter reading is due this week. submit it in the verizon app.
+ham,Your reservation at Holiday Inn Atlanta for 2 nights is confirmed. Confirmation no. 694923597.,your reservation at holiday inn atlanta for 2 nights is confirmed. confirmation no. <CODE> .
+ham,Bank of America: Transfer of $843.12 to Aisha completed. Ref 27112464.,bank of america: transfer of $<MONEY> to aisha completed. ref <CODE> .
+ham,Google: 859979 is your verification code. Don't share it with anyone.,google: 859979 is your verification code. don't share it with anyone.
+ham,Your reservation at Best Western Dublin for 2 nights is confirmed. Confirmation no. 200080623.,your reservation at best western dublin for 2 nights is confirmed. confirmation no. <CODE> .
+ham,Chase: Transfer of $14.08 to Tom completed. Ref 32638986.,chase: transfer of $<MONEY> to tom completed. ref <CODE> .
+ham,Your appointment at the DMV is confirmed for Oct 6 at 9:30 AM. Case number 40780667.,your appointment at the dmv is confirmed for oct 6 at 9:30 am. case number <CODE> .
+ham,TD Bank: Code 723143 to confirm the new payee Kenji. Valid for 10 min.,td bank: code <CODE> to confirm the new payee kenji. valid for 10 min.
+ham,Wells Fargo: Use one-time passcode 540486 to approve your payment of €874.79. We will never call to ask for it.,wells fargo: use one-time passcode <CODE> to approve your payment of €<MONEY> . we will never call to ask for it.
+ham,British Gas: Your electricity bill of €24.26 is due on May 8. Autopay is on.,british gas: your electricity bill of €<MONEY> is due on may 8. autopay is on.
+ham,Your insurance policy 325365936 renews on Nov 23. No action needed if your details are unchanged.,your insurance policy <CODE> renews on nov 23. no action needed if your details are unchanged.
+ham,Your gas meter reading is due this week. Submit it in the Comcast app.,your gas meter reading is due this week. submit it in the comcast app.
+ham,Your Google login code is 201019. It expires in 10 minutes.,your google login code is <CODE> . it expires in 10 minutes.
+ham,Refund of $185.23 from Amazon has been issued to your card ending 0147. Allow 3-5 days.,refund of $<MONEY> from amazon has been issued to your card ending <CODE> . allow 3-5 days.
+ham,Bank of America: Card ending 1345 was charged $383.12 at Target on Jun 9.,bank of america: card ending <CODE> was charged $<MONEY> at target on jun 9.
+ham,Comcast: Your council tax bill of $274.89 is due on Oct 17. Autopay is on.,comcast: your council tax bill of $<MONEY> is due on oct 17. autopay is on.
+ham,"Your Lyft driver Mia is arriving in a grey Tesla Model 3, plate A681Y.","your lyft driver mia is arriving in a grey tesla model 3, plate a681y."
+ham,"Your Bolt driver Sam is arriving in a white Toyota Camry, plate K426X.","your bolt driver sam is arriving in a white toyota camry, plate k426x."
+ham,Your reservation at Marriott Seattle for 1 nights is confirmed. Confirmation no. 057172795.,your reservation at marriott seattle for 1 nights is confirmed. confirmation no. <CODE> .
+ham,Your insurance policy 849243372 renews on Feb 21. No action needed if your details are unchanged.,your insurance policy <CODE> renews on feb 21. no action needed if your details are unchanged.
+ham,Reminder: the team meeting has moved to 2:45 AM in room 421.,reminder: the team meeting has moved to 2:45 am in room 421.
+ham,Adobe: Your subscription renewed for $11.23. Receipt sent to your email.,adobe: your subscription renewed for $<MONEY> . receipt sent to your email.
+ham,Your eBay order #605-3446882 has shipped. Estimated arrival Sunday.,your ebay order # <CODE> has shipped. estimated arrival sunday.
+ham,Your rental car pickup is Thursday at 8:15 AM. Reservation 59582785. Bring your driving licence.,your rental car pickup is thursday at 8:15 am. reservation <CODE> . bring your driving licence.
+ham,You paid Ben €35.15 with Zelle.,you paid ben €<MONEY> with zelle.
+ham,Refund of $543.80 from Apple has been issued to your card ending 2353. Allow 3-5 days.,refund of $<MONEY> from apple has been issued to your card ending <CODE> . allow 3-5 days.
+ham,"Venmo: Marco sent you $43.11 for ""rent"".","venmo: marco sent you $<MONEY> for ""rent""."
+ham,Lloyds: Your balance is below $159.99. Current balance: £14.42.,lloyds: your balance is below $<MONEY> . current balance: £<MONEY> .
+ham,PNC: Card ending 1436 was charged £33.44 at CVS on Jul 23.,pnc: card ending <CODE> was charged £<MONEY> at cvs on jul 23.
+ham,"Your paycheck of €3,938.82 has been deposited. Have a great weekend!",your paycheck of €<MONEY> has been deposited. have a great weekend!
+ham,EE: Your electricity bill of $92.02 is due on Dec 13. Autopay is on.,ee: your electricity bill of $<MONEY> is due on dec 13. autopay is on.
+ham,Dropbox: 369963 is your verification code. Don't share it with anyone.,dropbox: 369963 is your verification code. don't share it with anyone.
+ham,Your prescription is ready to collect at Walgreens. Order 2176541.,your prescription is ready to collect at walgreens. order <CODE> .
+ham,Good news! Your Zara order has been dispatched. Tracking number 624677096825.,good news! your zara order has been dispatched. tracking number <CODE> .
+ham,Reminder: the team meeting has moved to 1:45 PM in room 564.,reminder: the team meeting has moved to 1:45 pm in room 564.
+ham,Chase: Card ending 4832 was charged $468.74 at Walmart on Oct 15.,chase: card ending <CODE> was charged $<MONEY> at walmart on oct 15.
+ham,British Airways: Flight BA 2048 to Atlanta departs at 1:20 PM from gate E22.,british airways: flight ba 2048 to atlanta departs at 1:20 pm from gate e22.
+ham,Good news! Your Wayfair order has been dispatched. Tracking number 326819504466.,good news! your wayfair order has been dispatched. tracking number <CODE> .
+ham,G-016659 is your Google verification code.,g-016659 is your google verification code.
+ham,"Venmo: Aisha sent you $149.59 for ""gas"".","venmo: aisha sent you $<MONEY> for ""gas""."
+ham,"Your paycheck of £2,278.77 has been deposited. Have a great weekend!",your paycheck of £<MONEY> has been deposited. have a great weekend!
+ham,Bank of America: Transfer of $729.19 to Kenji completed. Ref 37832567.,bank of america: transfer of $<MONEY> to kenji completed. ref <CODE> .
+ham,AT&T: Your internet bill of $239.41 is due on Apr 9. Autopay is on.,at&t: your internet bill of $<MONEY> is due on apr 9. autopay is on.
+ham,Reminder: your vet appointment for Charlie is Friday at 7:20 AM.,reminder: your vet appointment for charlie is friday at 7:20 am.
+ham,"Your Uber driver Rosa is arriving in a black Prius, plate D457Y.","your uber driver rosa is arriving in a black prius, plate d457y."
+ham,FedEx: We missed you today. Your package will be redelivered Saturday.,fedex: we missed you today. your package will be redelivered saturday.
+ham,Ally: Your balance is below $178.17. Current balance: $5.18.,ally: your balance is below $<MONEY> . current balance: $<MONEY> .
+ham,Check-in is now open for your flight to Austin on Mar 17. Booking ref M90031.,check-in is now open for your flight to austin on mar 17. booking ref <CODE> .
+ham,Bright Smile Dental: Reminder of your appointment on Friday at 10:00 AM. Reply YES to confirm or call us to reschedule.,bright smile dental: reminder of your appointment on friday at 10:00 am. reply yes to confirm or call us to reschedule.
+ham,"Your paycheck of $3,284.18 has been deposited. Have a great weekend!",your paycheck of $<MONEY> has been deposited. have a great weekend!
+ham,Your gas meter reading is due this week. Submit it in the British Gas app.,your gas meter reading is due this week. submit it in the british gas app.
+ham,Your Uniqlo order #299-1843738 has shipped. Estimated arrival Tuesday.,your uniqlo order # <CODE> has shipped. estimated arrival tuesday.
+ham,Library notice: the book you reserved is ready to collect. Your hold expires on Aug 22.,library notice: the book you reserved is ready to collect. your hold expires on aug 22.
+ham,"Revolut alert: You spent $240.25 at Starbucks. Available balance $2,418.88.",revolut alert: you spent $<MONEY> at starbucks. available balance $<MONEY> .
+ham,United: Your flight UA2083 is delayed. New departure time 8:15 PM. We apologize for the inconvenience.,united: your flight ua2083 is delayed. new departure time 8:15 pm. we apologize for the inconvenience.
+ham,Refund of £150.66 from Argos has been issued to your card ending 0257. Allow 3-5 days.,refund of £<MONEY> from argos has been issued to your card ending <CODE> . allow 3-5 days.
+ham,Your car service at Halfords is complete. Total $426.66. You can pick it up now.,your car service at halfords is complete. total $<MONEY> . you can pick it up now.
+ham,DPD: Your parcel 6125 0090 5187 will arrive tomorrow between 9am and 1pm.,dpd: your parcel <CODE> will arrive tomorrow between 9am and 1pm.
+ham,TD Bank: Autopay of £382.66 for your credit card is scheduled for Jun 4.,td bank: autopay of £<MONEY> for your credit card is scheduled for jun 4.
+ham,Your Xbox Game Pass free trial ends on May 18. Manage your plan in account settings.,your xbox game pass free trial ends on may 18. manage your plan in account settings.
+ham,G-445765 is your Google verification code.,g-445765 is your google verification code.
+ham,Holiday Inn: Your stay on Sep 12 is confirmed. Booking reference 37153542. Check-in from 3 PM.,holiday inn: your stay on sep 12 is confirmed. booking reference <CODE> . check-in from 3 pm.
+ham,Your table for 7 at Luigi is booked for Monday at 7:20 PM. Reply C to confirm or X to cancel.,your table for 7 at luigi is booked for monday at 7:20 pm. reply c to confirm or x to cancel.
+ham,United: Flight UA 1732 to Seattle departs at 2:00 AM from gate B31.,united: flight ua 1732 to seattle departs at 2:00 am from gate b31.
+ham,Your train ticket to Boston on Sep 18 is confirmed. Ticket number 9692913072.,your train ticket to boston on sep 18 is confirmed. ticket number <CODE> .
+ham,PNC: Card ending 2061 was charged $333.88 at Chipotle on Mar 26.,pnc: card ending <CODE> was charged $<MONEY> at chipotle on mar 26.
+ham,Thanks! We received your payment of €218.84 to Octopus Energy. Confirmation 260506990.,thanks! we received your payment of €<MONEY> to octopus energy. confirmation <CODE> .
+ham,Thanks for riding with Bolt. Your trip total was €7.17.,thanks for riding with bolt. your trip total was €<MONEY> .
+ham,"Lloyds alert: You spent £519.06 at Walgreens. Available balance £2,287.71.",lloyds alert: you spent £<MONEY> at walgreens. available balance £<MONEY> .
+ham,Discord: 699276 is your verification code. Don't share it with anyone.,discord: 699276 is your verification code. don't share it with anyone.
+ham,Delta: Your flight DL439 is delayed. New departure time 11:45 AM. We apologize for the inconvenience.,delta: your flight dl439 is delayed. new departure time 11:45 am. we apologize for the inconvenience.
+ham,PNC: Your balance is below $114.05. Current balance: $34.50.,pnc: your balance is below $<MONEY> . current balance: $<MONEY> .
+ham,"NatWest alert: You spent $198.77 at Walmart. Available balance $2,414.43.",natwest alert: you spent $<MONEY> at walmart. available balance $<MONEY> .
+ham,You paid Rosa €52.24 with Zelle.,you paid rosa €<MONEY> with zelle.
+ham,G-521487 is your Google verification code.,g-521487 is your google verification code.
+ham,Your Deliveroo order from Pizza Palace is on the way. ETA 32 min.,your deliveroo order from pizza palace is on the way. eta 32 min.
+ham,Chase: Use one-time passcode 009164 to approve your payment of $657.31. We will never call to ask for it.,chase: use one-time passcode <CODE> to approve your payment of $<MONEY> . we will never call to ask for it.
+ham,NatWest: Transfer of £549.23 to Lena completed. Ref 59772215.,natwest: transfer of £<MONEY> to lena completed. ref <CODE> .
+ham,City Dental: Reminder of your appointment on Sunday at 8:45 PM. Reply YES to confirm or call us to reschedule.,city dental: reminder of your appointment on sunday at 8:45 pm. reply yes to confirm or call us to reschedule.
+ham,You paid Mia $62.02 with Venmo.,you paid mia $<MONEY> with venmo.
+ham,Airbnb: Your host Kenji confirmed your booking in Phoenix for Jun 28.,airbnb: your host kenji confirmed your booking in phoenix for jun 28.
+ham,Your train ticket to Boston on Mar 20 is confirmed. Ticket number 4963666937.,your train ticket to boston on mar 20 is confirmed. ticket number <CODE> .
+ham,Comcast: Your water bill of $95.05 is due on Mar 19. Autopay is on.,comcast: your water bill of $<MONEY> is due on mar 19. autopay is on.
+ham,Your appointment at the DMV is confirmed for Jan 10 at 3:40 AM. Case number 48758188.,your appointment at the dmv is confirmed for jan 10 at 3:40 am. case number <CODE> .
+ham,Westfield High: School will close early at 1:30 PM Monday due to a power outage.,westfield high: school will close early at 1:30 pm monday due to a power outage.
+ham,Your Wayfair order #349-0678185 has shipped. Estimated arrival Tuesday.,your wayfair order # <CODE> has shipped. estimated arrival tuesday.
+ham,"PayPal: Grace sent you €119.92 for ""rent"".","paypal: grace sent you €<MONEY> for ""rent""."
+ham,Citi: Autopay of $124.80 for your credit card is scheduled for Dec 10.,citi: autopay of $<MONEY> for your credit card is scheduled for dec 10.
+ham,Evri: Your parcel 6823 0751 5712 will arrive Saturday between 12am and 1pm.,evri: your parcel <CODE> will arrive saturday between 12am and 1pm.
+ham,Your water meter reading is due this week. Submit it in the Comcast app.,your water meter reading is due this week. submit it in the comcast app.
+ham,Chase: Card ending 3979 was charged €194.58 at Walgreens on May 14.,chase: card ending <CODE> was charged €<MONEY> at walgreens on may 14.
+ham,Monzo: Card ending 9924 was charged $306.94 at Costco on Jul 3.,monzo: card ending <CODE> was charged $<MONEY> at costco on jul 3.
+ham,Your Google login code is 085771. It expires in 15 minutes.,your google login code is <CODE> . it expires in 15 minutes.
+ham,Your rental car pickup is Sunday at 2:20 AM. Reservation 45931862. Bring your driving licence.,your rental car pickup is sunday at 2:20 am. reservation <CODE> . bring your driving licence.
+ham,Your electricity meter reading is due this week. Submit it in the Comcast app.,your electricity meter reading is due this week. submit it in the comcast app.
+ham,Your insurance policy 048701250 renews on Apr 22. No action needed if your details are unchanged.,your insurance policy <CODE> renews on apr 22. no action needed if your details are unchanged.
+ham,Library notice: the book you reserved is ready to collect. Your hold expires on May 19.,library notice: the book you reserved is ready to collect. your hold expires on may 19.
+ham,Your table for 5 at Luigi is booked for tomorrow at 6:30 PM. Reply C to confirm or X to cancel.,your table for 5 at luigi is booked for tomorrow at 6:30 pm. reply c to confirm or x to cancel.
+ham,FedEx: Package delivered to your front door at 6:45 PM.,fedex: package delivered to your front door at 6:45 pm.
+ham,Monzo: Transfer of $727.38 to Kenji completed. Ref 07302319.,monzo: transfer of $<MONEY> to kenji completed. ref <CODE> .
+ham,DHL: Your parcel 7160 1755 3715 will arrive Wednesday between 10am and 2pm.,dhl: your parcel <CODE> will arrive wednesday between 10am and 2pm.
+ham,Library notice: the book you reserved is ready to collect. Your hold expires on Jan 6.,library notice: the book you reserved is ready to collect. your hold expires on jan 6.
+ham,Reminder: your vet appointment for Charlie is today at 3:45 AM.,reminder: your vet appointment for charlie is today at 3:45 am.
+ham,You paid Omar £53.12 with Venmo.,you paid omar £<MONEY> with venmo.
+ham,"Cash App: Priya sent you $93.96 for ""groceries"".","cash app: priya sent you $<MONEY> for ""groceries""."
+ham,"Bank of America alert: You spent €54.00 at Walgreens. Available balance $2,843.72.",bank of america alert: you spent €<MONEY> at walgreens. available balance $<MONEY> .
+ham,Your insurance policy 414356433 renews on Feb 13. No action needed if your details are unchanged.,your insurance policy <CODE> renews on feb 13. no action needed if your details are unchanged.
+ham,Spectrum: Your gas bill of $253.05 is due on May 5. Autopay is on.,spectrum: your gas bill of $<MONEY> is due on may 5. autopay is on.
+ham,Your rental car pickup is Monday at 8:40 PM. Reservation 82708425. Bring your driving licence.,your rental car pickup is monday at 8:40 pm. reservation <CODE> . bring your driving licence.
+ham,UPS: We missed you today. Your package will be redelivered Sunday.,ups: we missed you today. your package will be redelivered sunday.
+ham,Capital One: Autopay of €124.80 for your credit card is scheduled for Mar 17.,capital one: autopay of €<MONEY> for your credit card is scheduled for mar 17.
+ham,Reminder: the team meeting has moved to 4:20 AM in room 200.,reminder: the team meeting has moved to 4:20 am in room 200.
+ham,Your train ticket to Chicago on Feb 20 is confirmed. Ticket number 7423293943.,your train ticket to chicago on feb 20 is confirmed. ticket number <CODE> .
+ham,Microsoft: 860855 is your verification code. Don't share it with anyone.,microsoft: 860855 is your verification code. don't share it with anyone.
+ham,EE: Your electricity bill of $134.66 is due on Aug 5. Autopay is on.,ee: your electricity bill of $<MONEY> is due on aug 5. autopay is on.
+ham,Check-in is now open for your flight to Phoenix on Jan 12. Booking ref S78115.,check-in is now open for your flight to phoenix on jan 12. booking ref <CODE> .
+ham,Reminder: your vet appointment for Bella is Saturday at 12:40 PM.,reminder: your vet appointment for bella is saturday at 12:40 pm.
+ham,Check-in is now open for your flight to Boston on May 28. Booking ref D77808.,check-in is now open for your flight to boston on may 28. booking ref <CODE> .
+ham,United: Your flight UA179 is delayed. New departure time 2:20 AM. We apologize for the inconvenience.,united: your flight ua179 is delayed. new departure time 2:20 am. we apologize for the inconvenience.
+ham,"Venmo: Mia sent you €95.47 for ""rent"".","venmo: mia sent you €<MONEY> for ""rent""."
+ham,TD Bank: Card ending 2041 was charged £445.75 at Sainsbury's on May 4.,td bank: card ending <CODE> was charged £<MONEY> at sainsbury's on may 4.
+ham,"Wells Fargo alert: You spent £796.34 at Sainsbury's. Available balance €1,214.42.",wells fargo alert: you spent £<MONEY> at sainsbury's. available balance €<MONEY> .
+ham,Your Grubhub order from Thai Garden is on the way. ETA 40 min.,your grubhub order from thai garden is on the way. eta 40 min.
+ham,Your appointment at the DMV is confirmed for Jan 21 at 7:20 PM. Case number 99806055.,your appointment at the dmv is confirmed for jan 21 at 7:20 pm. case number <CODE> .
+ham,Your Zara order #569-5680582 has shipped. Estimated arrival Saturday.,your zara order # <CODE> has shipped. estimated arrival saturday.
+ham,Refund of £597.82 from Amazon has been issued to your card ending 5182. Allow 3-5 days.,refund of £<MONEY> from amazon has been issued to your card ending <CODE> . allow 3-5 days.
+ham,"Your security code for Apple is 638032. If you didn't request it, you can ignore this message.","your security code for apple is 638032. if you didn't request it, you can ignore this message."
+ham,Good news! Your ASOS order has been dispatched. Tracking number 700094948091.,good news! your asos order has been dispatched. tracking number <CODE> .
+ham,"Venmo: Tom sent you $89.57 for ""dinner"".","venmo: tom sent you $<MONEY> for ""dinner""."
+ham,Verizon: Your water bill of $201.31 is due on Feb 2. Autopay is on.,verizon: your water bill of $<MONEY> is due on feb 2. autopay is on.
+ham,Your train ticket to Atlanta on May 3 is confirmed. Ticket number 7982718246.,your train ticket to atlanta on may 3 is confirmed. ticket number <CODE> .
+ham,Check-in is now open for your flight to Seattle on May 8. Booking ref Z18479.,check-in is now open for your flight to seattle on may 8. booking ref <CODE> .
+ham,Your car service at Kwik Fit is complete. Total £132.55. You can pick it up now.,your car service at kwik fit is complete. total £<MONEY> . you can pick it up now.
+ham,"Your Lyft driver Sam is arriving in a white Prius, plate D388Y.","your lyft driver sam is arriving in a white prius, plate d388y."
+ham,Your table for 5 at Luigi is booked for Saturday at 3:40 AM. Reply C to confirm or X to cancel.,your table for 5 at luigi is booked for saturday at 3:40 am. reply c to confirm or x to cancel.
+ham,Adobe: Your subscription renewed for £8.21. Receipt sent to your email.,adobe: your subscription renewed for £<MONEY> . receipt sent to your email.
+ham,Capital One: Autopay of $467.83 for your credit card is scheduled for Mar 18.,capital one: autopay of $<MONEY> for your credit card is scheduled for mar 18.
+ham,"Your security code for Argos is 570867. If you didn't request it, you can ignore this message.","your security code for argos is 570867. if you didn't request it, you can ignore this message."
+ham,Your council tax meter reading is due this week. Submit it in the Verizon app.,your council tax meter reading is due this week. submit it in the verizon app.
+ham,Your reservation at Marriott Denver for 4 nights is confirmed. Confirmation no. 552399481.,your reservation at marriott denver for 4 nights is confirmed. confirmation no. <CODE> .
+ham,Library notice: the book you reserved is ready to collect. Your hold expires on Dec 25.,library notice: the book you reserved is ready to collect. your hold expires on dec 25.
+ham,"Your Lyft driver Kenji is arriving in a white Tesla Model 3, plate B068Z.","your lyft driver kenji is arriving in a white tesla model 3, plate b068z."
+ham,"Monzo alert: You spent £866.58 at Home Depot. Available balance $2,147.76.",monzo alert: you spent £<MONEY> at home depot. available balance $<MONEY> .
+ham,Your timesheet for the week ending May 28 has been approved.,your timesheet for the week ending may 28 has been approved.
+ham,Airbnb: Your host Mia confirmed your booking in Chicago for Jul 28.,airbnb: your host mia confirmed your booking in chicago for jul 28.
+ham,Your order from Wayfair is ready for pickup at the store. Bring your order number 454568.,your order from wayfair is ready for pickup at the store. bring your order number <CODE> .
+ham,Ryanair: Your flight FR2755 is delayed. New departure time 6:00 PM. We apologize for the inconvenience.,ryanair: your flight fr2755 is delayed. new departure time 6:00 pm. we apologize for the inconvenience.
+ham,Amazon: Package delivered to your front door at 5:15 PM.,amazon: package delivered to your front door at 5:15 pm.
+ham,Gym: your membership payment of $43.32 was received. See you soon!,gym: your membership payment of $<MONEY> was received. see you soon!
+ham,USPS: Package delivered to your front door at 2:40 PM.,usps: package delivered to your front door at 2:40 pm.
+ham,iCloud: Your subscription renewed for $6.70. Receipt sent to your email.,icloud: your subscription renewed for $<MONEY> . receipt sent to your email.
+ham,UPS: We missed you today. Your package will be redelivered Monday.,ups: we missed you today. your package will be redelivered monday.
+ham,G-497484 is your Google verification code.,g-497484 is your google verification code.
+ham,Ryanair: Flight FR 2219 to Atlanta departs at 12:20 PM from gate D30.,ryanair: flight fr 2219 to atlanta departs at 12:20 pm from gate d30.
+ham,Your electricity meter reading is due this week. Submit it in the T-Mobile app.,your electricity meter reading is due this week. submit it in the t-mobile app.
+ham,Hyatt: Your stay on Nov 18 is confirmed. Booking reference 92367679. Check-in from 3 PM.,hyatt: your stay on nov 18 is confirmed. booking reference <CODE> . check-in from 3 pm.
+ham,Your table for 4 at Noodle Bar is booked for Tuesday at 3:30 PM. Reply C to confirm or X to cancel.,your table for 4 at noodle bar is booked for tuesday at 3:30 pm. reply c to confirm or x to cancel.
+ham,FedEx: Your parcel 4821 4586 2848 will arrive Thursday between 12am and 2pm.,fedex: your parcel <CODE> will arrive thursday between 12am and 2pm.
+ham,Good news! Your Etsy order has been dispatched. Tracking number 099159060048.,good news! your etsy order has been dispatched. tracking number <CODE> .
+ham,Airbnb: 461900 is your verification code. Don't share it with anyone.,airbnb: 461900 is your verification code. don't share it with anyone.
+ham,Dr. Okafor: Reminder of your appointment on today at 3:05 AM. Reply YES to confirm or call us to reschedule.,dr. okafor: reminder of your appointment on today at 3:05 am. reply yes to confirm or call us to reschedule.
+ham,Good news! Your Argos order has been dispatched. Tracking number 122881011287.,good news! your argos order has been dispatched. tracking number <CODE> .
+ham,Your appointment at the DMV is confirmed for Aug 20 at 7:40 AM. Case number 09523542.,your appointment at the dmv is confirmed for aug 20 at 7:40 am. case number <CODE> .
+ham,Capital One: Use one-time passcode 191537 to approve your payment of €348.93. We will never call to ask for it.,capital one: use one-time passcode <CODE> to approve your payment of €<MONEY> . we will never call to ask for it.
+ham,G-369070 is your Google verification code.,g-369070 is your google verification code.
+ham,Airbnb: Your host Aisha confirmed your booking in London for Apr 2.,airbnb: your host aisha confirmed your booking in london for apr 2.
+ham,Ally: Transfer of €769.68 to Lena completed. Ref 07469471.,ally: transfer of €<MONEY> to lena completed. ref <CODE> .
+ham,Reminder: your vet appointment for Charlie is Monday at 4:00 AM.,reminder: your vet appointment for charlie is monday at 4:00 am.
+ham,HSBC: Transfer of £170.34 to Ben completed. Ref 68515865.,hsbc: transfer of £<MONEY> to ben completed. ref <CODE> .
+ham,Your eBay order #165-8363745 has shipped. Estimated arrival Thursday.,your ebay order # <CODE> has shipped. estimated arrival thursday.
+ham,UPS: We missed you today. Your package will be redelivered Friday.,ups: we missed you today. your package will be redelivered friday.
+ham,American: Flight AA 2373 to Dublin departs at 8:40 AM from gate B24.,american: flight aa 2373 to dublin departs at 8:40 am from gate b24.
+ham,Your gas meter reading is due this week. Submit it in the Spectrum app.,your gas meter reading is due this week. submit it in the spectrum app.
+ham,USPS: Package delivered to your front door at 5:45 AM.,usps: package delivered to your front door at 5:45 am.
+ham,Your Argos order #832-1818460 has shipped. Estimated arrival Wednesday.,your argos order # <CODE> has shipped. estimated arrival wednesday.
+ham,AT&T: Your council tax bill of £99.06 is due on Jul 28. Autopay is on.,at&t: your council tax bill of £<MONEY> is due on jul 28. autopay is on.
+ham,Your Uber Eats order from Burger Barn is on the way. ETA 15 min.,your uber eats order from burger barn is on the way. eta 15 min.
+ham,Your PayPal login code is 560736. It expires in 10 minutes.,your paypal login code is <CODE> . it expires in 10 minutes.
+ham,Your rental car pickup is Tuesday at 3:30 AM. Reservation 49306092. Bring your driving licence.,your rental car pickup is tuesday at 3:30 am. reservation <CODE> . bring your driving licence.
+ham,USPS: We missed you today. Your package will be redelivered Friday.,usps: we missed you today. your package will be redelivered friday.
+ham,Your reservation at Holiday Inn Miami for 5 nights is confirmed. Confirmation no. 501409903.,your reservation at holiday inn miami for 5 nights is confirmed. confirmation no. <CODE> .
+ham,Your haircut at Style Studio is booked for Monday at 6:15 PM. Reply CANCEL if you can't make it.,your haircut at style studio is booked for monday at 6:15 pm. reply cancel if you can't make it.
+ham,Library notice: the book you reserved is ready to collect. Your hold expires on Feb 14.,library notice: the book you reserved is ready to collect. your hold expires on feb 14.
+ham,Your car service at Halfords is complete. Total €421.22. You can pick it up now.,your car service at halfords is complete. total €<MONEY> . you can pick it up now.
+ham,You paid Tom $73.06 with Cash App.,you paid tom $<MONEY> with cash app.
+ham,Your haircut at Cut & Co is booked for Wednesday at 8:40 AM. Reply CANCEL if you can't make it.,your haircut at cut & co is booked for wednesday at 8:40 am. reply cancel if you can't make it.
+ham,TD Bank: Use one-time passcode 842823 to approve your payment of €236.47. We will never call to ask for it.,td bank: use one-time passcode <CODE> to approve your payment of €<MONEY> . we will never call to ask for it.
+ham,G-255613 is your Google verification code.,g-255613 is your google verification code.
+ham,Your rental car pickup is Friday at 3:15 PM. Reservation 73308725. Bring your driving licence.,your rental car pickup is friday at 3:15 pm. reservation <CODE> . bring your driving licence.
+ham,Your car service at Jiffy Lube is complete. Total $446.96. You can pick it up now.,your car service at jiffy lube is complete. total $<MONEY> . you can pick it up now.
+ham,US Bank: Your balance is below €86.12. Current balance: $27.86.,us bank: your balance is below €<MONEY> . current balance: $<MONEY> .
+ham,TD Bank alert: You spent $14.10 at Tesco. Available balance $312.64.,td bank alert: you spent $<MONEY> at tesco. available balance $<MONEY> .
+ham,You paid Ben $26.57 with PayPal.,you paid ben $<MONEY> with paypal.
+ham,AT&T: Your phone bill of $32.76 is due on Aug 25. Autopay is on.,at&t: your phone bill of $<MONEY> is due on aug 25. autopay is on.
+ham,Check-in is now open for your flight to Seattle on Feb 21. Booking ref R67385.,check-in is now open for your flight to seattle on feb 21. booking ref <CODE> .
+ham,PayPal: 149431 is your verification code. Don't share it with anyone.,paypal: 149431 is your verification code. don't share it with anyone.
+ham,TD Bank: A deposit of $124.61 was credited to your account ending 6245.,td bank: a deposit of $<MONEY> was credited to your account ending <CODE> .
+ham,PNC: Your new card has been activated. You can now use it for purchases.,pnc: your new card has been activated. you can now use it for purchases.
+ham,Your reservation at Best Western Denver for 1 nights is confirmed. Confirmation no. 495625535.,your reservation at best western denver for 1 nights is confirmed. confirmation no. <CODE> .
+ham,US Bank: Card ending 6037 was charged £451.08 at Costco on May 20.,us bank: card ending <CODE> was charged £<MONEY> at costco on may 20.
+ham,Your table for 7 at Luigi is booked for Wednesday at 12:15 AM. Reply C to confirm or X to cancel.,your table for 7 at luigi is booked for wednesday at 12:15 am. reply c to confirm or x to cancel.
+ham,Monzo: A deposit of £314.50 was credited to your account ending 0773.,monzo: a deposit of £<MONEY> was credited to your account ending <CODE> .
+ham,TD Bank: Autopay of $21.63 for your credit card is scheduled for Oct 28.,td bank: autopay of $<MONEY> for your credit card is scheduled for oct 28.
+ham,Your insurance policy 862410865 renews on Feb 15. No action needed if your details are unchanged.,your insurance policy <CODE> renews on feb 15. no action needed if your details are unchanged.
+ham,Discord: 226407 is your verification code. Don't share it with anyone.,discord: 226407 is your verification code. don't share it with anyone.
+ham,Check-in is now open for your flight to London on Aug 3. Booking ref T58768.,check-in is now open for your flight to london on aug 3. booking ref <CODE> .
+ham,Your rental car pickup is Wednesday at 7:05 AM. Reservation 05949965. Bring your driving licence.,your rental car pickup is wednesday at 7:05 am. reservation <CODE> . bring your driving licence.
+ham,"Your Bolt driver Kenji is arriving in a white Prius, plate F803X.","your bolt driver kenji is arriving in a white prius, plate f803x."
+ham,Your haircut at Cut & Co is booked for tomorrow at 12:00 AM. Reply CANCEL if you can't make it.,your haircut at cut & co is booked for tomorrow at 12:00 am. reply cancel if you can't make it.
+ham,Your order from ASOS is ready for pickup at the store. Bring your order number 413238.,your order from asos is ready for pickup at the store. bring your order number <CODE> .
+ham,Library notice: the book you reserved is ready to collect. Your hold expires on Feb 8.,library notice: the book you reserved is ready to collect. your hold expires on feb 8.
+ham,Your insurance policy 413847387 renews on Apr 18. No action needed if your details are unchanged.,your insurance policy <CODE> renews on apr 18. no action needed if your details are unchanged.
+ham,Check-in is now open for your flight to Chicago on Dec 17. Booking ref U91617.,check-in is now open for your flight to chicago on dec 17. booking ref <CODE> .
+ham,"NatWest: A deposit of €1,674.16 was credited to your account ending 1817.",natwest: a deposit of €<MONEY> was credited to your account ending <CODE> .
+ham,Your insurance policy 682397125 renews on Oct 2. No action needed if your details are unchanged.,your insurance policy <CODE> renews on oct 2. no action needed if your details are unchanged.
+ham,Your Zara order #050-0937412 has shipped. Estimated arrival Sunday.,your zara order # <CODE> has shipped. estimated arrival sunday.
+ham,US Bank: Code 391525 to confirm the new payee Rosa. Valid for 10 min.,us bank: code <CODE> to confirm the new payee rosa. valid for 10 min.
+ham,Your insurance policy 504135885 renews on Dec 16. No action needed if your details are unchanged.,your insurance policy <CODE> renews on dec 16. no action needed if your details are unchanged.
+ham,NatWest: Use one-time passcode 951585 to approve your payment of €104.33. We will never call to ask for it.,natwest: use one-time passcode <CODE> to approve your payment of €<MONEY> . we will never call to ask for it.
+ham,Your haircut at Style Studio is booked for Friday at 6:15 PM. Reply CANCEL if you can't make it.,your haircut at style studio is booked for friday at 6:15 pm. reply cancel if you can't make it.
+ham,Your Uber login code is 971071. It expires in 5 minutes.,your uber login code is <CODE> . it expires in 5 minutes.
+ham,Southwest: Your flight WN2914 is delayed. New departure time 11:45 AM. We apologize for the inconvenience.,southwest: your flight wn2914 is delayed. new departure time 11:45 am. we apologize for the inconvenience.
+ham,Your table for 4 at Noodle Bar is booked for Friday at 8:00 AM. Reply C to confirm or X to cancel.,your table for 4 at noodle bar is booked for friday at 8:00 am. reply c to confirm or x to cancel.
+ham,Your Disney+ free trial ends on Aug 17. Manage your plan in account settings.,your disney+ free trial ends on aug 17. manage your plan in account settings.
+ham,"Your Uber driver Sam is arriving in a grey Honda Civic, plate K967X.","your uber driver sam is arriving in a grey honda civic, plate k967x."
+ham,Your car service at Halfords is complete. Total £145.44. You can pick it up now.,your car service at halfords is complete. total £<MONEY> . you can pick it up now.
+ham,Airbnb: Your host Tom confirmed your booking in Chicago for Jun 11.,airbnb: your host tom confirmed your booking in chicago for jun 11.
+ham,Your reservation at Marriott Seattle for 2 nights is confirmed. Confirmation no. 990325759.,your reservation at marriott seattle for 2 nights is confirmed. confirmation no. <CODE> .
+ham,Your Grubhub order from Burger Barn is on the way. ETA 20 min.,your grubhub order from burger barn is on the way. eta 20 min.
+ham,PayPal: 975303 is your verification code. Don't share it with anyone.,paypal: 975303 is your verification code. don't share it with anyone.
+ham,Your DoorDash order from Thai Garden is on the way. ETA 33 min.,your doordash order from thai garden is on the way. eta 33 min.
+ham,Check-in is now open for your flight to Phoenix on Sep 19. Booking ref E08136.,check-in is now open for your flight to phoenix on sep 19. booking ref <CODE> .
+ham,Your rental car pickup is Tuesday at 6:40 PM. Reservation 32145583. Bring your driving licence.,your rental car pickup is tuesday at 6:40 pm. reservation <CODE> . bring your driving licence.
+ham,Your phone meter reading is due this week. Submit it in the Spectrum app.,your phone meter reading is due this week. submit it in the spectrum app.
+ham,Your Netflix free trial ends on Dec 11. Manage your plan in account settings.,your netflix free trial ends on dec 11. manage your plan in account settings.
+ham,"Citi: A deposit of $2,671.86 was credited to your account ending 7676.",citi: a deposit of $<MONEY> was credited to your account ending <CODE> .
+ham,Check-in is now open for your flight to Seattle on Mar 19. Booking ref C24449.,check-in is now open for your flight to seattle on mar 19. booking ref <CODE> .
+ham,easyJet: Your flight U2401 is delayed. New departure time 4:05 AM. We apologize for the inconvenience.,easyjet: your flight u2401 is delayed. new departure time 4:05 am. we apologize for the inconvenience.
+ham,Your table for 3 at Saffron is booked for Saturday at 8:30 PM. Reply C to confirm or X to cancel.,your table for 3 at saffron is booked for saturday at 8:30 pm. reply c to confirm or x to cancel.
+ham,Lincoln Elementary: School will close early at 1:30 PM Saturday due to weather.,lincoln elementary: school will close early at 1:30 pm saturday due to weather.
+ham,Your rental car pickup is Friday at 4:20 AM. Reservation 30673948. Bring your driving licence.,your rental car pickup is friday at 4:20 am. reservation <CODE> . bring your driving licence.
+ham,Dr. Lee's office: Reminder of your appointment on Thursday at 4:20 AM. Reply YES to confirm or call us to reschedule.,dr. lee's office: reminder of your appointment on thursday at 4:20 am. reply yes to confirm or call us to reschedule.
+ham,US Bank: A deposit of $283.96 was credited to your account ending 9520.,us bank: a deposit of $<MONEY> was credited to your account ending <CODE> .
+ham,HSBC: Autopay of $523.29 for your credit card is scheduled for Jan 21.,hsbc: autopay of $<MONEY> for your credit card is scheduled for jan 21.
+ham,Thanks for riding with Lyft. Your trip total was €42.34.,thanks for riding with lyft. your trip total was €<MONEY> .
+ham,Your Disney+ free trial ends on Jan 28. Manage your plan in account settings.,your disney+ free trial ends on jan 28. manage your plan in account settings.
+ham,Bright Smile Dental: Reminder of your appointment on Monday at 7:05 PM. Reply YES to confirm or call us to reschedule.,bright smile dental: reminder of your appointment on monday at 7:05 pm. reply yes to confirm or call us to reschedule.
+ham,Wells Fargo: Transfer of $143.10 to Marco completed. Ref 81556589.,wells fargo: transfer of $<MONEY> to marco completed. ref <CODE> .
+ham,American: Your flight AA2792 is delayed. New departure time 10:05 PM. We apologize for the inconvenience.,american: your flight aa2792 is delayed. new departure time 10:05 pm. we apologize for the inconvenience.
+ham,Reminder: your vet appointment for Charlie is Monday at 11:30 PM.,reminder: your vet appointment for charlie is monday at 11:30 pm.
+ham,Southwest: Your flight WN1580 is delayed. New departure time 9:05 PM. We apologize for the inconvenience.,southwest: your flight wn1580 is delayed. new departure time 9:05 pm. we apologize for the inconvenience.
+ham,"Capital One: A deposit of $1,696.49 was credited to your account ending 1523.",capital one: a deposit of $<MONEY> was credited to your account ending <CODE> .
+ham,Your eBay order #092-1088382 has shipped. Estimated arrival Friday.,your ebay order # <CODE> has shipped. estimated arrival friday.
+ham,Your train ticket to Austin on Dec 5 is confirmed. Ticket number 2280537735.,your train ticket to austin on dec 5 is confirmed. ticket number <CODE> .
+ham,Netflix: Your subscription renewed for $17.18. Receipt sent to your email.,netflix: your subscription renewed for $<MONEY> . receipt sent to your email.
+ham,Microsoft: 650396 is your verification code. Don't share it with anyone.,microsoft: 650396 is your verification code. don't share it with anyone.
+ham,Bright Smile Dental: Reminder of your appointment on Friday at 8:15 AM. Reply YES to confirm or call us to reschedule.,bright smile dental: reminder of your appointment on friday at 8:15 am. reply yes to confirm or call us to reschedule.
+ham,"Your Lyft driver Marco is arriving in a black Prius, plate B507X.","your lyft driver marco is arriving in a black prius, plate b507x."
+ham,HSBC: Transfer of €539.04 to Grace completed. Ref 39035072.,hsbc: transfer of €<MONEY> to grace completed. ref <CODE> .
+ham,DHL: We missed you today. Your package will be redelivered Friday.,dhl: we missed you today. your package will be redelivered friday.
+ham,Your haircut at Style Studio is booked for Tuesday at 3:00 AM. Reply CANCEL if you can't make it.,your haircut at style studio is booked for tuesday at 3:00 am. reply cancel if you can't make it.
+ham,Thanks! We received your payment of $160.74 to T-Mobile. Confirmation 127616565.,thanks! we received your payment of $<MONEY> to t-mobile. confirmation <CODE> .
+ham,US Bank: Use one-time passcode 330028 to approve your payment of €210.77. We will never call to ask for it.,us bank: use one-time passcode <CODE> to approve your payment of €<MONEY> . we will never call to ask for it.
+ham,FedEx: We missed you today. Your package will be redelivered Monday.,fedex: we missed you today. your package will be redelivered monday.
+ham,G-511172 is your Google verification code.,g-511172 is your google verification code.
+ham,Your reservation at Hyatt Boston for 2 nights is confirmed. Confirmation no. 382881857.,your reservation at hyatt boston for 2 nights is confirmed. confirmation no. <CODE> .
+ham,"Your security code for Apple is 331420. If you didn't request it, you can ignore this message.","your security code for apple is 331420. if you didn't request it, you can ignore this message."
+ham,"PayPal: Priya sent you $43.31 for ""dinner"".","paypal: priya sent you $<MONEY> for ""dinner""."
+ham,Good news! Your Uniqlo order has been dispatched. Tracking number 540507848564.,good news! your uniqlo order has been dispatched. tracking number <CODE> .
+ham,Your ASOS order #586-6266620 has shipped. Estimated arrival Thursday.,your asos order # <CODE> has shipped. estimated arrival thursday.
+ham,Your train ticket to Atlanta on May 23 is confirmed. Ticket number 9633119006.,your train ticket to atlanta on may 23 is confirmed. ticket number <CODE> .
+ham,Your car service at Jiffy Lube is complete. Total £292.52. You can pick it up now.,your car service at jiffy lube is complete. total £<MONEY> . you can pick it up now.
+ham,Hulu: Your subscription renewed for €2.02. Receipt sent to your email.,hulu: your subscription renewed for €<MONEY> . receipt sent to your email.
+ham,Library notice: the book you reserved is ready to collect. Your hold expires on Nov 28.,library notice: the book you reserved is ready to collect. your hold expires on nov 28.
+ham,"Your Bolt driver Lena is arriving in a blue Honda Civic, plate G516Z.","your bolt driver lena is arriving in a blue honda civic, plate g516z."
+ham,Airbnb: Your host Ben confirmed your booking in Seattle for Aug 28.,airbnb: your host ben confirmed your booking in seattle for aug 28.
+ham,Oak Park School: School will close early at 2:30 PM tomorrow due to a power outage.,oak park school: school will close early at 2:30 pm tomorrow due to a power outage.
+ham,Your appointment at the DMV is confirmed for Jun 8 at 11:15 AM. Case number 72056561.,your appointment at the dmv is confirmed for jun 8 at 11:15 am. case number <CODE> .
+ham,EE: Your council tax bill of $145.81 is due on Aug 24. Autopay is on.,ee: your council tax bill of $<MONEY> is due on aug 24. autopay is on.
+ham,Chase: Your balance is below $105.04. Current balance: €33.35.,chase: your balance is below $<MONEY> . current balance: €<MONEY> .
+ham,Airbnb: Your host Lena confirmed your booking in Atlanta for Jun 26.,airbnb: your host lena confirmed your booking in atlanta for jun 26.
+ham,Royal Mail: Package delivered to your front door at 1:05 AM.,royal mail: package delivered to your front door at 1:05 am.
+ham,Steam: 409248 is your verification code. Don't share it with anyone.,steam: 409248 is your verification code. don't share it with anyone.
+ham,You paid Lena $52.16 with Cash App.,you paid lena $<MONEY> with cash app.
+ham,Revolut: Code 713264 to confirm the new payee Mia. Valid for 10 min.,revolut: code <CODE> to confirm the new payee mia. valid for 10 min.
+ham,Reminder: the team meeting has moved to 6:00 PM in room 292.,reminder: the team meeting has moved to 6:00 pm in room 292.
+ham,UPS: Your parcel 4669 4536 9293 will arrive Saturday between 8am and 6pm.,ups: your parcel <CODE> will arrive saturday between 8am and 6pm.
+ham,HSBC: Autopay of $66.36 for your credit card is scheduled for Aug 13.,hsbc: autopay of $<MONEY> for your credit card is scheduled for aug 13.
+ham,Your Uniqlo order #670-1997766 has shipped. Estimated arrival tomorrow.,your uniqlo order # <CODE> has shipped. estimated arrival tomorrow.
+ham,Ally: Your new card has been activated. You can now use it for purchases.,ally: your new card has been activated. you can now use it for purchases.
+ham,"Your security code for Wayfair is 672803. If you didn't request it, you can ignore this message.","your security code for wayfair is 672803. if you didn't request it, you can ignore this message."
+ham,Library notice: the book you reserved is ready to collect. Your hold expires on Apr 13.,library notice: the book you reserved is ready to collect. your hold expires on apr 13.
+ham,United: Flight UA 2884 to Seattle departs at 9:30 PM from gate D8.,united: flight ua 2884 to seattle departs at 9:30 pm from gate d8.
+ham,Citi: Code 190171 to confirm the new payee Aisha. Valid for 10 min.,citi: code <CODE> to confirm the new payee aisha. valid for 10 min.
+ham,Check-in is now open for your flight to Dublin on Jan 27. Booking ref X35708.,check-in is now open for your flight to dublin on jan 27. booking ref <CODE> .
+ham,Xbox Game Pass: Your subscription renewed for $17.27. Receipt sent to your email.,xbox game pass: your subscription renewed for $<MONEY> . receipt sent to your email.
+ham,Thanks! We received your payment of €130.54 to Spectrum. Confirmation 044366844.,thanks! we received your payment of €<MONEY> to spectrum. confirmation <CODE> .
+ham,Your Grubhub order from Taco Town is on the way. ETA 14 min.,your grubhub order from taco town is on the way. eta 14 min.
+ham,Evri: Your parcel 3780 5081 6950 will arrive Friday between 9am and 4pm.,evri: your parcel <CODE> will arrive friday between 9am and 4pm.
+ham,British Gas: Your council tax bill of $244.69 is due on Oct 20. Autopay is on.,british gas: your council tax bill of $<MONEY> is due on oct 20. autopay is on.
+ham,Your Grubhub order from Sushi Go is on the way. ETA 16 min.,your grubhub order from sushi go is on the way. eta 16 min.
+ham,Chase: Autopay of $271.56 for your credit card is scheduled for Nov 4.,chase: autopay of $<MONEY> for your credit card is scheduled for nov 4.
+ham,G-219720 is your Google verification code.,g-219720 is your google verification code.
+ham,Westfield High: School will close early at 1:30 PM Thursday due to a power outage.,westfield high: school will close early at 1:30 pm thursday due to a power outage.
+ham,Oak Park School: School will close early at 12:30 PM today due to weather.,oak park school: school will close early at 12:30 pm today due to weather.
+ham,Your timesheet for the week ending Feb 2 has been approved.,your timesheet for the week ending feb 2 has been approved.
+ham,Westfield High: School will close early at 1:30 PM Friday due to staff training.,westfield high: school will close early at 1:30 pm friday due to staff training.
+ham,British Airways: Your flight BA722 is delayed. New departure time 11:15 PM. We apologize for the inconvenience.,british airways: your flight ba722 is delayed. new departure time 11:15 pm. we apologize for the inconvenience.
+ham,HSBC: Use one-time passcode 624381 to approve your payment of $419.61. We will never call to ask for it.,hsbc: use one-time passcode <CODE> to approve your payment of $<MONEY> . we will never call to ask for it.
+ham,Westfield High: School will close early at 1:30 PM Saturday due to a power outage.,westfield high: school will close early at 1:30 pm saturday due to a power outage.
+ham,Your eBay order #051-3881475 has shipped. Estimated arrival Monday.,your ebay order # <CODE> has shipped. estimated arrival monday.
+ham,Your train ticket to Phoenix on Sep 25 is confirmed. Ticket number 1327439409.,your train ticket to phoenix on sep 25 is confirmed. ticket number <CODE> .
+ham,Your train ticket to Chicago on Jan 12 is confirmed. Ticket number 3240255773.,your train ticket to chicago on jan 12 is confirmed. ticket number <CODE> .
+ham,Your Adobe free trial ends on Mar 4. Manage your plan in account settings.,your adobe free trial ends on mar 4. manage your plan in account settings.
+ham,Your timesheet for the week ending May 26 has been approved.,your timesheet for the week ending may 26 has been approved.
+ham,"Your security code for Uniqlo is 718129. If you didn't request it, you can ignore this message.","your security code for uniqlo is 718129. if you didn't request it, you can ignore this message."
+ham,"Your security code for Apple is 252150. If you didn't request it, you can ignore this message.","your security code for apple is 252150. if you didn't request it, you can ignore this message."
+ham,Your insurance policy 742411312 renews on Aug 9. No action needed if your details are unchanged.,your insurance policy <CODE> renews on aug 9. no action needed if your details are unchanged.
